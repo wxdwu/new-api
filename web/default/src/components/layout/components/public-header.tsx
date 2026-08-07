@@ -27,6 +27,7 @@ import { ProfileDropdown } from '@/components/profile-dropdown'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
+import { useRuijieOAuthLogin } from '@/features/auth/hooks/use-ruijie-oauth-login'
 import { useNotifications } from '@/hooks/use-notifications'
 import { useSystemConfig } from '@/hooks/use-system-config'
 import { useTopNavLinks } from '@/hooks/use-top-nav-links'
@@ -90,13 +91,63 @@ export function PublicHeader(props: PublicHeaderProps) {
   } = useSystemConfig()
   const dynamicLinks = useTopNavLinks()
   const notifications = useNotifications()
+  const { startRuijieLogin, isLoading: isRuijieOAuthLoading } =
+    useRuijieOAuthLogin()
   const routerState = useRouterState()
   const pathname = routerState.location.pathname
+  const isHomePage = pathname === '/'
 
   const user = auth.user
   const isAuthenticated = !!user
   const displaySiteName = customSiteName || systemName
   const links = dynamicLinks.length > 0 ? dynamicLinks : navLinks
+
+  let desktopSignInTarget: React.ReactElement | undefined
+  let desktopSignInHandler: (() => void) | undefined
+  if (isHomePage) {
+    desktopSignInTarget = undefined
+    desktopSignInHandler = startRuijieLogin
+  } else {
+    desktopSignInTarget = <Link to='/sign-in' />
+    desktopSignInHandler = undefined
+  }
+
+  let mobileAuthButton: React.ReactNode
+  if (isAuthenticated) {
+    mobileAuthButton = (
+      <Link
+        to='/dashboard'
+        onClick={() => setMobileOpen(false)}
+        className='bg-foreground text-background inline-flex h-10 items-center justify-center rounded-lg text-sm font-medium transition-opacity hover:opacity-90 active:opacity-80'
+      >
+        {t('Go to Dashboard')}
+      </Link>
+    )
+  } else if (isHomePage) {
+    mobileAuthButton = (
+      <button
+        type='button'
+        disabled={isRuijieOAuthLoading}
+        onClick={() => {
+          setMobileOpen(false)
+          startRuijieLogin()
+        }}
+        className='bg-foreground text-background inline-flex h-10 items-center justify-center rounded-lg text-sm font-medium transition-opacity hover:opacity-90 active:opacity-80'
+      >
+        {t('Sign in')}
+      </button>
+    )
+  } else {
+    mobileAuthButton = (
+      <Link
+        to='/sign-in'
+        onClick={() => setMobileOpen(false)}
+        className='bg-foreground text-background inline-flex h-10 items-center justify-center rounded-lg text-sm font-medium transition-opacity hover:opacity-90 active:opacity-80'
+      >
+        {t('Sign in')}
+      </Link>
+    )
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -288,7 +339,9 @@ export function PublicHeader(props: PublicHeaderProps) {
                     <Button
                       size='sm'
                       className='h-8 rounded-lg px-3.5 text-xs font-medium'
-                      render={<Link to='/sign-in' />}
+                      render={desktopSignInTarget}
+                      onClick={desktopSignInHandler}
+                      disabled={isHomePage && isRuijieOAuthLoading}
                     >
                       {t('Sign in')}
                     </Button>
@@ -402,15 +455,7 @@ export function PublicHeader(props: PublicHeaderProps) {
             )}
             style={{ transitionDelay: mobileOpen ? '250ms' : '0ms' }}
           >
-            {showAuthButtons && (
-              <Link
-                to={isAuthenticated ? '/dashboard' : '/sign-in'}
-                onClick={() => setMobileOpen(false)}
-                className='bg-foreground text-background inline-flex h-10 items-center justify-center rounded-lg text-sm font-medium transition-opacity hover:opacity-90 active:opacity-80'
-              >
-                {isAuthenticated ? t('Go to Dashboard') : t('Sign in')}
-              </Link>
-            )}
+            {showAuthButtons && mobileAuthButton}
           </div>
         </div>
       </div>

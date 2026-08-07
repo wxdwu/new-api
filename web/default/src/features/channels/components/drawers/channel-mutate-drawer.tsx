@@ -1532,20 +1532,22 @@ export function ChannelMutateDrawer({
   // Handle model selection change from MultiSelect
   const handleModelsChange = useCallback(
     (selected: string[]) => {
-      form.setValue('models', selected.join(','))
-      form.setValue(
-        'tag_enabled_models',
-        form
-          .getValues('tag_enabled_models')
-          .filter((model) => selected.includes(model))
+      const enabledModels = form.getValues('tag_enabled_models')
+      const nextEnabledModels = enabledModels.filter((model) =>
+        selected.includes(model)
       )
+
+      form.setValue('models', selected.join(','))
+      form.setValue('tag_enabled_models', nextEnabledModels, {
+        shouldDirty: nextEnabledModels.length !== enabledModels.length,
+      })
     },
     [form]
   )
 
   const handleTagEnabledModelsChange = useCallback(
     (selected: string[]) => {
-      form.setValue('tag_enabled_models', selected)
+      form.setValue('tag_enabled_models', selected, { shouldDirty: true })
     },
     [form]
   )
@@ -1618,6 +1620,9 @@ export function ChannelMutateDrawer({
     currentRow,
     isEditing,
     isMultiKeyChannel,
+    tagEnabledModelsChanged: Boolean(
+      form.formState.dirtyFields.tag_enabled_models
+    ),
     onSuccess: handleSuccess,
   })
 

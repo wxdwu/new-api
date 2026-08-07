@@ -40,6 +40,7 @@ type UseChannelMutateFormParams = {
   currentRow?: Channel | null
   isEditing: boolean
   isMultiKeyChannel: boolean
+  tagEnabledModelsChanged: boolean
   onSuccess: () => void
 }
 
@@ -98,6 +99,9 @@ export function useChannelMutateForm(props: UseChannelMutateFormParams) {
         )
         if (!data.key?.trim()) {
           delete payload.key
+        }
+        if (!props.tagEnabledModelsChanged) {
+          delete payload.tag_enabled_models
         }
         if (!canEditSensitive) {
           for (const field of SENSITIVE_UPDATE_FIELDS) {
