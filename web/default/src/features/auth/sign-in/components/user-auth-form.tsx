@@ -18,7 +18,7 @@ For commercial licensing, please contact support@quantumnous.com
 */
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Link } from '@tanstack/react-router'
-import { Loader2, LogIn, KeyRound } from 'lucide-react'
+import { ChevronDown, KeyRound, Loader2, LogIn } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
@@ -68,6 +68,7 @@ export function UserAuthForm({
   const [isPasskeyLoading, setIsPasskeyLoading] = useState(false)
   const [isWeChatDialogOpen, setIsWeChatDialogOpen] = useState(false)
   const [isWeChatSubmitting, setIsWeChatSubmitting] = useState(false)
+  const [showPasswordLogin, setShowPasswordLogin] = useState(false)
   const legalConsentErrorMessage = t('Please agree to the legal terms first')
   const loginFailedMessage = t('Login failed')
 
@@ -104,8 +105,15 @@ export function UserAuthForm({
     status?.telegram_oauth ||
     (status?.custom_oauth_providers?.length ?? 0) > 0
   )
+  const hasRuijieOAuth = Boolean(
+    status?.custom_oauth_providers?.some(
+      (provider) => provider.slug.toLowerCase() === 'ruijie'
+    )
+  )
   const hasAlternativeLogin =
     passkeyLoginEnabled || hasWeChatLogin || hasOAuthLogin
+  const passwordFormVisible =
+    passwordLoginEnabled && (!hasRuijieOAuth || showPasswordLogin)
 
   useEffect(() => {
     if (requiresLegalConsent) {
@@ -168,7 +176,7 @@ export function UserAuthForm({
         await handleLoginSuccess(res.data as { id?: number } | null, redirectTo)
         toast.success(t('Welcome back!'))
       }
-    } catch (_error) {
+    } catch {
       // Errors are handled by global interceptor
     } finally {
       setIsLoading(false)
@@ -208,7 +216,7 @@ export function UserAuthForm({
       } else {
         toast.error(res?.message || loginFailedMessage)
       }
-    } catch (_error) {
+    } catch {
       toast.error(loginFailedMessage)
     } finally {
       setIsWeChatSubmitting(false)
@@ -324,12 +332,24 @@ export function UserAuthForm({
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className={cn('grid gap-4', className)}
+        className={cn('grid gap-2', className)}
         {...props}
       >
         {hasAlternativeLogin && alternativeLoginMethods}
 
-        {passwordLoginEnabled && (
+        {passwordLoginEnabled && hasRuijieOAuth && !showPasswordLogin && (
+          <Button
+            type='button'
+            variant='outline'
+            onClick={() => setShowPasswordLogin(true)}
+            className='h-12 w-full justify-center rounded-xl border-[#d8e1ee] bg-white text-[#243152] hover:border-[#4b8cf7] hover:bg-[#f7faff] hover:text-[#1769e8]'
+          >
+            {t('Sign in with username and password')}
+            <ChevronDown className='ml-1 size-4' aria-hidden='true' />
+          </Button>
+        )}
+
+        {passwordFormVisible && (
           <>
             {/* Username Field */}
             <FormField

@@ -16,6 +16,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 For commercial licensing, please contact support@quantumnous.com
 */
+import { ArrowRight, ShieldCheck } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -46,6 +47,7 @@ type ProviderButton = {
   onClick: () => void
   icon?: ReactNode
   disabled?: boolean
+  featured?: boolean
 }
 
 export function OAuthProviders({
@@ -129,46 +131,67 @@ export function OAuthProviders({
   const customProviders = status?.custom_oauth_providers
   if (customProviders && customProviders.length > 0) {
     for (const provider of customProviders) {
+      const isRuijieProvider = provider.slug.toLowerCase() === 'ruijie'
       providerButtons.push({
         key: `custom-${provider.slug}`,
-        label: t('Continue with {{name}}', { name: provider.name }),
+        label: isRuijieProvider
+          ? t('Sign in with Ruijie SSO')
+          : t('Continue with {{name}}', { name: provider.name }),
         onClick: () => handleCustomOAuthLogin(provider, redirectTo),
+        icon: isRuijieProvider ? <ShieldCheck className='size-5' /> : undefined,
+        featured: isRuijieProvider,
       })
     }
   }
 
   if (providerButtons.length === 0) return null
 
+  const featuredButtons = providerButtons.filter((button) => button.featured)
+  const standardButtons = providerButtons.filter((button) => !button.featured)
+
+  const renderButton = (button: ProviderButton) => (
+    <Button
+      key={button.key}
+      variant={button.featured ? 'default' : 'outline'}
+      type='button'
+      disabled={disabled || isLoading || button.disabled}
+      onClick={button.onClick}
+      className={cn(
+        'h-12 w-full justify-center gap-2 rounded-xl',
+        button.featured &&
+          'relative h-14 bg-gradient-to-r from-[#1768ec] to-[#278bff] px-5 text-[15px] font-extrabold text-white shadow-[0_14px_28px_rgba(24,111,240,0.28)] hover:brightness-105'
+      )}
+    >
+      {button.icon}
+      {button.label}
+      {button.featured && (
+        <ArrowRight className='absolute right-5 size-5' aria-hidden='true' />
+      )}
+    </Button>
+  )
+
   return (
     <div className={cn('space-y-3', className)}>
-      <div className='relative'>
-        <div className='absolute inset-0 flex items-center'>
-          <span className='w-full border-t' />
-        </div>
-        <div className='relative flex justify-center text-xs uppercase'>
-          <span className='bg-background text-muted-foreground px-2'>
-            {t('Or continue with')}
-          </span>
-        </div>
-      </div>
+      {featuredButtons.map(renderButton)}
 
-      <div className='flex flex-col gap-2'>
-        {providerButtons.map(
-          ({ key, label, onClick, icon, disabled: extraDisabled }) => (
-            <Button
-              key={key}
-              variant='outline'
-              type='button'
-              disabled={disabled || isLoading || extraDisabled}
-              onClick={onClick}
-              className='h-11 w-full justify-center gap-2 rounded-lg'
-            >
-              {icon}
-              {label}
-            </Button>
-          )
-        )}
-      </div>
+      {standardButtons.length > 0 && (
+        <div className='relative py-1'>
+          <div className='absolute inset-0 flex items-center'>
+            <span className='w-full border-t' />
+          </div>
+          <div className='relative flex justify-center text-xs uppercase'>
+            <span className='bg-background text-muted-foreground px-2'>
+              {t('Or continue with')}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {standardButtons.length > 0 && (
+        <div className='flex flex-col gap-2'>
+          {standardButtons.map(renderButton)}
+        </div>
+      )}
     </div>
   )
 }

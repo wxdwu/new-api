@@ -524,6 +524,17 @@ func (channel *Channel) Insert() error {
 }
 
 func (channel *Channel) Update() error {
+	return channel.update(true)
+}
+
+// UpdateWithAbilityTagSync applies an explicit channel tag change to every
+// ability. Ordinary channel edits should call Update so independently managed
+// ability tags are retained.
+func (channel *Channel) UpdateWithAbilityTagSync() error {
+	return channel.update(false)
+}
+
+func (channel *Channel) update(preserveAbilityTags bool) error {
 	// If this is a multi-key channel, recalculate MultiKeySize based on the current key list to avoid inconsistency after editing keys
 	if channel.ChannelInfo.IsMultiKey {
 		var keyStr string
@@ -568,7 +579,11 @@ func (channel *Channel) Update() error {
 		return err
 	}
 	DB.Model(channel).First(channel, "id = ?", channel.Id)
-	err = channel.UpdateAbilities(nil)
+	if preserveAbilityTags {
+		err = channel.UpdateAbilitiesPreservingTags(nil)
+	} else {
+		err = channel.UpdateAbilities(nil)
+	}
 	return err
 }
 

@@ -1046,7 +1046,11 @@ func UpdateChannel(c *gin.Context) {
 			// 覆盖模式：直接使用新密钥（默认行为，不需要特殊处理）
 		}
 	}
-	err = channel.Update()
+	if shouldSynchronizeAbilityTags(&channel, originChannel, requestData) {
+		err = channel.UpdateWithAbilityTagSync()
+	} else {
+		err = channel.Update()
+	}
 	if err != nil {
 		common.ApiError(c, err)
 		return
@@ -1083,6 +1087,13 @@ func UpdateChannel(c *gin.Context) {
 		"data":    channel,
 	})
 	return
+}
+
+func shouldSynchronizeAbilityTags(channel *PatchChannel, originChannel *model.Channel, requestData map[string]any) bool {
+	if _, tagWasProvided := requestData["tag"]; !tagWasProvided {
+		return false
+	}
+	return !equalStringPtr(channel.Tag, originChannel.Tag)
 }
 
 func UpdateChannelStatus(c *gin.Context) {

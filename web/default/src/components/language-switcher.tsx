@@ -35,10 +35,17 @@ import { api } from '@/lib/api'
 import { cn } from '@/lib/utils'
 import { useAuthStore } from '@/stores/auth-store'
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({
+  showLabel = false,
+}: {
+  showLabel?: boolean
+}) {
   const { i18n, t } = useTranslation()
   const user = useAuthStore((s) => s.auth.user)
   const currentLanguage = normalizeInterfaceLanguage(i18n.language)
+  const currentLanguageLabel = INTERFACE_LANGUAGE_OPTIONS.find(
+    (lang) => lang.code === currentLanguage
+  )?.label
   const handleChangeLanguage = useCallback(
     async (code: string) => {
       await i18n.changeLanguage(code)
@@ -56,9 +63,16 @@ export function LanguageSwitcher() {
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger
-        render={<Button variant='ghost' size='icon' className='h-9 w-9' />}
+        render={
+          <Button
+            variant='ghost'
+            size={showLabel ? 'default' : 'icon'}
+            className={cn('h-9', showLabel ? 'gap-1.5 px-2 text-xs' : 'w-9')}
+          />
+        }
       >
         <Languages className='size-[1.2rem]' />
+        {showLabel && currentLanguageLabel}
         <span className='sr-only'>{t('Change language')}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>

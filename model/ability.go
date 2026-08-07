@@ -250,6 +250,17 @@ func (channel *Channel) DeleteAbilities() error {
 // UpdateAbilities updates abilities of this channel.
 // Make sure the channel is completed before calling this function.
 func (channel *Channel) UpdateAbilities(tx *gorm.DB) error {
+	return channel.updateAbilities(tx, false)
+}
+
+// UpdateAbilitiesPreservingTags rebuilds a channel's abilities while keeping
+// tags that are managed directly on existing ability rows. Newly introduced
+// group/model pairs still inherit the channel tag.
+func (channel *Channel) UpdateAbilitiesPreservingTags(tx *gorm.DB) error {
+	return channel.updateAbilities(tx, true)
+}
+
+func (channel *Channel) updateAbilities(tx *gorm.DB, preserveExistingTags bool) error {
 	isNewTx := false
 	// 如果没有传入事务，创建新的事务
 	if tx == nil {
@@ -263,6 +274,20 @@ func (channel *Channel) UpdateAbilities(tx *gorm.DB) error {
 				tx.Rollback()
 			}
 		}()
+	}
+
+	existingTags := make(map[string]*string)
+	if preserveExistingTags {
+		var existingAbilities []Ability
+		if err := tx.Where("channel_id = ?", channel.Id).Find(&existingAbilities).Error; err != nil {
+			if isNewTx {
+				tx.Rollback()
+			}
+			return err
+		}
+		for _, ability := range existingAbilities {
+			existingTags[ability.Group+"\x00"+ability.Model] = ability.Tag
+		}
 	}
 
 	// First delete all abilities of this channel
@@ -294,6 +319,9 @@ func (channel *Channel) UpdateAbilities(tx *gorm.DB) error {
 				Priority:  channel.Priority,
 				Weight:    uint(channel.GetWeight()),
 				Tag:       channel.Tag,
+			}
+			if existingTag, ok := existingTags[group+"\x00"+model]; ok {
+				ability.Tag = existingTag
 			}
 			abilities = append(abilities, ability)
 		}
