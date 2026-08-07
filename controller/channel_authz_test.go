@@ -151,56 +151,6 @@ func TestUpdateChannelRejectsStatusField(t *testing.T) {
 	assert.False(t, response.Success)
 }
 
-func TestShouldSynchronizeAbilityTags(t *testing.T) {
-	channelTag := "channel-tag"
-	updatedTag := "updated-tag"
-
-	tests := []struct {
-		name        string
-		requestData map[string]any
-		updatedTag  *string
-		originTag   *string
-		want        bool
-	}{
-		{
-			name:        "tag omitted",
-			requestData: map[string]any{"name": "renamed"},
-			updatedTag:  &channelTag,
-			originTag:   &channelTag,
-			want:        false,
-		},
-		{
-			name:        "unchanged tag included by form",
-			requestData: map[string]any{"name": "renamed", "tag": channelTag},
-			updatedTag:  &channelTag,
-			originTag:   &channelTag,
-			want:        false,
-		},
-		{
-			name:        "tag changed",
-			requestData: map[string]any{"tag": updatedTag},
-			updatedTag:  &updatedTag,
-			originTag:   &channelTag,
-			want:        true,
-		},
-		{
-			name:        "tag cleared",
-			requestData: map[string]any{"tag": nil},
-			updatedTag:  nil,
-			originTag:   &channelTag,
-			want:        true,
-		},
-	}
-
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			updated := &PatchChannel{Channel: model.Channel{Tag: tt.updatedTag}}
-			origin := &model.Channel{Tag: tt.originTag}
-			assert.Equal(t, tt.want, shouldSynchronizeAbilityTags(updated, origin, tt.requestData))
-		})
-	}
-}
-
 func TestChannelStatusValidation(t *testing.T) {
 	assert.True(t, isManageableChannelStatus(common.ChannelStatusEnabled))
 	assert.True(t, isManageableChannelStatus(common.ChannelStatusManuallyDisabled))

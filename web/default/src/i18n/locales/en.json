@@ -1605,6 +1605,8 @@
     "Enable WeChat Auth": "Enable WeChat Auth",
     "Enable when proxying workers that fetch images over HTTP.": "Enable when proxying workers that fetch images over HTTP.",
     "Enabled": "Enabled",
+    "Selected models will be displayed after saving.": "Selected models will be displayed after saving.",
+    "Select models to enable": "Select models to enable",
     "Enabled all channels with tag: {{tag}}": "Enabled all channels with tag: {{tag}}",
     "Enabled channels with tag {{tag}}": "Enabled channels with tag {{tag}}",
     "Enabled Status": "Enabled Status",

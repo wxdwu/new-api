@@ -51,6 +51,7 @@ export const channelSchema = z.object({
   balance: z.number().default(0), // in USD
   balance_updated_time: z.number(),
   models: z.string().default(''),
+  tag_enabled_models: z.array(z.string()).default([]),
   group: z.string().default('default'),
   used_quota: z.number().default(0),
   model_mapping: z.string().nullish(),
@@ -344,6 +345,7 @@ export interface ChannelFormData {
   key: string
   openai_organization?: string
   models: string
+  tag_enabled_models?: string[]
   group: string
   model_mapping?: string
   priority?: number

@@ -1605,6 +1605,8 @@
     "Enable WeChat Auth": "启用微信授权",
     "Enable when proxying workers that fetch images over HTTP.": "当代理通过 HTTP 获取图像的 worker 时启用。",
     "Enabled": "已启用",
+    "Selected models will be displayed after saving.": "保存后，选中的模型将会被显示。",
+    "Select models to enable": "选择要启用的模型",
     "Enabled all channels with tag: {{tag}}": "已启用标签「{{tag}}」下的所有渠道",
     "Enabled channels with tag {{tag}}": "启用标签为 {{tag}} 的渠道",
     "Enabled Status": "启用状态",

@@ -41,15 +41,16 @@ type Channel struct {
 	UsedQuota          int64   `json:"used_quota" gorm:"bigint;default:0"`
 	ModelMapping       *string `json:"model_mapping" gorm:"type:text"`
 	//MaxInputTokens     *int    `json:"max_input_tokens" gorm:"default:0"`
-	StatusCodeMapping *string `json:"status_code_mapping" gorm:"type:varchar(1024);default:''"`
-	Priority          *int64  `json:"priority" gorm:"bigint;default:0"`
-	AutoBan           *int    `json:"auto_ban" gorm:"default:1"`
-	OtherInfo         string  `json:"other_info"`
-	Tag               *string `json:"tag" gorm:"index"`
-	Setting           *string `json:"setting" gorm:"type:text"` // 渠道额外设置
-	ParamOverride     *string `json:"param_override" gorm:"type:text"`
-	HeaderOverride    *string `json:"header_override" gorm:"type:text"`
-	Remark            *string `json:"remark" gorm:"type:varchar(255)" validate:"max=255"`
+	StatusCodeMapping *string  `json:"status_code_mapping" gorm:"type:varchar(1024);default:''"`
+	Priority          *int64   `json:"priority" gorm:"bigint;default:0"`
+	AutoBan           *int     `json:"auto_ban" gorm:"default:1"`
+	OtherInfo         string   `json:"other_info"`
+	Tag               *string  `json:"tag" gorm:"index"`
+	TagEnabledModels  []string `json:"tag_enabled_models,omitempty" gorm:"-"`
+	Setting           *string  `json:"setting" gorm:"type:text"` // 渠道额外设置
+	ParamOverride     *string  `json:"param_override" gorm:"type:text"`
+	HeaderOverride    *string  `json:"header_override" gorm:"type:text"`
+	Remark            *string  `json:"remark" gorm:"type:varchar(255)" validate:"max=255"`
 	// add after v0.8.5
 	ChannelInfo ChannelInfo `json:"channel_info" gorm:"type:json"`
 
@@ -524,17 +525,12 @@ func (channel *Channel) Insert() error {
 }
 
 func (channel *Channel) Update() error {
-	return channel.update(true)
+	return channel.update()
 }
 
-// UpdateWithAbilityTagSync applies an explicit channel tag change to every
-// ability. Ordinary channel edits should call Update so independently managed
-// ability tags are retained.
-func (channel *Channel) UpdateWithAbilityTagSync() error {
-	return channel.update(false)
-}
-
-func (channel *Channel) update(preserveAbilityTags bool) error {
+func (channel *Channel) update() error {
+	tagEnabledModels := channel.TagEnabledModels
+	tagEnabledModelsProvided := tagEnabledModels != nil
 	// If this is a multi-key channel, recalculate MultiKeySize based on the current key list to avoid inconsistency after editing keys
 	if channel.ChannelInfo.IsMultiKey {
 		var keyStr string
@@ -579,11 +575,10 @@ func (channel *Channel) update(preserveAbilityTags bool) error {
 		return err
 	}
 	DB.Model(channel).First(channel, "id = ?", channel.Id)
-	if preserveAbilityTags {
-		err = channel.UpdateAbilitiesPreservingTags(nil)
-	} else {
-		err = channel.UpdateAbilities(nil)
+	if tagEnabledModelsProvided {
+		channel.TagEnabledModels = tagEnabledModels
 	}
+	err = channel.UpdateAbilitiesPreservingTags(nil)
 	return err
 }
 
@@ -794,31 +789,42 @@ func UpdateChannelStatus(channelId int, usingKey string, status int, reason stri
 }
 
 func EnableChannelByTag(tag string) error {
-	err := DB.Model(&Channel{}).Where("tag = ?", tag).Update("status", common.ChannelStatusEnabled).Error
+	var channelIDs []int
+	err := DB.Model(&Channel{}).Where("tag = ?", tag).Pluck("id", &channelIDs).Error
 	if err != nil {
 		return err
 	}
-	err = UpdateAbilityStatusByTag(tag, true)
-	return err
+	err = DB.Model(&Channel{}).Where("id IN ?", channelIDs).Update("status", common.ChannelStatusEnabled).Error
+	if err != nil {
+		return err
+	}
+	return DB.Model(&Ability{}).Where("channel_id IN ?", channelIDs).Update("enabled", true).Error
 }
 
 func DisableChannelByTag(tag string) error {
-	err := DB.Model(&Channel{}).Where("tag = ?", tag).Update("status", common.ChannelStatusManuallyDisabled).Error
+	var channelIDs []int
+	err := DB.Model(&Channel{}).Where("tag = ?", tag).Pluck("id", &channelIDs).Error
 	if err != nil {
 		return err
 	}
-	err = UpdateAbilityStatusByTag(tag, false)
-	return err
+	err = DB.Model(&Channel{}).Where("id IN ?", channelIDs).Update("status", common.ChannelStatusManuallyDisabled).Error
+	if err != nil {
+		return err
+	}
+	return DB.Model(&Ability{}).Where("channel_id IN ?", channelIDs).Update("enabled", false).Error
 }
 
 func EditChannelByTag(tag string, newTag *string, modelMapping *string, models *string, group *string, priority *int64, weight *uint, paramOverride *string, headerOverride *string) error {
+	var channelIDs []int
+	err := DB.Model(&Channel{}).Where("tag = ?", tag).Pluck("id", &channelIDs).Error
+	if err != nil {
+		return err
+	}
 	updateData := Channel{}
 	shouldReCreateAbilities := false
-	updatedTag := tag
 	// 如果 newTag 不为空且不等于 tag，则更新 tag
 	if newTag != nil && *newTag != tag {
 		updateData.Tag = newTag
-		updatedTag = *newTag
 	}
 	if modelMapping != nil {
 		updateData.ModelMapping = modelMapping
@@ -844,12 +850,12 @@ func EditChannelByTag(tag string, newTag *string, modelMapping *string, models *
 		updateData.HeaderOverride = headerOverride
 	}
 
-	err := DB.Model(&Channel{}).Where("tag = ?", tag).Updates(updateData).Error
+	err = DB.Model(&Channel{}).Where("id IN ?", channelIDs).Updates(updateData).Error
 	if err != nil {
 		return err
 	}
 	if shouldReCreateAbilities {
-		channels, err := GetChannelsByTag(updatedTag, false, false)
+		channels, err := GetChannelsByIds(channelIDs)
 		if err == nil {
 			for _, channel := range channels {
 				err = channel.UpdateAbilities(nil)
@@ -858,11 +864,15 @@ func EditChannelByTag(tag string, newTag *string, modelMapping *string, models *
 				}
 			}
 		}
-	} else {
-		err := UpdateAbilityByTag(tag, newTag, priority, weight)
-		if err != nil {
-			return err
+	} else if priority != nil || weight != nil {
+		updates := make(map[string]interface{})
+		if priority != nil {
+			updates["priority"] = *priority
 		}
+		if weight != nil {
+			updates["weight"] = *weight
+		}
+		return DB.Model(&Ability{}).Where("channel_id IN ?", channelIDs).Updates(updates).Error
 	}
 	return nil
 }
@@ -1067,7 +1077,8 @@ func BatchSetChannelTag(ids []int, tag *string) error {
 	}
 
 	// update ability status
-	channels, err := GetChannelsByIds(ids)
+	var channels []*Channel
+	err = tx.Where("id in (?)", ids).Find(&channels).Error
 	if err != nil {
 		tx.Rollback()
 		return err

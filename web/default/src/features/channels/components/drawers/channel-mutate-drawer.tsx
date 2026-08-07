@@ -719,6 +719,7 @@ export function ChannelMutateDrawer({
   const currentKey = form.watch('key')
   const currentOther = form.watch('other')
   const currentModels = form.watch('models')
+  const currentTagEnabledModels = form.watch('tag_enabled_models')
   const currentName = form.watch('name')
   const currentModelMapping = form.watch('model_mapping')
   const awsKeyType = form.watch('aws_key_type')
@@ -908,6 +909,23 @@ export function ChannelMutateDrawer({
     () => parseModelsString(currentModels),
     [currentModels]
   )
+  const tagEnabledModelOptions = useMemo(
+    () =>
+      currentModelsArray.map((model) => ({
+        value: model,
+        label: model,
+      })),
+    [currentModelsArray]
+  )
+
+  useEffect(() => {
+    const validModels = currentTagEnabledModels.filter((model) =>
+      currentModelsArray.includes(model)
+    )
+    if (validModels.length !== currentTagEnabledModels.length) {
+      form.setValue('tag_enabled_models', validModels)
+    }
+  }, [currentModelsArray, currentTagEnabledModels, form])
 
   const currentTypeLabel = useMemo(
     () =>
@@ -1515,6 +1533,19 @@ export function ChannelMutateDrawer({
   const handleModelsChange = useCallback(
     (selected: string[]) => {
       form.setValue('models', selected.join(','))
+      form.setValue(
+        'tag_enabled_models',
+        form
+          .getValues('tag_enabled_models')
+          .filter((model) => selected.includes(model))
+      )
+    },
+    [form]
+  )
+
+  const handleTagEnabledModelsChange = useCallback(
+    (selected: string[]) => {
+      form.setValue('tag_enabled_models', selected)
     },
     [form]
   )
@@ -3289,6 +3320,43 @@ export function ChannelMutateDrawer({
                                       </AlertDescription>
                                     </Alert>
                                   )}
+                                  <FormMessage />
+                                </FormItem>
+                              )}
+                            />
+
+                            <Separator className='my-4' />
+
+                            <FormField
+                              control={form.control}
+                              name='tag_enabled_models'
+                              render={() => (
+                                <FormItem className='space-y-3'>
+                                  <div className='flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between'>
+                                    <div className='space-y-1'>
+                                      <FormLabel>{t('Enable')}</FormLabel>
+                                      <FormDescription>
+                                        {t(
+                                          'Selected models will be displayed after saving.'
+                                        )}
+                                      </FormDescription>
+                                    </div>
+                                    <Badge variant='outline' className='w-fit'>
+                                      {t('Selected {{count}}', {
+                                        count: currentTagEnabledModels.length,
+                                      })}
+                                    </Badge>
+                                  </div>
+                                  <FormControl>
+                                    <MultiSelect
+                                      options={tagEnabledModelOptions}
+                                      selected={currentTagEnabledModels}
+                                      onChange={handleTagEnabledModelsChange}
+                                      placeholder={t('Select models to enable')}
+                                      maxVisibleChips={8}
+                                      copyChipOnClick
+                                    />
+                                  </FormControl>
                                   <FormMessage />
                                 </FormItem>
                               )}

@@ -32,6 +32,11 @@ export function SignIn() {
   const { status } = useStatus()
   const docsLink =
     typeof status?.docs_link === 'string' ? status.docs_link : undefined
+  const hasRuijieOAuth = Boolean(
+    status?.custom_oauth_providers?.some(
+      (provider) => provider.slug.toLowerCase() === 'ruijie'
+    )
+  )
   const workspaceFeatures = [
     {
       icon: ShieldCheck,
@@ -153,22 +158,26 @@ export function SignIn() {
               <h2 className='truncate text-sm font-extrabold text-[#172449]'>
                 {t('Ruijie Networks Co., Ltd.')}
               </h2>
-              <p className='mt-1 flex items-center gap-1.5 text-xs font-medium text-[#249d70]'>
-                <Check className='size-3.5' aria-hidden='true' />
-                {t('Enterprise SSO is enabled')}
-              </p>
+              {hasRuijieOAuth && (
+                <p className='mt-1 flex items-center gap-1.5 text-xs font-medium text-[#249d70]'>
+                  <Check className='size-3.5' aria-hidden='true' />
+                  {t('Enterprise SSO is enabled')}
+                </p>
+              )}
             </div>
           </div>
 
           <UserAuthForm redirectTo={redirect} />
 
-          <div className='mt-4 flex items-center justify-center gap-2 text-center text-xs text-[#66758d]'>
-            <span
-              className='size-1.5 rounded-full bg-[#29b77b]'
-              aria-hidden='true'
-            />
-            {t('Connected to Ruijie unified identity authentication')}
-          </div>
+          {hasRuijieOAuth && (
+            <div className='mt-4 flex items-center justify-center gap-2 text-center text-xs text-[#66758d]'>
+              <span
+                className='size-1.5 rounded-full bg-[#29b77b]'
+                aria-hidden='true'
+              />
+              {t('Connected to Ruijie unified identity authentication')}
+            </div>
+          )}
 
           <TermsFooter
             variant='sign-in'

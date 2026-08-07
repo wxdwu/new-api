@@ -47,13 +47,23 @@ func GetGroupEnabledModels(group string) []string {
 	return models
 }
 
-// GetGroupEnabledModelsByTag returns only models that have a non-empty tag in the abilities table.
+// GetGroupEnabledModelsByTag returns models explicitly marked with tag "1".
 func GetGroupEnabledModelsByTag(group string) []string {
 	var models []string
 	DB.Table("abilities").
-		Where(commonGroupCol+" = ? AND enabled = ? AND tag = \"1\"", group, true).
+		Where(commonGroupCol+" = ? AND enabled = ? AND tag = ?", group, true, "1").
 		Distinct("model").Pluck("model", &models)
 	return models
+}
+
+func GetTagEnabledModelsByChannelId(channelId int) ([]string, error) {
+	var models []string
+	err := DB.Model(&Ability{}).
+		Where("channel_id = ? AND tag = ?", channelId, "1").
+		Distinct("model").
+		Order("model").
+		Pluck("model", &models).Error
+	return models, err
 }
 
 func GetEnabledModels() []string {
@@ -205,6 +215,10 @@ func filterAbilitiesByRequestPathAndModel(abilities []Ability, requestPath strin
 func (channel *Channel) AddAbilities(tx *gorm.DB) error {
 	models_ := strings.Split(channel.Models, ",")
 	groups_ := strings.Split(channel.Group, ",")
+	tagEnabledModels := make(map[string]struct{}, len(channel.TagEnabledModels))
+	for _, model := range channel.TagEnabledModels {
+		tagEnabledModels[model] = struct{}{}
+	}
 	abilitySet := make(map[string]struct{})
 	abilities := make([]Ability, 0, len(models_))
 	for _, model := range models_ {
@@ -221,7 +235,10 @@ func (channel *Channel) AddAbilities(tx *gorm.DB) error {
 				Enabled:   channel.Status == common.ChannelStatusEnabled,
 				Priority:  channel.Priority,
 				Weight:    uint(channel.GetWeight()),
-				Tag:       channel.Tag,
+			}
+			if _, enabled := tagEnabledModels[model]; enabled {
+				tag := "1"
+				ability.Tag = &tag
 			}
 			abilities = append(abilities, ability)
 		}
@@ -247,20 +264,20 @@ func (channel *Channel) DeleteAbilities() error {
 	return DB.Where("channel_id = ?", channel.Id).Delete(&Ability{}).Error
 }
 
-// UpdateAbilities updates abilities of this channel.
-// Make sure the channel is completed before calling this function.
+// UpdateAbilities rebuilds abilities while preserving tags that are managed
+// directly on existing ability rows. Make sure the channel is complete before
+// calling this function.
 func (channel *Channel) UpdateAbilities(tx *gorm.DB) error {
-	return channel.updateAbilities(tx, false)
+	return channel.updateAbilities(tx)
 }
 
-// UpdateAbilitiesPreservingTags rebuilds a channel's abilities while keeping
-// tags that are managed directly on existing ability rows. Newly introduced
-// group/model pairs still inherit the channel tag.
+// UpdateAbilitiesPreservingTags is kept as an explicit name for callers whose
+// main purpose is preserving ability tags during an ordinary channel update.
 func (channel *Channel) UpdateAbilitiesPreservingTags(tx *gorm.DB) error {
-	return channel.updateAbilities(tx, true)
+	return channel.updateAbilities(tx)
 }
 
-func (channel *Channel) updateAbilities(tx *gorm.DB, preserveExistingTags bool) error {
+func (channel *Channel) updateAbilities(tx *gorm.DB) error {
 	isNewTx := false
 	// 如果没有传入事务，创建新的事务
 	if tx == nil {
@@ -277,7 +294,7 @@ func (channel *Channel) updateAbilities(tx *gorm.DB, preserveExistingTags bool) 
 	}
 
 	existingTags := make(map[string]*string)
-	if preserveExistingTags {
+	if channel.TagEnabledModels == nil {
 		var existingAbilities []Ability
 		if err := tx.Where("channel_id = ?", channel.Id).Find(&existingAbilities).Error; err != nil {
 			if isNewTx {
@@ -288,6 +305,10 @@ func (channel *Channel) updateAbilities(tx *gorm.DB, preserveExistingTags bool) 
 		for _, ability := range existingAbilities {
 			existingTags[ability.Group+"\x00"+ability.Model] = ability.Tag
 		}
+	}
+	tagEnabledModels := make(map[string]struct{}, len(channel.TagEnabledModels))
+	for _, model := range channel.TagEnabledModels {
+		tagEnabledModels[model] = struct{}{}
 	}
 
 	// First delete all abilities of this channel
@@ -318,9 +339,11 @@ func (channel *Channel) updateAbilities(tx *gorm.DB, preserveExistingTags bool) 
 				Enabled:   channel.Status == common.ChannelStatusEnabled,
 				Priority:  channel.Priority,
 				Weight:    uint(channel.GetWeight()),
-				Tag:       channel.Tag,
 			}
-			if existingTag, ok := existingTags[group+"\x00"+model]; ok {
+			if _, enabled := tagEnabledModels[model]; channel.TagEnabledModels != nil && enabled {
+				tag := "1"
+				ability.Tag = &tag
+			} else if existingTag, ok := existingTags[group+"\x00"+model]; ok {
 				ability.Tag = existingTag
 			}
 			abilities = append(abilities, ability)
@@ -351,24 +374,6 @@ func UpdateAbilityStatus(channelId int, status bool) error {
 	return DB.Model(&Ability{}).Where("channel_id = ?", channelId).Select("enabled").Update("enabled", status).Error
 }
 
-func UpdateAbilityStatusByTag(tag string, status bool) error {
-	return DB.Model(&Ability{}).Where("tag = ?", tag).Select("enabled").Update("enabled", status).Error
-}
-
-func UpdateAbilityByTag(tag string, newTag *string, priority *int64, weight *uint) error {
-	ability := Ability{}
-	if newTag != nil {
-		ability.Tag = newTag
-	}
-	if priority != nil {
-		ability.Priority = priority
-	}
-	if weight != nil {
-		ability.Weight = *weight
-	}
-	return DB.Model(&Ability{}).Where("tag = ?", tag).Updates(ability).Error
-}
-
 var fixLock = sync.Mutex{}
 
 func FixAbility() (int, int, error) {
@@ -378,15 +383,27 @@ func FixAbility() (int, int, error) {
 	}
 	defer fixLock.Unlock()
 
+	var taggedAbilities []Ability
+	err := DB.Select([]string{"group", "model", "channel_id", "tag"}).
+		Where("tag IS NOT NULL").
+		Find(&taggedAbilities).Error
+	if err != nil {
+		return 0, 0, err
+	}
+	tagsByChannel := make(map[int][]Ability)
+	for _, ability := range taggedAbilities {
+		tagsByChannel[ability.ChannelId] = append(tagsByChannel[ability.ChannelId], ability)
+	}
+
 	// truncate abilities table
 	if common.UsingMainDatabase(common.DatabaseTypeSQLite) {
-		err := DB.Exec("DELETE FROM abilities").Error
+		err = DB.Exec("DELETE FROM abilities").Error
 		if err != nil {
 			common.SysLog(fmt.Sprintf("Delete abilities failed: %s", err.Error()))
 			return 0, 0, err
 		}
 	} else {
-		err := DB.Exec("TRUNCATE TABLE abilities").Error
+		err = DB.Exec("TRUNCATE TABLE abilities").Error
 		if err != nil {
 			common.SysLog(fmt.Sprintf("Truncate abilities failed: %s", err.Error()))
 			return 0, 0, err
@@ -394,7 +411,7 @@ func FixAbility() (int, int, error) {
 	}
 	var channels []*Channel
 	// Find all channels
-	err := DB.Model(&Channel{}).Find(&channels).Error
+	err = DB.Model(&Channel{}).Find(&channels).Error
 	if err != nil {
 		return 0, 0, err
 	}
@@ -415,6 +432,16 @@ func FixAbility() (int, int, error) {
 		// Then add new abilities
 		for _, channel := range chunk {
 			err = channel.AddAbilities(nil)
+			if err == nil {
+				for _, ability := range tagsByChannel[channel.Id] {
+					err = DB.Model(&Ability{}).
+						Where("channel_id = ? AND "+commonGroupCol+" = ? AND model = ?", channel.Id, ability.Group, ability.Model).
+						Update("tag", ability.Tag).Error
+					if err != nil {
+						break
+					}
+				}
+			}
 			if err != nil {
 				common.SysLog(fmt.Sprintf("Add abilities for channel %d failed: %s", channel.Id, err.Error()))
 				failCount++
