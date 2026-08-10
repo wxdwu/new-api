@@ -525,10 +525,6 @@ func (channel *Channel) Insert() error {
 }
 
 func (channel *Channel) Update() error {
-	return channel.update()
-}
-
-func (channel *Channel) update() error {
 	tagEnabledModels := channel.TagEnabledModels
 	tagEnabledModelsProvided := tagEnabledModels != nil
 	// If this is a multi-key channel, recalculate MultiKeySize based on the current key list to avoid inconsistency after editing keys
@@ -578,7 +574,7 @@ func (channel *Channel) update() error {
 	if tagEnabledModelsProvided {
 		channel.TagEnabledModels = tagEnabledModels
 	}
-	err = channel.UpdateAbilitiesPreservingTags(nil)
+	err = channel.UpdateAbilities(nil)
 	return err
 }
 

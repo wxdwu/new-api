@@ -23,27 +23,36 @@ import { useStatus } from '@/hooks/use-status'
 
 import { useOAuthLogin } from './use-oauth-login'
 
-export function useRuijieOAuthLogin() {
+export function useRuijieOAuthLogin(): {
+  startRuijieLogin: () => Promise<boolean>
+  isLoading: boolean
+  isAvailable: boolean
+} {
   const { t } = useTranslation()
-  const { status, loading: statusLoading } = useStatus()
+  const {
+    status,
+    loading: statusLoading,
+    fetching: statusFetching,
+  } = useStatus()
   const { isLoading, handleCustomOAuthLogin } = useOAuthLogin(status)
   const ruijieProvider = status?.custom_oauth_providers?.find(
     (provider) => provider.slug.toLowerCase() === 'ruijie'
   )
 
-  const startRuijieLogin = () => {
+  const startRuijieLogin = async (): Promise<boolean> => {
     if (!ruijieProvider) {
       toast.error(
         t('Failed to start {{provider}} login', { provider: 'Ruijie SSO' })
       )
-      return
+      return false
     }
 
-    void handleCustomOAuthLogin(ruijieProvider)
+    return handleCustomOAuthLogin(ruijieProvider)
   }
 
   return {
     startRuijieLogin,
-    isLoading: statusLoading || isLoading,
+    isLoading: statusLoading || statusFetching || isLoading,
+    isAvailable: Boolean(ruijieProvider),
   }
 }

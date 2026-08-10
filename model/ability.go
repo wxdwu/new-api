@@ -268,16 +268,6 @@ func (channel *Channel) DeleteAbilities() error {
 // directly on existing ability rows. Make sure the channel is complete before
 // calling this function.
 func (channel *Channel) UpdateAbilities(tx *gorm.DB) error {
-	return channel.updateAbilities(tx)
-}
-
-// UpdateAbilitiesPreservingTags is kept as an explicit name for callers whose
-// main purpose is preserving ability tags during an ordinary channel update.
-func (channel *Channel) UpdateAbilitiesPreservingTags(tx *gorm.DB) error {
-	return channel.updateAbilities(tx)
-}
-
-func (channel *Channel) updateAbilities(tx *gorm.DB) error {
 	isNewTx := false
 	// 如果没有传入事务，创建新的事务
 	if tx == nil {
@@ -293,7 +283,12 @@ func (channel *Channel) updateAbilities(tx *gorm.DB) error {
 		}()
 	}
 
+	type preservedModelTag struct {
+		tag        *string
+		consistent bool
+	}
 	existingTags := make(map[string]*string)
+	existingModelTags := make(map[string]preservedModelTag)
 	if channel.TagEnabledModels == nil {
 		var existingAbilities []Ability
 		if err := tx.Where("channel_id = ?", channel.Id).Find(&existingAbilities).Error; err != nil {
@@ -304,6 +299,25 @@ func (channel *Channel) updateAbilities(tx *gorm.DB) error {
 		}
 		for _, ability := range existingAbilities {
 			existingTags[ability.Group+"\x00"+ability.Model] = ability.Tag
+			preserved, exists := existingModelTags[ability.Model]
+			if !exists {
+				existingModelTags[ability.Model] = preservedModelTag{
+					tag:        ability.Tag,
+					consistent: true,
+				}
+				continue
+			}
+			if !preserved.consistent {
+				continue
+			}
+			sameTag := preserved.tag == nil && ability.Tag == nil
+			if preserved.tag != nil && ability.Tag != nil {
+				sameTag = *preserved.tag == *ability.Tag
+			}
+			if !sameTag {
+				preserved.consistent = false
+				existingModelTags[ability.Model] = preserved
+			}
 		}
 	}
 	tagEnabledModels := make(map[string]struct{}, len(channel.TagEnabledModels))
@@ -345,6 +359,8 @@ func (channel *Channel) updateAbilities(tx *gorm.DB) error {
 				ability.Tag = &tag
 			} else if existingTag, ok := existingTags[group+"\x00"+model]; ok {
 				ability.Tag = existingTag
+			} else if preserved, ok := existingModelTags[model]; ok && preserved.consistent {
+				ability.Tag = preserved.tag
 			}
 			abilities = append(abilities, ability)
 		}

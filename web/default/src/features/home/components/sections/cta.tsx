@@ -22,7 +22,6 @@ import { useTranslation } from 'react-i18next'
 
 import { AnimateInView } from '@/components/animate-in-view'
 import { Button } from '@/components/ui/button'
-import { useRuijieOAuthLogin } from '@/features/auth/hooks/use-ruijie-oauth-login'
 
 interface CTAProps {
   className?: string
@@ -31,8 +30,6 @@ interface CTAProps {
 
 export function CTA(props: CTAProps) {
   const { t } = useTranslation()
-  const { startRuijieLogin, isLoading: isRuijieOAuthLoading } =
-    useRuijieOAuthLogin()
 
   if (props.isAuthenticated) {
     return null
@@ -69,11 +66,7 @@ export function CTA(props: CTAProps) {
           )}
         </p>
         <div className='mt-8 flex items-center justify-center gap-3'>
-          <Button
-            className='group rounded-lg'
-            onClick={startRuijieLogin}
-            disabled={isRuijieOAuthLoading}
-          >
+          <Button className='group rounded-lg' render={<Link to='/sign-up' />}>
             {t('Get Started')}
             <ArrowRight className='ml-1 size-3.5 transition-transform duration-200 group-hover:translate-x-0.5' />
           </Button>

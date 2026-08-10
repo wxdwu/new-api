@@ -26,6 +26,10 @@ import { useAuthStore } from '@/stores/auth-store'
 
 import { getOAuthState } from '../api'
 import {
+  buildCustomOAuthAuthorizationUrl,
+  buildCustomOAuthRedirectUri,
+} from '../lib/custom-oauth'
+import {
   buildGitHubOAuthUrl,
   buildDiscordOAuthUrl,
   buildOIDCOAuthUrl,
@@ -209,8 +213,11 @@ export function useOAuthLogin(status: SystemStatus | null) {
     toast.info(t('Telegram login requires widget integration; coming soon'))
   }
 
-  const handleCustomOAuthLogin = async (provider: CustomOAuthProviderInfo, redirectTo?: string) => {
-    if (!provider.authorization_endpoint || !provider.client_id) return
+  const handleCustomOAuthLogin = async (
+    provider: CustomOAuthProviderInfo,
+    redirectTo?: string
+  ): Promise<boolean> => {
+    if (!provider.authorization_endpoint || !provider.client_id) return false
 
     setIsLoading(true)
     try {
@@ -219,24 +226,29 @@ export function useOAuthLogin(status: SystemStatus | null) {
       const state = await getOAuthState()
       if (!state) {
         toast.error(t('Failed to initialize OAuth'))
-        return
+        return false
       }
 
-      const redirectUri = `${window.location.origin}/oauth/${provider.slug}`
-      const url = new URL(provider.authorization_endpoint)
-      url.searchParams.set('client_id', provider.client_id)
-      url.searchParams.set('redirect_uri', redirectUri)
-      url.searchParams.set('response_type', 'code')
-      url.searchParams.set('state', state)
-      if (provider.scopes) {
-        url.searchParams.set('scope', provider.scopes)
-      }
+      const redirectUri = buildCustomOAuthRedirectUri(
+        status?.server_address,
+        window.location.origin,
+        provider.slug
+      )
+      const url = buildCustomOAuthAuthorizationUrl({
+        clientId: provider.client_id,
+        authorizationEndpoint: provider.authorization_endpoint,
+        redirectUri,
+        state,
+        scopes: provider.scopes,
+      })
 
-      window.open(url.toString(), '_self')
-    } catch (_error) {
+      window.open(url, '_self')
+      return true
+    } catch {
       toast.error(
         t('Failed to start {{provider}} login', { provider: provider.name })
       )
+      return false
     } finally {
       setIsLoading(false)
     }

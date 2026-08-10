@@ -215,6 +215,63 @@ func TestChannelTagOperationsDoNotOverwriteAbilityTag(t *testing.T) {
 	assertStoredAbilityTag(t, channel.Id, "enabled-model", "1")
 }
 
+func TestChannelGroupUpdatePreservesAbilityTagWhenSelectionIsOmitted(t *testing.T) {
+	truncateTables(t)
+
+	channel := Channel{
+		Type:             1,
+		Key:              "local-test-key",
+		Status:           common.ChannelStatusEnabled,
+		Name:             "group update",
+		Models:           "enabled-model",
+		Group:            "before-group",
+		TagEnabledModels: []string{"enabled-model"},
+		Priority:         common.GetPointer[int64](0),
+		Weight:           common.GetPointer[uint](0),
+	}
+	require.NoError(t, channel.Insert())
+
+	channel.Group = "after-group"
+	channel.TagEnabledModels = nil
+	require.NoError(t, channel.Update())
+
+	assertStoredAbilityTag(t, channel.Id, "enabled-model", "1")
+}
+
+func TestBatchGroupUpdatePreservesAbilityTag(t *testing.T) {
+	truncateTables(t)
+
+	channelTag := "batch-group-update"
+	channel := Channel{
+		Type:             1,
+		Key:              "local-test-key",
+		Status:           common.ChannelStatusEnabled,
+		Name:             "batch group update",
+		Models:           "enabled-model",
+		Group:            "before-group",
+		Tag:              &channelTag,
+		TagEnabledModels: []string{"enabled-model"},
+		Priority:         common.GetPointer[int64](0),
+		Weight:           common.GetPointer[uint](0),
+	}
+	require.NoError(t, channel.Insert())
+
+	afterGroup := "after-group"
+	require.NoError(t, EditChannelByTag(
+		channelTag,
+		nil,
+		nil,
+		nil,
+		&afterGroup,
+		nil,
+		nil,
+		nil,
+		nil,
+	))
+
+	assertStoredAbilityTag(t, channel.Id, "enabled-model", "1")
+}
+
 func assertStoredAbilityTag(t *testing.T, channelID int, model string, expected string) {
 	t.Helper()
 	var ability Ability

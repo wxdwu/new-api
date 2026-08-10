@@ -167,7 +167,7 @@ export function SignIn() {
             </div>
           </div>
 
-          <UserAuthForm redirectTo={redirect} />
+          <UserAuthForm redirectTo={redirect} hideAlternativeLogin />
 
           {hasRuijieOAuth && (
             <div className='mt-4 flex items-center justify-center gap-2 text-center text-xs text-[#66758d]'>

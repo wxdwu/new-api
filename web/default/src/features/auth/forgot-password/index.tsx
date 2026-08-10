@@ -16,6 +16,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 For commercial licensing, please contact support@quantumnous.com
 */
+import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 
 import { AuthLayout } from '../auth-layout'
@@ -34,6 +35,16 @@ export function ForgotPassword() {
             {t(
               'Enter your registered email and we will send you a link to reset your password.'
             )}
+          </p>
+          <p className='text-muted-foreground text-left text-sm sm:text-base'>
+            {t("Don't have an account?")}{' '}
+            <Link
+              to='/sign-up'
+              className='hover:text-primary font-medium underline underline-offset-4'
+            >
+              {t('Sign up')}
+            </Link>
+            .
           </p>
         </div>
 

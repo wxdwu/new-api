@@ -16,10 +16,35 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 For commercial licensing, please contact support@quantumnous.com
 */
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useEffect, useRef } from 'react'
 
-import { Home } from '@/features/home'
+import { useRuijieOAuthLogin } from '@/features/auth/hooks/use-ruijie-oauth-login'
+
+function RuijieLoginRedirect(): null {
+  const navigate = useNavigate()
+  const { startRuijieLogin, isLoading, isAvailable } = useRuijieOAuthLogin()
+  const startedRef = useRef(false)
+
+  useEffect(() => {
+    if (isLoading || startedRef.current) return
+
+    startedRef.current = true
+    if (!isAvailable) {
+      navigate({ to: '/sign-in', replace: true })
+      return
+    }
+
+    void startRuijieLogin().then((started) => {
+      if (!started) {
+        navigate({ to: '/sign-in', replace: true })
+      }
+    })
+  }, [isAvailable, isLoading, navigate, startRuijieLogin])
+
+  return null
+}
 
 export const Route = createFileRoute('/')({
-  component: Home,
+  component: RuijieLoginRedirect,
 })
