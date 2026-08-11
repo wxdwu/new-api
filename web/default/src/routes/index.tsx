@@ -20,9 +20,11 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useEffect, useRef } from 'react'
 
 import { useRuijieOAuthLogin } from '@/features/auth/hooks/use-ruijie-oauth-login'
+import { useAuthStore } from '@/stores/auth-store'
 
 function RuijieLoginRedirect(): null {
   const navigate = useNavigate()
+  const user = useAuthStore((state) => state.auth.user)
   const { startRuijieLogin, isLoading, isAvailable } = useRuijieOAuthLogin()
   const startedRef = useRef(false)
 
@@ -30,6 +32,11 @@ function RuijieLoginRedirect(): null {
     if (isLoading || startedRef.current) return
 
     startedRef.current = true
+    if (user) {
+      navigate({ to: '/dashboard', replace: true })
+      return
+    }
+
     if (!isAvailable) {
       navigate({ to: '/sign-in', replace: true })
       return
@@ -40,7 +47,7 @@ function RuijieLoginRedirect(): null {
         navigate({ to: '/sign-in', replace: true })
       }
     })
-  }, [isAvailable, isLoading, navigate, startRuijieLogin])
+  }, [isAvailable, isLoading, navigate, startRuijieLogin, user])
 
   return null
 }
