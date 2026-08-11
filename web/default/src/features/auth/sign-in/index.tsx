@@ -17,19 +17,36 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 For commercial licensing, please contact support@quantumnous.com
 */
 import { Link, useSearch } from '@tanstack/react-router'
-import { Blocks, Building2, Check, ShieldCheck, Workflow } from 'lucide-react'
+import {
+  ArrowRight,
+  Blocks,
+  Building2,
+  Check,
+  Loader2,
+  ShieldCheck,
+  Workflow,
+} from 'lucide-react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { LanguageSwitcher } from '@/components/language-switcher'
+import { Button } from '@/components/ui/button'
 import { useStatus } from '@/hooks/use-status'
 
 import { TermsFooter } from '../components/terms-footer'
+import { useRuijieOAuthLogin } from '../hooks/use-ruijie-oauth-login'
 import { UserAuthForm } from './components/user-auth-form'
 
 export function SignIn() {
   const { t } = useTranslation()
   const { redirect } = useSearch({ from: '/(auth)/sign-in' })
   const { status } = useStatus()
+  const [showPasswordLogin, setShowPasswordLogin] = useState(false)
+  const {
+    startRuijieLogin,
+    isLoading: isRuijieLoginLoading,
+    isAvailable: isRuijieLoginAvailable,
+  } = useRuijieOAuthLogin()
   const docsLink =
     typeof status?.docs_link === 'string' ? status.docs_link : undefined
   const hasRuijieOAuth = Boolean(
@@ -167,7 +184,46 @@ export function SignIn() {
             </div>
           </div>
 
-          <UserAuthForm redirectTo={redirect} hideAlternativeLogin />
+          <div className='space-y-3'>
+            <Button
+              type='button'
+              onClick={() => void startRuijieLogin()}
+              disabled={isRuijieLoginLoading || !isRuijieLoginAvailable}
+              className='h-14 w-full justify-between rounded-xl bg-gradient-to-r from-[#336fe7] to-[#4f82ef] px-4 text-base font-bold text-white shadow-[0_14px_30px_rgba(51,111,231,0.24)] transition-all hover:from-[#2d66d8] hover:to-[#4779df] hover:shadow-[0_16px_34px_rgba(51,111,231,0.3)] disabled:opacity-60'
+            >
+              <span className='flex items-center gap-3'>
+                {isRuijieLoginLoading ? (
+                  <Loader2 className='size-5 animate-spin' aria-hidden='true' />
+                ) : (
+                  <ShieldCheck className='size-6' aria-hidden='true' />
+                )}
+                {t('Sign in with Ruijie SSO')}
+              </span>
+              {!isRuijieLoginLoading && (
+                <ArrowRight className='size-5' aria-hidden='true' />
+              )}
+            </Button>
+
+            <Button
+              type='button'
+              variant='outline'
+              aria-expanded={showPasswordLogin}
+              aria-controls='admin-password-login-form'
+              onClick={() => setShowPasswordLogin((visible) => !visible)}
+              className='h-12 w-full rounded-xl border-[#d6dfec] bg-white text-base font-bold text-[#172449] shadow-none hover:bg-[#f7faff] hover:text-[#172449]'
+            >
+              {t('Sign in with username and password')}
+            </Button>
+
+            {showPasswordLogin && (
+              <div
+                id='admin-password-login-form'
+                className='animate-in fade-in slide-in-from-top-2 border-t border-[#e2eaf5] pt-4 duration-200'
+              >
+                <UserAuthForm redirectTo={redirect} hideAlternativeLogin />
+              </div>
+            )}
+          </div>
 
           {hasRuijieOAuth && (
             <div className='mt-4 flex items-center justify-center gap-2 text-center text-xs text-[#66758d]'>
