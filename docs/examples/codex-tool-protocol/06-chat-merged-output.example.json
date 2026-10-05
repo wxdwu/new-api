@@ -1,0 +1,21 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_ds_demo",
+            "type": "function",
+            "function": {
+              "name": "exec_command",
+              "arguments": "{\"cmd\":\"rg -n login src\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ]
+}

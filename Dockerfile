@@ -1,21 +1,25 @@
 FROM oven/bun:1@sha256:e10577f0db68676a7024391c6e5cb4b879ebd17188ab750cf10024a6d700e5c4 AS builder
 
+ARG BUN_REGISTRY=https://registry.npmmirror.com
+
 WORKDIR /build/web
 COPY web/package.json web/bun.lock ./
 COPY web/default/package.json ./default/package.json
 COPY web/classic/package.json ./classic/package.json
-RUN bun install --frozen-lockfile --linker=isolated --registry=https://registry.npmmirror.com
+RUN bun install --frozen-lockfile --linker=isolated --network-concurrency=8 --registry=${BUN_REGISTRY}
 COPY ./web/default ./default
 COPY ./VERSION /build/VERSION
 RUN cd default && DISABLE_ESLINT_PLUGIN='true' VITE_REACT_APP_VERSION=$(cat /build/VERSION) bun run build
 
 FROM oven/bun:1@sha256:e10577f0db68676a7024391c6e5cb4b879ebd17188ab750cf10024a6d700e5c4 AS builder-classic
 
+ARG BUN_REGISTRY=https://registry.npmmirror.com
+
 WORKDIR /build/web
 COPY web/package.json web/bun.lock ./
 COPY web/default/package.json ./default/package.json
 COPY web/classic/package.json ./classic/package.json
-RUN bun install --filter ./classic --frozen-lockfile --linker=isolated
+RUN bun install --filter ./classic --frozen-lockfile --linker=isolated --network-concurrency=8 --registry=${BUN_REGISTRY}
 COPY ./web/classic ./classic
 COPY ./VERSION /build/VERSION
 RUN cd classic && VITE_REACT_APP_VERSION=$(cat /build/VERSION) bun run build
@@ -40,7 +44,9 @@ RUN go build -ldflags "-s -w -X 'github.com/QuantumNous/new-api/common.Version=$
 
 FROM debian:bookworm-slim@sha256:f06537653ac770703bc45b4b113475bd402f451e85223f0f2837acbf89ab020a
 
-RUN apt-get update \
+ARG DEBIAN_MIRROR=deb.debian.org
+RUN sed -i "s|deb.debian.org|${DEBIAN_MIRROR}|g" /etc/apt/sources.list.d/debian.sources \
+    && apt-get update \
     && apt-get install -y --no-install-recommends ca-certificates tzdata libasan8 wget \
     && rm -rf /var/lib/apt/lists/* \
     && update-ca-certificates

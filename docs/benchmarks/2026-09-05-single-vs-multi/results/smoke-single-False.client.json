@@ -1,0 +1,60 @@
+{
+  "run_id": "smoke-single-False",
+  "url": "http://172.19.0.4/v1/responses",
+  "model": "gpt-4o-mini",
+  "stream": false,
+  "rps": 2,
+  "duration_s": 1,
+  "request_timeout_s": 15.0,
+  "summary": {
+    "planned_requests": 2,
+    "actual_sent": 2,
+    "total_completed": 2,
+    "success": 2,
+    "http_error": 0,
+    "stream_interrupted": 0,
+    "invalid_response": 0,
+    "transport_error": 0,
+    "run_started_at": 1788616600.8137712,
+    "send_window_s": 1,
+    "send_window_ended_at": 1788616601.8137712,
+    "last_actual_start_at": 1788616601.3143375,
+    "last_actual_start_offset_s": 0.5005662441253662,
+    "actual_started_within_send_window": 2,
+    "actual_start_rate_during_window_rps": 2.0,
+    "drain_elapsed_s": 0.5092569910048041,
+    "whole_run_elapsed_s": 1.5092569910048041,
+    "whole_run_completed_rps": 1.3251553657992192,
+    "latency_p95_s": 1.0554769009977463,
+    "latency_p99_s": 1.0554769009977463,
+    "first_output_p95_s": 1.0550331459962763,
+    "first_output_p99_s": 1.0550331459962763,
+    "scheduling_delay_p95_s": 0.0007715840038144961,
+    "scheduling_delay_p99_s": 0.0007715840038144961,
+    "workers": 30
+  },
+  "rows": [
+    {
+      "benchmark_id": "smoke-single-False-0",
+      "scheduled_at": 1788616600.8137712,
+      "started_at": 1788616600.8145442,
+      "ended_at": 1788616601.8700223,
+      "scheduling_delay_s": 0.0007715840038144961,
+      "status_code": 200,
+      "outcome": "success",
+      "latency_s": 1.0554769009977463,
+      "first_output_latency_s": 1.0550331459962763
+    },
+    {
+      "benchmark_id": "smoke-single-False-1",
+      "scheduled_at": 1788616601.3137712,
+      "started_at": 1788616601.3143375,
+      "ended_at": 1788616602.322623,
+      "scheduling_delay_s": 0.0005652760009979829,
+      "status_code": 200,
+      "outcome": "success",
+      "latency_s": 1.0082843100026366,
+      "first_output_latency_s": 1.0076615790021606
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "recorded_at": 1788614973.6989665,
+  "machine_cpu_count": 2,
+  "containers": [
+    {
+      "name": "/new-api-cloud-new-api-1",
+      "image_id": "sha256:958364d0fd43225eac82cadaccc64f9df758c7e1f4653da78fc65a9f4f56e1ac",
+      "image_tag": "new-api:cloud",
+      "memory_limit_bytes": 0,
+      "nano_cpus": 0,
+      "pids_limit": null,
+      "state": {
+        "running": true,
+        "oom_killed": false,
+        "health": "healthy"
+      }
+    },
+    {
+      "name": "/new-api-bench-app",
+      "image_id": "sha256:958364d0fd43225eac82cadaccc64f9df758c7e1f4653da78fc65a9f4f56e1ac",
+      "image_tag": "new-api:cloud",
+      "memory_limit_bytes": 536870912,
+      "nano_cpus": 750000000,
+      "pids_limit": 256,
+      "state": {
+        "running": true,
+        "oom_killed": false,
+        "health": null
+      }
+    },
+    {
+      "name": "/new-api-bench-redis",
+      "image_id": "sha256:ff02b58f971e7d7d156a1267e283fcbbeee91773b6aa36c49dac28ecfe28eadf",
+      "image_tag": "redis:7-alpine",
+      "memory_limit_bytes": 67108864,
+      "nano_cpus": 100000000,
+      "pids_limit": 64,
+      "state": {
+        "running": true,
+        "oom_killed": false,
+        "health": null
+      }
+    },
+    {
+      "name": "/new-api-bench-nginx",
+      "image_id": "sha256:74694f2de64c44787a81f0554aa45b281e468c0c58b8665fafceda624d31e556",
+      "image_tag": "nginx:stable-alpine",
+      "memory_limit_bytes": 33554432,
+      "nano_cpus": 100000000,
+      "pids_limit": 64,
+      "state": {
+        "running": true,
+        "oom_killed": false,
+        "health": null
+      }
+    }
+  ],
+  "notes": [
+    "single server shared by original containers, test gateway, mock upstream and load driver",
+    "test database SQLite; original MySQL",
+    "mock binding only Docker private bridge",
+    "no real model provider configured or called"
+  ]
+}

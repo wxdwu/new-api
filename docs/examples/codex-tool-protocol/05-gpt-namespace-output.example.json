@@ -1,0 +1,11 @@
+{
+  "output": [
+    {
+      "type": "function_call",
+      "call_id": "call_gpt_kb_demo",
+      "namespace": "kb",
+      "name": "search",
+      "arguments": "{\"query\": \"登录实现约定\"}"
+    }
+  ]
+}

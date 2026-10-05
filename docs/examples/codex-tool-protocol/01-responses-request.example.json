@@ -1,0 +1,103 @@
+{
+  "model": "EXAMPLE_GPT_MODEL",
+  "instructions": "检查项目登录实现并参考知识库。",
+  "input": [
+    {
+      "type": "message",
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "查找src中的登录代码，并查询知识库中的登录实现约定。"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "name": "exec_command",
+      "description": "执行终端命令",
+      "strict": false,
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cmd"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "type": "namespace",
+      "name": "kb",
+      "description": "示例知识库服务，并非Codex固定内置工具",
+      "tools": [
+        {
+          "type": "function",
+          "name": "search",
+          "description": "搜索项目知识库",
+          "strict": false,
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "query"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "name": "exec",
+      "description": "通过JavaScript编排已启用的工具；示例中可调用tools.exec_command和tools.kb__search",
+      "format": {
+        "type": "grammar",
+        "syntax": "lark",
+        "definition": "start: pragma_source | plain_source\npragma_source: PRAGMA_LINE NEWLINE SOURCE\nplain_source: SOURCE\nPRAGMA_LINE: /[ \\t]*\\/\\/ @exec:[^\\r\\n]*/\nNEWLINE: /\\r?\\n/\nSOURCE: /[\\s\\S]+/"
+      }
+    },
+    {
+      "type": "custom",
+      "name": "apply_patch",
+      "description": "接收补丁文本修改文件",
+      "format": {
+        "type": "grammar",
+        "syntax": "lark",
+        "definition": "start: begin_patch hunk+ end_patch\nbegin_patch: \"*** Begin Patch\" LF\nend_patch: \"*** End Patch\" LF?\n\nhunk: add_hunk | delete_hunk | update_hunk\nadd_hunk: \"*** Add File: \" filename LF add_line+\ndelete_hunk: \"*** Delete File: \" filename LF\nupdate_hunk: \"*** Update File: \" filename LF change_move? change?\n\nfilename: /(.+)/\nadd_line: \"+\" /(.*)/ LF -> line\n\nchange_move: \"*** Move to: \" filename LF\nchange: (change_context | change_line)+ eof_line?\nchange_context: (\"@@\" | \"@@ \" /(.+)/) LF\nchange_line: (\"+\" | \"-\" | \" \") /(.*)/ LF\neof_line: \"*** End of File\" LF\n\n%import common.LF\n"
+      }
+    },
+    {
+      "type": "web_search"
+    },
+    {
+      "type": "tool_search",
+      "execution": "client",
+      "description": "发现可用工具；本例使用缩减参数",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "stream": true
+}

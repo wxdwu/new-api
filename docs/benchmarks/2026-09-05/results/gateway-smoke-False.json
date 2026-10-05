@@ -1,0 +1,82 @@
+{
+  "run_id": "gateway-smoke-False",
+  "url": "http://172.19.0.4/v1/responses",
+  "model": "gpt-4o-mini",
+  "stream": false,
+  "rps": 2,
+  "duration_s": 2,
+  "request_timeout_s": 15.0,
+  "summary": {
+    "planned_requests": 4,
+    "actual_sent": 4,
+    "total_completed": 4,
+    "success": 4,
+    "http_error": 0,
+    "stream_interrupted": 0,
+    "invalid_response": 0,
+    "transport_error": 0,
+    "run_started_at": 1788614896.4905846,
+    "send_window_s": 2,
+    "send_window_ended_at": 1788614898.4905846,
+    "last_actual_start_at": 1788614897.9908726,
+    "last_actual_start_offset_s": 1.5002880096435547,
+    "actual_started_within_send_window": 4,
+    "actual_start_rate_during_window_rps": 2.0,
+    "drain_elapsed_s": 0.0,
+    "whole_run_elapsed_s": 1.5578240850009024,
+    "whole_run_completed_rps": 2.5676840142047763,
+    "latency_p95_s": 0.10802793000038946,
+    "latency_p99_s": 0.10802793000038946,
+    "first_output_p95_s": 0.10777175299881492,
+    "first_output_p99_s": 0.10777175299881492,
+    "scheduling_delay_p95_s": 0.0006152589994599111,
+    "scheduling_delay_p99_s": 0.0006152589994599111,
+    "workers": 30
+  },
+  "rows": [
+    {
+      "benchmark_id": "gateway-smoke-False-0",
+      "scheduled_at": 1788614896.4905846,
+      "started_at": 1788614896.4912007,
+      "ended_at": 1788614896.599228,
+      "scheduling_delay_s": 0.0006152589994599111,
+      "status_code": 200,
+      "outcome": "success",
+      "latency_s": 0.10802793000038946,
+      "first_output_latency_s": 0.10777175299881492
+    },
+    {
+      "benchmark_id": "gateway-smoke-False-1",
+      "scheduled_at": 1788614896.9905846,
+      "started_at": 1788614896.9907937,
+      "ended_at": 1788614897.0485704,
+      "scheduling_delay_s": 0.0002092969953082502,
+      "status_code": 200,
+      "outcome": "success",
+      "latency_s": 0.05777266400400549,
+      "first_output_latency_s": 0.057325556001160294
+    },
+    {
+      "benchmark_id": "gateway-smoke-False-2",
+      "scheduled_at": 1788614897.4905846,
+      "started_at": 1788614897.4907532,
+      "ended_at": 1788614897.5481722,
+      "scheduling_delay_s": 0.0001689769997028634,
+      "status_code": 200,
+      "outcome": "success",
+      "latency_s": 0.05741746300191153,
+      "first_output_latency_s": 0.05691548500180943
+    },
+    {
+      "benchmark_id": "gateway-smoke-False-3",
+      "scheduled_at": 1788614897.9905846,
+      "started_at": 1788614897.9908726,
+      "ended_at": 1788614898.0477538,
+      "scheduling_delay_s": 0.00028831500094383955,
+      "status_code": 200,
+      "outcome": "success",
+      "latency_s": 0.05688030599412741,
+      "first_output_latency_s": 0.05657338300079573
+    }
+  ]
+}

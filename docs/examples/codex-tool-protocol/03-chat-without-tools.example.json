@@ -1,0 +1,14 @@
+{
+  "model": "EXAMPLE_DEEPSEEK_CHAT_MODEL",
+  "messages": [
+    {
+      "role": "system",
+      "content": "检查项目登录实现并参考知识库。"
+    },
+    {
+      "role": "user",
+      "content": "查找src中的登录代码，并查询知识库中的登录实现约定。"
+    }
+  ],
+  "stream": true
+}

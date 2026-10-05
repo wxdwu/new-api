@@ -1,0 +1,37 @@
+{
+  "recorded_at": 1788615359.0165722,
+  "temporary_containers_removed": true,
+  "temporary_network_removed": true,
+  "mock_stopped": true,
+  "test_credentials_and_database_removed": true,
+  "original_containers": [
+    {
+      "name": "/new-api-cloud-new-api-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 5,
+      "health": "healthy"
+    },
+    {
+      "name": "/new-api-cloud-nginx-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "/new-api-cloud-mysql-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": "healthy"
+    },
+    {
+      "name": "/new-api-cloud-redis-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": "healthy"
+    }
+  ]
+}

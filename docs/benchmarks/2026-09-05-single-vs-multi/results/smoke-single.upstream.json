@@ -1,0 +1,96 @@
+{
+  "control_epoch": 1788616600.8126762,
+  "duration_s": 1.0,
+  "first_token_s": 0.2,
+  "fault_period_s": 0.0,
+  "fault_window_s": 0.0,
+  "channels": {
+    "a": {
+      "attempts": 4,
+      "success": 4,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 2,
+      "effective_config": {
+        "capacity": 8,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "smoke-single-False-0",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616600.8667846,
+          "end": 1788616601.8672953,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "smoke-single-False-1",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616601.3198073,
+          "end": 1788616602.3202965,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "smoke-single-True-0",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616602.3846555,
+          "end": 1788616603.3853467,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "smoke-single-True-1",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616602.8309228,
+          "end": 1788616603.8316712,
+          "inflight": 2
+        }
+      ]
+    },
+    "b": {
+      "attempts": 0,
+      "success": 0,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 0,
+      "effective_config": {
+        "capacity": 24,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": []
+    },
+    "c": {
+      "attempts": 0,
+      "success": 0,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 0,
+      "effective_config": {
+        "capacity": 32,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": []
+    }
+  }
+}

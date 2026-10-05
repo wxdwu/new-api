@@ -1,0 +1,5098 @@
+{
+  "control_epoch": 1788616977.4113429,
+  "duration_s": 1.0,
+  "first_token_s": 0.2,
+  "fault_period_s": 0.0,
+  "fault_window_s": 0.0,
+  "channels": {
+    "a": {
+      "attempts": 137,
+      "success": 108,
+      "rejected": 3,
+      "fault": 26,
+      "inflight": 0,
+      "max_inflight": 8,
+      "effective_config": {
+        "capacity": 8,
+        "fault_period_s": 10.0,
+        "fault_window_s": 2.0
+      },
+      "overrides": {
+        "fault_period_s": 10.0,
+        "fault_window_s": 2.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "burst_fault-3-multi-1",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616977.4670632,
+          "end": 1788616977.4670632,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-3",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616977.5672283,
+          "end": 1788616977.5672283,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-5",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616977.6674309,
+          "end": 1788616977.6674309,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-8",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616977.817204,
+          "end": 1788616977.817204,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-12",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616978.017899,
+          "end": 1788616978.017899,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-19",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616978.3673074,
+          "end": 1788616978.3673074,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-21",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616978.4670405,
+          "end": 1788616978.4670405,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-24",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616978.67223,
+          "end": 1788616978.67223,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-28",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616978.8253834,
+          "end": 1788616978.8253834,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-33",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616979.1484964,
+          "end": 1788616979.1484964,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-35",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616979.17054,
+          "end": 1788616979.17054,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-39",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616979.4740791,
+          "end": 1788616980.474712,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-46",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616979.7182996,
+          "end": 1788616980.719385,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-49",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616979.8684826,
+          "end": 1788616980.8692515,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-52",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616980.0249462,
+          "end": 1788616981.026338,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-58",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616980.3742714,
+          "end": 1788616981.375054,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-64",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616980.6717834,
+          "end": 1788616981.6723502,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-69",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616980.8674796,
+          "end": 1788616981.8686998,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-71",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616980.9872808,
+          "end": 1788616981.9898756,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-72",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616981.040867,
+          "end": 1788616982.0423863,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-73",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616981.1075506,
+          "end": 1788616982.1093118,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-60",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616981.1485496,
+          "end": 1788616982.149233,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-74",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616981.2529705,
+          "end": 1788616982.2541013,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-81",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616981.491685,
+          "end": 1788616982.4929283,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-90",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616981.9177198,
+          "end": 1788616982.9183857,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-92",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616982.0198226,
+          "end": 1788616983.020451,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-94",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616982.1227002,
+          "end": 1788616983.1232648,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-96",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616982.216859,
+          "end": 1788616983.2177565,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-98",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616982.4327755,
+          "end": 1788616983.433522,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-102",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616982.519016,
+          "end": 1788616983.5208304,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-116",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616983.2377193,
+          "end": 1788616984.2383237,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-121",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616983.507789,
+          "end": 1788616984.5084019,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-126",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616983.7274823,
+          "end": 1788616984.7285821,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-124",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616983.7572887,
+          "end": 1788616984.7577946,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-129",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616983.8874571,
+          "end": 1788616984.8881001,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-131",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616983.9877284,
+          "end": 1788616984.9883664,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-133",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616984.0678442,
+          "end": 1788616985.0684934,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-134",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616984.160409,
+          "end": 1788616985.1612039,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-136",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616984.218011,
+          "end": 1788616984.218011,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-125",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616984.504443,
+          "end": 1788616985.5052643,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-145",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616984.6800253,
+          "end": 1788616985.6812658,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-143",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616984.7716038,
+          "end": 1788616985.7725677,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-149",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616985.0256715,
+          "end": 1788616986.0270977,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-154",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616985.20069,
+          "end": 1788616986.2014008,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-155",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616985.313047,
+          "end": 1788616986.314689,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-167",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616985.8308249,
+          "end": 1788616986.8316684,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-173",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616986.0874445,
+          "end": 1788616987.0883653,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-165",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616986.3000777,
+          "end": 1788616987.3021007,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-187",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616986.7798944,
+          "end": 1788616987.7810175,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-188",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616986.821861,
+          "end": 1788616987.8230152,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-193",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616987.0685902,
+          "end": 1788616988.069807,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-211",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616987.9680846,
+          "end": 1788616987.9680846,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-217",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616988.2673452,
+          "end": 1788616988.2673452,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-219",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616988.4234412,
+          "end": 1788616988.4234412,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-222",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616988.5559754,
+          "end": 1788616988.5559754,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-224",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616988.6200721,
+          "end": 1788616988.6200721,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-226",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616988.8017178,
+          "end": 1788616988.8017178,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-233",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616989.2562535,
+          "end": 1788616989.2562535,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-239",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616989.4237282,
+          "end": 1788616990.4251611,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-243",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616989.5775664,
+          "end": 1788616990.5783002,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-215",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616989.605255,
+          "end": 1788616990.6063333,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-250",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616990.0237207,
+          "end": 1788616991.024816,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-258",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616990.3478446,
+          "end": 1788616991.3482988,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-245",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616990.604605,
+          "end": 1788616991.605233,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-252",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616990.8513136,
+          "end": 1788616991.8520012,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-269",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616990.9978652,
+          "end": 1788616991.9987116,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-274",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.1270003,
+          "end": 1788616992.1299028,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-283",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.5683348,
+          "end": 1788616992.5697243,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-278",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.5701714,
+          "end": 1788616992.571731,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-284",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.676304,
+          "end": 1788616992.676791,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-288",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.9037921,
+          "end": 1788616992.905178,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-289",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.9050963,
+          "end": 1788616992.9060488,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-290",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616991.9184632,
+          "end": 1788616992.9194694,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-315",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616993.1781971,
+          "end": 1788616994.1794858,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-320",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616993.4526982,
+          "end": 1788616994.4533317,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-318",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616993.497389,
+          "end": 1788616994.4980695,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-327",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616993.953925,
+          "end": 1788616994.9574265,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-335",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616994.1719897,
+          "end": 1788616995.173074,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-339",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616994.3777583,
+          "end": 1788616995.3786674,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-343",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616994.5763378,
+          "end": 1788616995.5769928,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-355",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616995.3016434,
+          "end": 1788616996.3023875,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-362",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616995.5200517,
+          "end": 1788616996.5218208,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-365",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616995.7294495,
+          "end": 1788616996.7314248,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-371",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616995.9769166,
+          "end": 1788616996.9776263,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-372",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616996.0214243,
+          "end": 1788616997.022218,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-383",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616996.9080758,
+          "end": 1788616997.9103856,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-389",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616996.9119864,
+          "end": 1788616997.9150355,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-384",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616997.2574077,
+          "end": 1788616998.2588267,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-398",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616997.3196898,
+          "end": 1788616998.320272,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-399",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616997.3802676,
+          "end": 1788616998.381314,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-402",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616997.5194829,
+          "end": 1788616997.5194829,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-406",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616997.824512,
+          "end": 1788616997.824512,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-411",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616997.9705145,
+          "end": 1788616997.9705145,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-412",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616998.019878,
+          "end": 1788616998.019878,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-416",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616998.2307,
+          "end": 1788616998.2307,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-418",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616998.3289533,
+          "end": 1788616998.3289533,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-421",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616998.4794345,
+          "end": 1788616998.4794345,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-381",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616998.7004037,
+          "end": 1788616998.7004037,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-444",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616999.6738055,
+          "end": 1788617000.6749887,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-446",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616999.7982502,
+          "end": 1788617000.798869,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-456",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.2371042,
+          "end": 1788617001.2398474,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-436",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.2572894,
+          "end": 1788617001.2588441,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-424",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.259414,
+          "end": 1788617001.2659636,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-457",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.3032432,
+          "end": 1788617001.3074963,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-460",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.4231057,
+          "end": 1788617001.4250357,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-462",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.597038,
+          "end": 1788617001.597864,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-464",
+          "channel": "a",
+          "status": 429,
+          "start": 1788617000.6505096,
+          "end": 1788617000.6505096,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-463",
+          "channel": "a",
+          "status": 429,
+          "start": 1788617000.6550822,
+          "end": 1788617000.6550822,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-467",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617000.7730827,
+          "end": 1788617001.7737904,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-475",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617001.1867166,
+          "end": 1788617002.1874232,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-476",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617001.3108273,
+          "end": 1788617002.3116627,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-481",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617001.4903302,
+          "end": 1788617002.4909616,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-482",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617001.5351865,
+          "end": 1788617002.5363417,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-489",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617002.1017487,
+          "end": 1788617003.105421,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-495",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617002.1680322,
+          "end": 1788617003.1688023,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-499",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617002.402724,
+          "end": 1788617003.4034805,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-505",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617002.6823382,
+          "end": 1788617003.6830657,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-511",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617002.9730291,
+          "end": 1788617003.97378,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-512",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617003.0207746,
+          "end": 1788617004.0214553,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-507",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617003.1014163,
+          "end": 1788617004.1024299,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-515",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617003.2282534,
+          "end": 1788617004.2302365,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-518",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617003.5499492,
+          "end": 1788617004.5507684,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-526",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617003.8254404,
+          "end": 1788617004.8276653,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-528",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617004.150621,
+          "end": 1788617005.1514816,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-540",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617004.421076,
+          "end": 1788617005.422312,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-541",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617004.5033178,
+          "end": 1788617005.504604,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-546",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617004.726401,
+          "end": 1788617005.727068,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-547",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617004.7715938,
+          "end": 1788617005.7724292,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-555",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617005.2476304,
+          "end": 1788617006.2484083,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-562",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617005.519864,
+          "end": 1788617006.5207603,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-567",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617005.8583868,
+          "end": 1788617006.8592358,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-569",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617005.9475486,
+          "end": 1788617006.9493752,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-571",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617006.0254407,
+          "end": 1788617007.0281057,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-574",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617006.1236506,
+          "end": 1788617007.1246095,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-587",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617006.7773306,
+          "end": 1788617007.7779636,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-589",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617006.9232578,
+          "end": 1788617007.9237928,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-596",
+          "channel": "a",
+          "status": 200,
+          "start": 1788617007.2255588,
+          "end": 1788617008.2261798,
+          "inflight": 3
+        }
+      ]
+    },
+    "b": {
+      "attempts": 463,
+      "success": 463,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 24,
+      "effective_config": {
+        "capacity": 24,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "burst_fault-3-multi-0",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.4173083,
+          "end": 1788616978.4180632,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-2",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.5172818,
+          "end": 1788616978.5180874,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-4",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.6173718,
+          "end": 1788616978.6180587,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-6",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.7172303,
+          "end": 1788616978.7210774,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-7",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.7672994,
+          "end": 1788616978.7678208,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-9",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.8674073,
+          "end": 1788616978.8680837,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-10",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.9173815,
+          "end": 1788616978.9179585,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-11",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616977.967496,
+          "end": 1788616978.968105,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-13",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.0673604,
+          "end": 1788616979.068065,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-14",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.117642,
+          "end": 1788616979.1186304,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-15",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.167419,
+          "end": 1788616979.1684735,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-16",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.2174432,
+          "end": 1788616979.2205198,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-17",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.267406,
+          "end": 1788616979.2684488,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-18",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.3175924,
+          "end": 1788616979.3187137,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-20",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.4175134,
+          "end": 1788616979.4188447,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-23",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.5669034,
+          "end": 1788616979.567607,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-22",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.5723531,
+          "end": 1788616979.5728776,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-25",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.6667917,
+          "end": 1788616979.6676385,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-26",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.7200468,
+          "end": 1788616979.7209518,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-27",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.7778852,
+          "end": 1788616979.779281,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-29",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.885599,
+          "end": 1788616979.8862379,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-31",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.9667315,
+          "end": 1788616979.9672596,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-30",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616978.972573,
+          "end": 1788616979.973034,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-32",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.0174997,
+          "end": 1788616980.0189037,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-34",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.1788712,
+          "end": 1788616980.1798627,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-36",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.2196124,
+          "end": 1788616980.223733,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-37",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.2699838,
+          "end": 1788616980.270925,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-38",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.3364704,
+          "end": 1788616980.3371785,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-40",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.427814,
+          "end": 1788616980.428697,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-41",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.4684057,
+          "end": 1788616980.4695442,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-42",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.5259736,
+          "end": 1788616980.5267503,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-43",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.5671933,
+          "end": 1788616980.569312,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-44",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.6168454,
+          "end": 1788616980.618652,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-45",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.6732793,
+          "end": 1788616980.6738558,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-47",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.7668872,
+          "end": 1788616980.7678316,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-48",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.8192139,
+          "end": 1788616980.8201735,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-50",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616979.9363246,
+          "end": 1788616980.937039,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-51",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.0280025,
+          "end": 1788616981.0308907,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-53",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.0707648,
+          "end": 1788616981.071809,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-54",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.1261787,
+          "end": 1788616981.1268485,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-55",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.1705685,
+          "end": 1788616981.1712556,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-57",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.2850401,
+          "end": 1788616981.2856758,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-59",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.385329,
+          "end": 1788616981.386092,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-61",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.4876127,
+          "end": 1788616981.4895608,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-63",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.5895886,
+          "end": 1788616981.5903866,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-62",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.6233478,
+          "end": 1788616981.6242065,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-65",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.6682465,
+          "end": 1788616981.6688237,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-66",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.7190554,
+          "end": 1788616981.7196982,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-56",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.758772,
+          "end": 1788616981.7594626,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-67",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.7697196,
+          "end": 1788616981.7713177,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-68",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.8169124,
+          "end": 1788616981.8175912,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-70",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616980.9168377,
+          "end": 1788616981.9182382,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-75",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.1694922,
+          "end": 1788616982.170039,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-76",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.2564895,
+          "end": 1788616982.257014,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-77",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.2683632,
+          "end": 1788616982.2692065,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-78",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.3354728,
+          "end": 1788616982.3359709,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-80",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.42245,
+          "end": 1788616982.4264307,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-79",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.4260569,
+          "end": 1788616982.430175,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-82",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.5313616,
+          "end": 1788616982.5324476,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-84",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.6413333,
+          "end": 1788616982.6420588,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-87",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.8030548,
+          "end": 1788616982.8048484,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-89",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.8706825,
+          "end": 1788616982.8717344,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-91",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616981.9672596,
+          "end": 1788616982.967945,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-93",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.0756142,
+          "end": 1788616983.0763123,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-95",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.1683748,
+          "end": 1788616983.169119,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-100",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.4277446,
+          "end": 1788616983.4305537,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-99",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.4318743,
+          "end": 1788616983.435472,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-101",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.5213585,
+          "end": 1788616983.5224113,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-103",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.6019282,
+          "end": 1788616983.6026883,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-104",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.625893,
+          "end": 1788616983.6273708,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-105",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.6720645,
+          "end": 1788616983.6729212,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-106",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.7176871,
+          "end": 1788616983.7184198,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-88",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.7498739,
+          "end": 1788616983.7508745,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-86",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.7510278,
+          "end": 1788616983.7529132,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-85",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.7999256,
+          "end": 1788616983.8050597,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-83",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.803803,
+          "end": 1788616983.8047225,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-107",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.8083482,
+          "end": 1788616983.8099976,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-108",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.8370543,
+          "end": 1788616983.8376818,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-109",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.867073,
+          "end": 1788616983.8677146,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-110",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.9177108,
+          "end": 1788616983.9183187,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-111",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616982.9668908,
+          "end": 1788616983.9676003,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-112",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.016739,
+          "end": 1788616984.0176752,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-113",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.0705504,
+          "end": 1788616984.0712233,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-97",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.2399654,
+          "end": 1788616984.2407315,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-117",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.2859564,
+          "end": 1788616984.2865565,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-118",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.3170078,
+          "end": 1788616984.3176649,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-114",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.34937,
+          "end": 1788616984.3504121,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-115",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.3514655,
+          "end": 1788616984.3526137,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-119",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.366993,
+          "end": 1788616984.3677533,
+          "inflight": 24
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-120",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.4967146,
+          "end": 1788616984.497546,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-122",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.517944,
+          "end": 1788616984.5185804,
+          "inflight": 24
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-123",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.5665677,
+          "end": 1788616984.5678604,
+          "inflight": 24
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-127",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.8020225,
+          "end": 1788616984.8035023,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-128",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616983.9238482,
+          "end": 1788616984.925147,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-132",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.0539238,
+          "end": 1788616985.0549228,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-135",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.1667464,
+          "end": 1788616985.1672347,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-137",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.2773683,
+          "end": 1788616985.27792,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-141",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.482483,
+          "end": 1788616985.4833632,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-139",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.505047,
+          "end": 1788616985.507206,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-142",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.666942,
+          "end": 1788616985.6682353,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-138",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.667997,
+          "end": 1788616985.6706562,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-144",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.7103157,
+          "end": 1788616985.7112708,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-146",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.7269297,
+          "end": 1788616985.730172,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-140",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.7275517,
+          "end": 1788616985.7283452,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-147",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.8015914,
+          "end": 1788616985.8022935,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-148",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.8533213,
+          "end": 1788616985.8558154,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-130",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.8555608,
+          "end": 1788616985.8567324,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-150",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.9247367,
+          "end": 1788616985.9261107,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-151",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616984.9692428,
+          "end": 1788616985.9702933,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-152",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.0344002,
+          "end": 1788616986.0354633,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-153",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.2014198,
+          "end": 1788616986.2040622,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-156",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.2543588,
+          "end": 1788616986.2549536,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-157",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.266672,
+          "end": 1788616986.2677906,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-158",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.3244631,
+          "end": 1788616986.325115,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-159",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.3857882,
+          "end": 1788616986.3864996,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-160",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.4235435,
+          "end": 1788616986.424156,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-161",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.4819887,
+          "end": 1788616986.4827926,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-162",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.5362093,
+          "end": 1788616986.5368006,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-163",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.5772533,
+          "end": 1788616986.5815427,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-164",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.6305852,
+          "end": 1788616986.643514,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-168",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.8221002,
+          "end": 1788616986.824736,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-166",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.825808,
+          "end": 1788616986.8277516,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-169",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616985.8690786,
+          "end": 1788616986.8703134,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-172",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.0266454,
+          "end": 1788616987.0294204,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-174",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.1222572,
+          "end": 1788616987.1228313,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-171",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.147918,
+          "end": 1788616987.1487198,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-170",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.1500063,
+          "end": 1788616987.1516697,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-177",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.2704225,
+          "end": 1788616987.2717803,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-176",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.3007598,
+          "end": 1788616987.3033876,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-178",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.3752437,
+          "end": 1788616987.3780105,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-180",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.524669,
+          "end": 1788616987.5255659,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-182",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.536223,
+          "end": 1788616987.5374641,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-175",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.6275644,
+          "end": 1788616987.6320484,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-183",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.6329958,
+          "end": 1788616987.6342435,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-181",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.634812,
+          "end": 1788616987.637215,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-179",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.6365094,
+          "end": 1788616987.6437635,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-184",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.6556804,
+          "end": 1788616987.6571012,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-185",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.9047236,
+          "end": 1788616987.9077954,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-186",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.908634,
+          "end": 1788616987.9093487,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-189",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.9109035,
+          "end": 1788616987.9125383,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-190",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616986.9298086,
+          "end": 1788616987.9308388,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-196",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.218418,
+          "end": 1788616988.219033,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-197",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.2693753,
+          "end": 1788616988.2701669,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-194",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.3515735,
+          "end": 1788616988.3522484,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-199",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.3805215,
+          "end": 1788616988.3817077,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-191",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.403832,
+          "end": 1788616988.4055603,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-195",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.4072106,
+          "end": 1788616988.4087148,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-200",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.4565496,
+          "end": 1788616988.4574223,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-201",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.5043113,
+          "end": 1788616988.5054207,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-203",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.5696034,
+          "end": 1788616988.5703194,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-202",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.5980608,
+          "end": 1788616988.5986173,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-205",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.6909232,
+          "end": 1788616988.6916244,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-206",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.727869,
+          "end": 1788616988.7285812,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-208",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.8274145,
+          "end": 1788616988.8320966,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-192",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.849015,
+          "end": 1788616988.8503096,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-198",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.8625627,
+          "end": 1788616988.8647025,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-209",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.8893127,
+          "end": 1788616988.8904536,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-207",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.9487484,
+          "end": 1788616988.9497273,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-204",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616987.952406,
+          "end": 1788616988.9528306,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-214",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.1384194,
+          "end": 1788616989.1392748,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-213",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.1471088,
+          "end": 1788616989.1478596,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-216",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.2970574,
+          "end": 1788616989.2978265,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-218",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.451048,
+          "end": 1788616989.4516513,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-223",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.606798,
+          "end": 1788616989.6102574,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-225",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.746389,
+          "end": 1788616989.747337,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-210",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.7525163,
+          "end": 1788616989.7552292,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-227",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.7727818,
+          "end": 1788616989.7734165,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-220",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.800269,
+          "end": 1788616989.80187,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-228",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.8303885,
+          "end": 1788616989.8325622,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-229",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616988.873894,
+          "end": 1788616989.8744779,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-232",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.0247967,
+          "end": 1788616990.025864,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-230",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.0274506,
+          "end": 1788616990.0302658,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-231",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.0287275,
+          "end": 1788616990.0320988,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-236",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.2194538,
+          "end": 1788616990.2205343,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-235",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.250507,
+          "end": 1788616990.252482,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-234",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.2521958,
+          "end": 1788616990.2554357,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-212",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.2572286,
+          "end": 1788616990.2586544,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-240",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.417358,
+          "end": 1788616990.4180708,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-238",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.4245381,
+          "end": 1788616990.4258583,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-242",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.528103,
+          "end": 1788616990.5288208,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-241",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.6038368,
+          "end": 1788616990.608822,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-237",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.6071932,
+          "end": 1788616990.6095173,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-221",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.6079006,
+          "end": 1788616990.6123908,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-244",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.63042,
+          "end": 1788616990.6312797,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-246",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.7581596,
+          "end": 1788616990.7593243,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-247",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.824109,
+          "end": 1788616990.8259306,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-248",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.8253772,
+          "end": 1788616990.8261573,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-251",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616989.9755118,
+          "end": 1788616990.9761508,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-254",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.15141,
+          "end": 1788616991.1523702,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-255",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.1716166,
+          "end": 1788616991.1767766,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-256",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.2169871,
+          "end": 1788616991.2178912,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-257",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.2914388,
+          "end": 1788616991.2925744,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-253",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.3978806,
+          "end": 1788616991.3989685,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-261",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.473247,
+          "end": 1788616991.4738522,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-249",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.5006742,
+          "end": 1788616991.5014656,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-262",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.5199707,
+          "end": 1788616991.5205126,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-265",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.6696446,
+          "end": 1788616991.6707635,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-266",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.7288854,
+          "end": 1788616991.7294712,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-268",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.9264169,
+          "end": 1788616991.929315,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-270",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.9275181,
+          "end": 1788616991.9300594,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-271",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616990.9867165,
+          "end": 1788616991.9877994,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-272",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.036559,
+          "end": 1788616992.037408,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-273",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.0718417,
+          "end": 1788616992.0723848,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-267",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.1017802,
+          "end": 1788616992.102638,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-259",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.1088526,
+          "end": 1788616992.1099288,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-263",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.1135137,
+          "end": 1788616992.1176383,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-275",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.18351,
+          "end": 1788616992.1856632,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-260",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.254401,
+          "end": 1788616992.2551079,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-276",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.2552395,
+          "end": 1788616992.2573996,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-277",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.2680268,
+          "end": 1788616992.269217,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-282",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.582117,
+          "end": 1788616992.5826063,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-285",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.6696587,
+          "end": 1788616992.6704535,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-281",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.7007701,
+          "end": 1788616992.7016454,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-286",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.720012,
+          "end": 1788616992.7215562,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-287",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.7755218,
+          "end": 1788616992.776212,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-279",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.7988474,
+          "end": 1788616992.799409,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-264",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.9513996,
+          "end": 1788616992.9521034,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-291",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616991.9778006,
+          "end": 1788616992.9787555,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-293",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.0813727,
+          "end": 1788616993.0823011,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-292",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.1012518,
+          "end": 1788616993.1019163,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-294",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.1264472,
+          "end": 1788616993.1270778,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-297",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.2727098,
+          "end": 1788616993.2735007,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-301",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.4780226,
+          "end": 1788616993.4788072,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-302",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.524041,
+          "end": 1788616993.5256233,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-300",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.525651,
+          "end": 1788616993.5276275,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-303",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.5675776,
+          "end": 1788616993.5680869,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-304",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.619213,
+          "end": 1788616993.6204984,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-305",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.6670322,
+          "end": 1788616993.6677346,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-306",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.7270727,
+          "end": 1788616993.7287455,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-307",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.7686784,
+          "end": 1788616993.7694864,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-308",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.8385417,
+          "end": 1788616993.8392577,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-296",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.8499901,
+          "end": 1788616993.8518617,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-298",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.851303,
+          "end": 1788616993.8527615,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-299",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.8979003,
+          "end": 1788616993.9013298,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-295",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.8990147,
+          "end": 1788616993.9006095,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-309",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.9040992,
+          "end": 1788616993.905371,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-311",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616992.9869049,
+          "end": 1788616993.9881787,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-312",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.0209587,
+          "end": 1788616994.022165,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-280",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.0547247,
+          "end": 1788616994.0561697,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-316",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.224059,
+          "end": 1788616994.2255516,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-310",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.2490656,
+          "end": 1788616994.2496135,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-317",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.287324,
+          "end": 1788616994.2880876,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-314",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.297074,
+          "end": 1788616994.2984762,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-313",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.4009888,
+          "end": 1788616994.4021568,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-321",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.4678328,
+          "end": 1788616994.4685256,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-323",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.578616,
+          "end": 1788616994.5794818,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-324",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.6196568,
+          "end": 1788616994.6225052,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-325",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.7230525,
+          "end": 1788616994.7237551,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-322",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.7513766,
+          "end": 1788616994.7523446,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-328",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.9027395,
+          "end": 1788616994.903686,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-329",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.9502428,
+          "end": 1788616994.9524999,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-326",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616993.951615,
+          "end": 1788616994.9553964,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-332",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.0186627,
+          "end": 1788616995.01969,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-334",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.1198883,
+          "end": 1788616995.1204522,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-333",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.1233318,
+          "end": 1788616995.123925,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-331",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.1985247,
+          "end": 1788616995.199233,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-336",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.2328067,
+          "end": 1788616995.2334971,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-319",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.3018124,
+          "end": 1788616995.3030276,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-337",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.3488317,
+          "end": 1788616995.3497388,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-338",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.397428,
+          "end": 1788616995.3983936,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-342",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.5282302,
+          "end": 1788616995.5287423,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-340",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.650006,
+          "end": 1788616995.650704,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-345",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.6695442,
+          "end": 1788616995.670264,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-346",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.7202575,
+          "end": 1788616995.721527,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-341",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.7974765,
+          "end": 1788616995.7982938,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-349",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.8765748,
+          "end": 1788616995.8776534,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-350",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616994.9277751,
+          "end": 1788616995.9287167,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-352",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.0295222,
+          "end": 1788616996.0300925,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-330",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.052927,
+          "end": 1788616996.0538435,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-353",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.0686367,
+          "end": 1788616996.0694654,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-351",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.0720696,
+          "end": 1788616996.0730026,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-354",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.1195898,
+          "end": 1788616996.120749,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-344",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.1583517,
+          "end": 1788616996.1588326,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-357",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.2708776,
+          "end": 1788616996.272013,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-356",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.2751768,
+          "end": 1788616996.2762747,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-347",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.2978551,
+          "end": 1788616996.299255,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-358",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.3376725,
+          "end": 1788616996.3383288,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-348",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.3483071,
+          "end": 1788616996.3490028,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-359",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.4027581,
+          "end": 1788616996.4038823,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-360",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.4500787,
+          "end": 1788616996.4508142,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-361",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.501894,
+          "end": 1788616996.5031767,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-363",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.5722766,
+          "end": 1788616996.5734746,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-366",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.7244568,
+          "end": 1788616996.7300386,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-364",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.7275643,
+          "end": 1788616996.7282567,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-367",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.7728925,
+          "end": 1788616996.7738845,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-368",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.826029,
+          "end": 1788616996.8279881,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-369",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.8695812,
+          "end": 1788616996.8703902,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-370",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616995.9507816,
+          "end": 1788616996.9520445,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-374",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.1199014,
+          "end": 1788616997.1208136,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-376",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.2195313,
+          "end": 1788616997.2207131,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-373",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.2509801,
+          "end": 1788616997.2529776,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-377",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.3262413,
+          "end": 1788616997.3284738,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-378",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.3267019,
+          "end": 1788616997.32761,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-379",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.371982,
+          "end": 1788616997.372729,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-380",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.4219887,
+          "end": 1788616997.4225178,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-385",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.6860268,
+          "end": 1788616997.6867273,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-386",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.751377,
+          "end": 1788616997.7528327,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-388",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.827597,
+          "end": 1788616997.8285074,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-387",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616996.8410847,
+          "end": 1788616997.8423789,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-392",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.0304496,
+          "end": 1788616998.0348103,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-390",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.0313034,
+          "end": 1788616998.0389543,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-393",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.066861,
+          "end": 1788616998.0677693,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-391",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.148361,
+          "end": 1788616998.149764,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-396",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.2388194,
+          "end": 1788616998.2399619,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-375",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.256237,
+          "end": 1788616998.2618515,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-382",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.2593012,
+          "end": 1788616998.2607934,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-397",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.2738976,
+          "end": 1788616998.2756991,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-403",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.5908065,
+          "end": 1788616998.5918465,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-404",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.6176808,
+          "end": 1788616998.618296,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-400",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.6494343,
+          "end": 1788616998.6507323,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-394",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.6534917,
+          "end": 1788616998.654611,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-401",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.6570926,
+          "end": 1788616998.6583977,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-407",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.7789805,
+          "end": 1788616998.7802744,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-408",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.8225207,
+          "end": 1788616998.8253632,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-409",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.9020462,
+          "end": 1788616998.9037616,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-410",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616997.9572825,
+          "end": 1788616998.958216,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-413",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.0781972,
+          "end": 1788616999.0786765,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-414",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.142022,
+          "end": 1788616999.142893,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-415",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.1899414,
+          "end": 1788616999.1908808,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-420",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.4203305,
+          "end": 1788616999.4214485,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-417",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.4535155,
+          "end": 1788616999.454326,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-422",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.536256,
+          "end": 1788616999.5369995,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-419",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.5497484,
+          "end": 1788616999.5503826,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-423",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.5872211,
+          "end": 1788616999.5877082,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-425",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.7036712,
+          "end": 1788616999.704483,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-427",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.771207,
+          "end": 1788616999.773613,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-426",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.7725935,
+          "end": 1788616999.7734077,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-428",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.8280458,
+          "end": 1788616999.8297582,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-429",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.8757234,
+          "end": 1788616999.8763645,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-430",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616998.9354198,
+          "end": 1788616999.9360025,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-432",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.0208714,
+          "end": 1788617000.024607,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-431",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.073973,
+          "end": 1788617000.075326,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-433",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.1228714,
+          "end": 1788617000.1240816,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-434",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.1241162,
+          "end": 1788617000.1248593,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-435",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.1699724,
+          "end": 1788617000.1709828,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-437",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.2724943,
+          "end": 1788617000.273008,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-438",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.32205,
+          "end": 1788617000.324031,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-439",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.367687,
+          "end": 1788617000.3685033,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-441",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.5025735,
+          "end": 1788617000.5037212,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-395",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.50807,
+          "end": 1788617000.5087764,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-442",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.5184615,
+          "end": 1788617000.519706,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-443",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.6783056,
+          "end": 1788617000.679889,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-445",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.6802242,
+          "end": 1788617000.683536,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-448",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.8720093,
+          "end": 1788617000.8725379,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-447",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.8758655,
+          "end": 1788617000.8776681,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-449",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.88341,
+          "end": 1788617000.884445,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-450",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616999.9278378,
+          "end": 1788617000.9285383,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-451",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.022788,
+          "end": 1788617001.0251455,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-452",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.0236733,
+          "end": 1788617001.0260363,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-453",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.0685904,
+          "end": 1788617001.069412,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-454",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.2482302,
+          "end": 1788617001.250649,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-455",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.2502666,
+          "end": 1788617001.2547631,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-440",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.2561815,
+          "end": 1788617001.263726,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-458",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.3225899,
+          "end": 1788617001.3256054,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-461",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.4776425,
+          "end": 1788617001.4784546,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-405",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.6010072,
+          "end": 1788617001.6039524,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-465",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.671784,
+          "end": 1788617001.6727493,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-466",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.7203202,
+          "end": 1788617001.7213004,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-459",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.807092,
+          "end": 1788617001.8082707,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-468",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.8192582,
+          "end": 1788617001.8210623,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-469",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617000.8908212,
+          "end": 1788617001.8914626,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-474",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.2256866,
+          "end": 1788617002.2277586,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-477",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.346181,
+          "end": 1788617002.3469837,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-478",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.3568542,
+          "end": 1788617002.3573937,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-480",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.4222896,
+          "end": 1788617002.4231117,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-479",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.5385618,
+          "end": 1788617002.5389695,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-484",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.6533172,
+          "end": 1788617002.6539435,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-485",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.6667407,
+          "end": 1788617002.6674185,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-483",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.6748998,
+          "end": 1788617002.6782951,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-488",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.8240862,
+          "end": 1788617002.825196,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-487",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.8506908,
+          "end": 1788617002.8515515,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-472",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.8541977,
+          "end": 1788617002.8560598,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-473",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.901522,
+          "end": 1788617002.9038959,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-471",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.9023745,
+          "end": 1788617002.9047248,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-490",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.973067,
+          "end": 1788617002.9769788,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-491",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617001.9744723,
+          "end": 1788617002.9751177,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-486",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.0485609,
+          "end": 1788617003.0493183,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-492",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.0969756,
+          "end": 1788617003.0977006,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-493",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.103098,
+          "end": 1788617003.1037822,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-470",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.15389,
+          "end": 1788617003.154869,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-494",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.156025,
+          "end": 1788617003.1570742,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-497",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.2696717,
+          "end": 1788617003.2704175,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-496",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.2977166,
+          "end": 1788617003.2984262,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-500",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.4166842,
+          "end": 1788617003.418254,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-501",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.4685435,
+          "end": 1788617003.4706624,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-498",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.4999545,
+          "end": 1788617003.5007544,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-502",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.5539238,
+          "end": 1788617003.5544994,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-503",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.5716956,
+          "end": 1788617003.573502,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-504",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.680259,
+          "end": 1788617003.6810758,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-506",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.7245877,
+          "end": 1788617003.7263188,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-509",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.9030876,
+          "end": 1788617003.9044704,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-510",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.921295,
+          "end": 1788617003.9225907,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-508",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617002.9247253,
+          "end": 1788617003.9262502,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-513",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.0951014,
+          "end": 1788617004.0959668,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-516",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.2215824,
+          "end": 1788617004.2223709,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-514",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.2265596,
+          "end": 1788617004.2284842,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-517",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.2788162,
+          "end": 1788617004.2802196,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-519",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.369642,
+          "end": 1788617004.370411,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-520",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.4208786,
+          "end": 1788617004.4226255,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-521",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.4701078,
+          "end": 1788617004.4709291,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-522",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.5203426,
+          "end": 1788617004.5211878,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-523",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.572489,
+          "end": 1788617004.5740073,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-524",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.6750913,
+          "end": 1788617004.681304,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-525",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.6756628,
+          "end": 1788617004.6769753,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-527",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.823463,
+          "end": 1788617004.824465,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-529",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.8868773,
+          "end": 1788617004.8877156,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-531",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.9860845,
+          "end": 1788617004.9887073,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-530",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617003.9968553,
+          "end": 1788617005.0164201,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-532",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.036408,
+          "end": 1788617005.0371745,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-533",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.0706148,
+          "end": 1788617005.0715802,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-534",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.1545084,
+          "end": 1788617005.155152,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-535",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.2013621,
+          "end": 1788617005.2061584,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-536",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.2743466,
+          "end": 1788617005.276003,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-537",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.2877645,
+          "end": 1788617005.2892065,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-538",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.4256938,
+          "end": 1788617005.4266655,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-542",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.5279193,
+          "end": 1788617005.5285542,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-543",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.6050344,
+          "end": 1788617005.6062691,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-544",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.6280499,
+          "end": 1788617005.630256,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-545",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.6760683,
+          "end": 1788617005.679974,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-548",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.8366528,
+          "end": 1788617005.8382623,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-549",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.8873272,
+          "end": 1788617005.8898752,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-550",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.9385564,
+          "end": 1788617005.9392505,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-551",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617004.9883335,
+          "end": 1788617005.9899693,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-552",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.0439408,
+          "end": 1788617006.044962,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-553",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.0815814,
+          "end": 1788617006.0823617,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-554",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.1394014,
+          "end": 1788617006.1407492,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-556",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.236813,
+          "end": 1788617006.238317,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-539",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.3177116,
+          "end": 1788617006.3188145,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-557",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.3235044,
+          "end": 1788617006.3268073,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-558",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.345366,
+          "end": 1788617006.3461728,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-559",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.401924,
+          "end": 1788617006.402508,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-561",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.5490315,
+          "end": 1788617006.5497239,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-563",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.5686865,
+          "end": 1788617006.5694659,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-564",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.628382,
+          "end": 1788617006.629005,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-566",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.7216828,
+          "end": 1788617006.7236683,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-565",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.747944,
+          "end": 1788617006.7485907,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-570",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617005.9366279,
+          "end": 1788617006.938511,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-572",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.0236082,
+          "end": 1788617007.026451,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-573",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.125777,
+          "end": 1788617007.1267438,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-575",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.2966814,
+          "end": 1788617007.2980788,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-578",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.3241997,
+          "end": 1788617007.325973,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-576",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.3516068,
+          "end": 1788617007.3540442,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-577",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.352782,
+          "end": 1788617007.355319,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-579",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.3704598,
+          "end": 1788617007.3715353,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-560",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.4527237,
+          "end": 1788617007.454997,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-580",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.4543364,
+          "end": 1788617007.4568489,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-568",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.4570613,
+          "end": 1788617007.4593244,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-581",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.4698296,
+          "end": 1788617007.4707663,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-582",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.519462,
+          "end": 1788617007.5199647,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-583",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.6059678,
+          "end": 1788617007.6067603,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-584",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.618682,
+          "end": 1788617007.619246,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-586",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.7226105,
+          "end": 1788617007.7234585,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-588",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.8358746,
+          "end": 1788617007.8368783,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-585",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.8490894,
+          "end": 1788617007.849829,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-591",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617006.9852521,
+          "end": 1788617007.9873447,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-590",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.0526843,
+          "end": 1788617008.0534608,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-593",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.0771792,
+          "end": 1788617008.0777779,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-592",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.1051152,
+          "end": 1788617008.1062713,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-595",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.1697874,
+          "end": 1788617008.1704779,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-594",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.24656,
+          "end": 1788617008.2471678,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-597",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.302875,
+          "end": 1788617008.3043704,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-599",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.425421,
+          "end": 1788617008.4264925,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-598",
+          "channel": "b",
+          "status": 200,
+          "start": 1788617007.4972343,
+          "end": 1788617008.497928,
+          "inflight": 15
+        }
+      ]
+    },
+    "c": {
+      "attempts": 29,
+      "success": 29,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 7,
+      "effective_config": {
+        "capacity": 32,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "burst_fault-3-multi-1",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616977.4782941,
+          "end": 1788616978.479225,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-3",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616977.5780685,
+          "end": 1788616978.578574,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-5",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616977.67816,
+          "end": 1788616978.678879,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-8",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616977.829487,
+          "end": 1788616978.8302636,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-12",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616978.0293174,
+          "end": 1788616979.0298862,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-19",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616978.3806574,
+          "end": 1788616979.3815868,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-21",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616978.478206,
+          "end": 1788616979.4788451,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-24",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616978.6861773,
+          "end": 1788616979.6869235,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-28",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616978.8396862,
+          "end": 1788616979.840631,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-33",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616979.1849709,
+          "end": 1788616980.1856756,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-35",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616979.1963465,
+          "end": 1788616980.1995702,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-136",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616984.2293842,
+          "end": 1788616985.2298417,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-217",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616988.3165333,
+          "end": 1788616989.3172977,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-211",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616988.6187763,
+          "end": 1788616989.619909,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-224",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616988.633059,
+          "end": 1788616989.6339018,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-226",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616988.8262265,
+          "end": 1788616989.827878,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-233",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616989.3051724,
+          "end": 1788616990.3058927,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-219",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616989.8804007,
+          "end": 1788616990.881283,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-222",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616990.8029814,
+          "end": 1788616991.803718,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-402",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616997.6114485,
+          "end": 1788616998.6122632,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-406",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616997.8409772,
+          "end": 1788616998.8414953,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-412",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616998.0437248,
+          "end": 1788616999.0451813,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-411",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616998.21721,
+          "end": 1788616999.2180176,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-416",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616998.4756052,
+          "end": 1788616999.4763906,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-418",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616998.5227015,
+          "end": 1788616999.5243535,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-421",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616998.5466928,
+          "end": 1788616999.5476637,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-381",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616998.8944528,
+          "end": 1788616999.8954644,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-464",
+          "channel": "c",
+          "status": 200,
+          "start": 1788617000.6678786,
+          "end": 1788617001.6688187,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst_fault-3-multi-463",
+          "channel": "c",
+          "status": 200,
+          "start": 1788617000.6814878,
+          "end": 1788617001.6822472,
+          "inflight": 2
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "output": [
+    {
+      "type": "custom_tool_call",
+      "call_id": "call_gpt_demo",
+      "name": "exec",
+      "input": "const [code, docs] = await Promise.all([tools.exec_command({cmd: \"rg -n login src\"}), tools.kb__search({query: \"登录实现约定\"})]); text({code, docs});"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "function_call",
+  "call_id": "call_ds_demo",
+  "name": "exec_command",
+  "arguments": "{\"cmd\":\"rg -n login src\"}"
+}

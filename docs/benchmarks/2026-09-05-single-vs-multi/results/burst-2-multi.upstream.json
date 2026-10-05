@@ -1,0 +1,4922 @@
+{
+  "control_epoch": 1788616675.3939981,
+  "duration_s": 1.0,
+  "first_token_s": 0.2,
+  "fault_period_s": 0.0,
+  "fault_window_s": 0.0,
+  "channels": {
+    "a": {
+      "attempts": 154,
+      "success": 147,
+      "rejected": 7,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 8,
+      "effective_config": {
+        "capacity": 8,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "burst-2-multi-0",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616675.4000752,
+          "end": 1788616676.401241,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst-2-multi-2",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616675.5003686,
+          "end": 1788616676.5010765,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-3",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616675.551259,
+          "end": 1788616676.5520015,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-12",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.002548,
+          "end": 1788616677.0044317,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-15",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.1530213,
+          "end": 1788616677.1537578,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-16",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.2053962,
+          "end": 1788616677.2077334,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-19",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.3520448,
+          "end": 1788616677.3529828,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-20",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.4023874,
+          "end": 1788616677.4045389,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-21",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.4503007,
+          "end": 1788616677.4518685,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-23",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.551641,
+          "end": 1788616677.5525775,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-27",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616676.7555687,
+          "end": 1788616677.756896,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-29",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616676.849765,
+          "end": 1788616676.849765,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-34",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616677.1336308,
+          "end": 1788616678.1345258,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-36",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616677.2440765,
+          "end": 1788616678.2450469,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-39",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616677.3525796,
+          "end": 1788616678.3540177,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-41",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616677.4514885,
+          "end": 1788616678.452096,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-49",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616677.849725,
+          "end": 1788616678.8504016,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-52",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616677.9999032,
+          "end": 1788616679.000671,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-53",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616678.0700579,
+          "end": 1788616679.0718834,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-56",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616678.2375672,
+          "end": 1788616679.2390475,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-59",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616678.3498883,
+          "end": 1788616679.3503268,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-62",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616678.5345592,
+          "end": 1788616679.5352504,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-73",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.0743747,
+          "end": 1788616680.0749671,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-74",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.1028335,
+          "end": 1788616680.1037025,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-77",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.2528906,
+          "end": 1788616680.253741,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-81",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.4521058,
+          "end": 1788616680.4527936,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-82",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.5054367,
+          "end": 1788616680.5062304,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-85",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.6496801,
+          "end": 1788616680.6505017,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-91",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616679.949928,
+          "end": 1788616680.950543,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-93",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616680.0548728,
+          "end": 1788616681.0556166,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-99",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616680.3504667,
+          "end": 1788616681.352024,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-102",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616680.5217311,
+          "end": 1788616681.5225198,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-105",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616680.7099705,
+          "end": 1788616681.7105756,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-108",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616680.8192165,
+          "end": 1788616681.820651,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-113",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.051368,
+          "end": 1788616682.0520988,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-121",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.449594,
+          "end": 1788616682.450713,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-125",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.649857,
+          "end": 1788616682.65173,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-126",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.6998487,
+          "end": 1788616682.7005384,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-124",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.7041166,
+          "end": 1788616682.7049813,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-131",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.951836,
+          "end": 1788616682.9525268,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-115",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616681.9804788,
+          "end": 1788616682.9809835,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-135",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616682.176108,
+          "end": 1788616683.1768122,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-134",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616682.437462,
+          "end": 1788616683.438475,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-142",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616682.5097172,
+          "end": 1788616683.5103211,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-148",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616682.8047028,
+          "end": 1788616683.805158,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-149",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616682.8502598,
+          "end": 1788616683.8522499,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-150",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616682.9499264,
+          "end": 1788616683.9509122,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-159",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616683.3505404,
+          "end": 1788616684.3519607,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-161",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616683.5571504,
+          "end": 1788616684.5587697,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-163",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616683.6165276,
+          "end": 1788616684.6174064,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-160",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616683.7310305,
+          "end": 1788616684.7317774,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-167",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616683.7498562,
+          "end": 1788616684.7506902,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-169",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616683.8578796,
+          "end": 1788616684.858984,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-172",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616684.0086763,
+          "end": 1788616685.0102556,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-178",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616684.3344498,
+          "end": 1788616685.335252,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-182",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616684.5000148,
+          "end": 1788616685.500756,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-193",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616685.0525317,
+          "end": 1788616686.0533724,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-196",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616685.233643,
+          "end": 1788616686.234418,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-207",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616685.7853854,
+          "end": 1788616686.7866604,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-216",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616686.2103891,
+          "end": 1788616687.211752,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-218",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616686.301845,
+          "end": 1788616687.304374,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-219",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616686.3527603,
+          "end": 1788616687.3540053,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-221",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616686.7816691,
+          "end": 1788616687.7824643,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-228",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616686.834397,
+          "end": 1788616687.8350794,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-230",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616686.9019222,
+          "end": 1788616687.9027503,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-233",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616687.0689793,
+          "end": 1788616688.0701165,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-239",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616687.3639581,
+          "end": 1788616688.3648016,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-247",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616687.808769,
+          "end": 1788616688.8109577,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-249",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616687.8607984,
+          "end": 1788616688.8618581,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-251",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616687.9525845,
+          "end": 1788616688.9551804,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-254",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616688.1225362,
+          "end": 1788616689.1244662,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-252",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616688.1835823,
+          "end": 1788616689.1845636,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-260",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616688.4823625,
+          "end": 1788616689.483263,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-264",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616688.7321992,
+          "end": 1788616689.732864,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-276",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616689.3830876,
+          "end": 1788616690.384046,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-286",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616689.93848,
+          "end": 1788616690.9398184,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-291",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616689.955502,
+          "end": 1788616690.958626,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-298",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616690.305978,
+          "end": 1788616691.30774,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-303",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616690.6058578,
+          "end": 1788616691.6077569,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-312",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616691.0645156,
+          "end": 1788616692.0661125,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-314",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616691.1306064,
+          "end": 1788616692.1321056,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-315",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616691.1745372,
+          "end": 1788616692.1756127,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-316",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616691.2097797,
+          "end": 1788616692.2109,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-328",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616691.9930534,
+          "end": 1788616692.993671,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-335",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.1853878,
+          "end": 1788616693.1869698,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-318",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.2509437,
+          "end": 1788616693.252059,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-334",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.2846313,
+          "end": 1788616693.2852685,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-338",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.3039255,
+          "end": 1788616693.3047228,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-339",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.3634355,
+          "end": 1788616693.3642535,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-340",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.406107,
+          "end": 1788616693.4066796,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-319",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616692.5056226,
+          "end": 1788616693.5078864,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-346",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616692.7084095,
+          "end": 1788616692.7084095,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-344",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616692.7335541,
+          "end": 1788616692.7335541,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-351",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616692.9546652,
+          "end": 1788616692.9546652,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-362",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616693.5027838,
+          "end": 1788616694.503791,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-361",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616693.530966,
+          "end": 1788616694.531732,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-359",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616693.8843868,
+          "end": 1788616694.8848507,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-377",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616694.2864778,
+          "end": 1788616695.2873013,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-364",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616694.3348088,
+          "end": 1788616695.335628,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-386",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616694.738747,
+          "end": 1788616695.7393992,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-394",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616695.4157088,
+          "end": 1788616696.4168916,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-398",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616695.4301915,
+          "end": 1788616696.4318037,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-404",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616695.680943,
+          "end": 1788616696.6825538,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-409",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616695.8620608,
+          "end": 1788616696.8643072,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-418",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616696.3109324,
+          "end": 1788616697.3115852,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-426",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616696.7059946,
+          "end": 1788616697.7068017,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-403",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616696.8872952,
+          "end": 1788616697.8894465,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-428",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616696.8880334,
+          "end": 1788616697.8898969,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-430",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616696.9156096,
+          "end": 1788616697.9164212,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-432",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616697.0884984,
+          "end": 1788616698.0895019,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-437",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616697.2652385,
+          "end": 1788616698.2666953,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-440",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616697.4112477,
+          "end": 1788616698.4123874,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-441",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616697.5011897,
+          "end": 1788616698.5034554,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-452",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616698.010883,
+          "end": 1788616699.0118067,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-455",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616698.2299192,
+          "end": 1788616699.2316153,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-458",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616698.3187256,
+          "end": 1788616699.3197649,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-462",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616698.5085502,
+          "end": 1788616699.5113127,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-470",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616698.9354146,
+          "end": 1788616699.9364452,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-472",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.0028112,
+          "end": 1788616700.0035377,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-471",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.1846545,
+          "end": 1788616700.1865177,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-475",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.282152,
+          "end": 1788616700.2838573,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-479",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.4579966,
+          "end": 1788616700.4600034,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-480",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.4627109,
+          "end": 1788616700.4634857,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-474",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.5325336,
+          "end": 1788616700.5332603,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-485",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616699.6555579,
+          "end": 1788616700.6568284,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-487",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616699.757434,
+          "end": 1788616699.757434,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-488",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616699.805708,
+          "end": 1788616699.805708,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-498",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616700.3075337,
+          "end": 1788616701.3104272,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-509",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616700.8552542,
+          "end": 1788616701.857073,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-510",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616700.9013078,
+          "end": 1788616701.9031909,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-477",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616700.983288,
+          "end": 1788616701.9839206,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-512",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616701.0819213,
+          "end": 1788616702.0839937,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-493",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616701.0898302,
+          "end": 1788616702.090518,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-507",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616701.3009615,
+          "end": 1788616702.301685,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-519",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616701.3523772,
+          "end": 1788616702.353067,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-520",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616701.4042134,
+          "end": 1788616702.4048388,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-526",
+          "channel": "a",
+          "status": 429,
+          "start": 1788616701.7669039,
+          "end": 1788616701.7669039,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-529",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616701.8648787,
+          "end": 1788616702.8660593,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-533",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.1079907,
+          "end": 1788616703.1118774,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-524",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.1438336,
+          "end": 1788616703.1445556,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-535",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.1498601,
+          "end": 1788616703.1510704,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-537",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.260746,
+          "end": 1788616703.2613132,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-540",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.4012835,
+          "end": 1788616703.401945,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-546",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.710499,
+          "end": 1788616703.7115383,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-548",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616702.836149,
+          "end": 1788616703.8397648,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-560",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616703.619398,
+          "end": 1788616704.6199505,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-564",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616703.6232464,
+          "end": 1788616704.625037,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-565",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616703.8330874,
+          "end": 1788616704.8358784,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-569",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616704.0312834,
+          "end": 1788616705.034316,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-585",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616704.6522784,
+          "end": 1788616705.6529698,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-593",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616705.0534382,
+          "end": 1788616706.0540717,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-594",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616705.2065809,
+          "end": 1788616706.207281,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-596",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616705.2128322,
+          "end": 1788616706.2141078,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-591",
+          "channel": "a",
+          "status": 200,
+          "start": 1788616705.363441,
+          "end": 1788616706.3649595,
+          "inflight": 5
+        }
+      ]
+    },
+    "b": {
+      "attempts": 446,
+      "success": 446,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 23,
+      "effective_config": {
+        "capacity": 24,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "burst-2-multi-1",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.450294,
+          "end": 1788616676.451394,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst-2-multi-4",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.6060205,
+          "end": 1788616676.606677,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-5",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.655428,
+          "end": 1788616676.6564422,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-6",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.7056828,
+          "end": 1788616676.7069542,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "burst-2-multi-7",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.7528389,
+          "end": 1788616676.7566998,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "burst-2-multi-8",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.804554,
+          "end": 1788616676.8052628,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "burst-2-multi-9",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.8548164,
+          "end": 1788616676.8555408,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "burst-2-multi-10",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.9030287,
+          "end": 1788616676.9046583,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "burst-2-multi-11",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616675.9551082,
+          "end": 1788616676.9574804,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst-2-multi-13",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.0514443,
+          "end": 1788616677.0521042,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst-2-multi-14",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.1127422,
+          "end": 1788616677.1132793,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-17",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.2519472,
+          "end": 1788616677.2529101,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-18",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.3024676,
+          "end": 1788616677.3040006,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-22",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.500727,
+          "end": 1788616677.5015676,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-24",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.6028361,
+          "end": 1788616677.6033807,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-25",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.654924,
+          "end": 1788616677.6555417,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-26",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.7114742,
+          "end": 1788616677.7120416,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-28",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.8017418,
+          "end": 1788616677.8039715,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-30",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616676.9102242,
+          "end": 1788616677.911189,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-32",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.023768,
+          "end": 1788616678.0245624,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-31",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.060177,
+          "end": 1788616678.0608919,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-33",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.0867054,
+          "end": 1788616678.0872505,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-35",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.1693385,
+          "end": 1788616678.1700017,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-37",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.3594897,
+          "end": 1788616678.3610086,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-38",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.3616803,
+          "end": 1788616678.3625093,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-40",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.4350574,
+          "end": 1788616678.435733,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-43",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.5502129,
+          "end": 1788616678.5508645,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-44",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.5997949,
+          "end": 1788616678.6006124,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-45",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.6496248,
+          "end": 1788616678.6505334,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-46",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.699839,
+          "end": 1788616678.7008245,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-47",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.7612643,
+          "end": 1788616678.7619069,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-48",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.8034132,
+          "end": 1788616678.804042,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-50",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.9030986,
+          "end": 1788616678.9043884,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-51",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616677.959172,
+          "end": 1788616678.9603517,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-54",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.1197042,
+          "end": 1788616679.1205697,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-55",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.2287114,
+          "end": 1788616679.22939,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-42",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.2342117,
+          "end": 1788616679.2358062,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-58",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.301616,
+          "end": 1788616679.3026814,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-57",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.3050845,
+          "end": 1788616679.3059993,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-60",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.4124274,
+          "end": 1788616679.4130774,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-61",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.556396,
+          "end": 1788616679.557051,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-64",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.5999625,
+          "end": 1788616679.6008582,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-63",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.6056437,
+          "end": 1788616679.606386,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-65",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.652615,
+          "end": 1788616679.6536345,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-66",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.7000065,
+          "end": 1788616679.7005596,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-68",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.8120098,
+          "end": 1788616679.8127446,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-67",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.857451,
+          "end": 1788616679.8598046,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-71",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.9539073,
+          "end": 1788616679.955225,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-69",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.9582498,
+          "end": 1788616679.9596226,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-70",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616678.9589634,
+          "end": 1788616679.9615977,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-72",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.01867,
+          "end": 1788616680.019541,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-75",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.151683,
+          "end": 1788616680.152508,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-76",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.2190156,
+          "end": 1788616680.2196183,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-78",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.3016124,
+          "end": 1788616680.3020449,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-79",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.365234,
+          "end": 1788616680.365766,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-80",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.4851048,
+          "end": 1788616680.4855673,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-83",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.5555968,
+          "end": 1788616680.5564375,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-84",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.6568515,
+          "end": 1788616680.6575499,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-86",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.735848,
+          "end": 1788616680.7365532,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-87",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.753911,
+          "end": 1788616680.7545924,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-89",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.858219,
+          "end": 1788616680.858771,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-90",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.9051101,
+          "end": 1788616680.9068558,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-88",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616679.905942,
+          "end": 1788616680.90747,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-92",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.0023437,
+          "end": 1788616681.0029292,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-94",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.155743,
+          "end": 1788616681.1589158,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-95",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.1584187,
+          "end": 1788616681.1608846,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-96",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.200955,
+          "end": 1788616681.201699,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-100",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.399875,
+          "end": 1788616681.4003804,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-98",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.404569,
+          "end": 1788616681.4053438,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-101",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.4696896,
+          "end": 1788616681.4706137,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-97",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.4813368,
+          "end": 1788616681.4819443,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-103",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.5519707,
+          "end": 1788616681.5539231,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-106",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.7089612,
+          "end": 1788616681.712876,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-104",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.7303941,
+          "end": 1788616681.7313583,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-107",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.8077292,
+          "end": 1788616681.8085742,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-110",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.9045928,
+          "end": 1788616681.9060776,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-111",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616680.959042,
+          "end": 1788616681.959877,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-112",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.0799687,
+          "end": 1788616682.080929,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-109",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.0832064,
+          "end": 1788616682.0839403,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-114",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.104726,
+          "end": 1788616682.105688,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-116",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.2359552,
+          "end": 1788616682.2374334,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-117",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.2728713,
+          "end": 1788616682.2747667,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-119",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.350183,
+          "end": 1788616682.3514779,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-118",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.357069,
+          "end": 1788616682.357868,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-120",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.399772,
+          "end": 1788616682.4002702,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-122",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.5103843,
+          "end": 1788616682.5109947,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-123",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.5528843,
+          "end": 1788616682.5547233,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-127",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.7610078,
+          "end": 1788616682.7619216,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-128",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.8032668,
+          "end": 1788616682.8049848,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-130",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.9017184,
+          "end": 1788616682.902237,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-129",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616681.9070547,
+          "end": 1788616682.9081686,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-132",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.0085437,
+          "end": 1788616683.0095294,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-133",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.0502176,
+          "end": 1788616683.0513566,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-136",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.2067091,
+          "end": 1788616683.2072423,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-139",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.371319,
+          "end": 1788616683.372104,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-138",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.41101,
+          "end": 1788616683.4118352,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-140",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.4127254,
+          "end": 1788616683.4138536,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-137",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.4358034,
+          "end": 1788616683.436431,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-143",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.5543408,
+          "end": 1788616683.5564904,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-144",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.601662,
+          "end": 1788616683.6030247,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-147",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.7499347,
+          "end": 1788616683.7505698,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-145",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.754997,
+          "end": 1788616683.7564812,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-146",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616682.7559493,
+          "end": 1788616683.75698,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-152",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.0125127,
+          "end": 1788616684.0130794,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-151",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.083036,
+          "end": 1788616684.0838518,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-153",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.0876012,
+          "end": 1788616684.0885122,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-141",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.0910373,
+          "end": 1788616684.09226,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-154",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.103644,
+          "end": 1788616684.1054032,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-156",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.204449,
+          "end": 1788616684.206907,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-155",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.2402015,
+          "end": 1788616684.2407222,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-157",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.3058946,
+          "end": 1788616684.307419,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-158",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.3540733,
+          "end": 1788616684.3547788,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-162",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.5210056,
+          "end": 1788616684.5219433,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-164",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.6025233,
+          "end": 1788616684.6031773,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-165",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.6595747,
+          "end": 1788616684.660263,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-166",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.6997745,
+          "end": 1788616684.7024698,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-170",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.9336147,
+          "end": 1788616684.934495,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-171",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616683.9497664,
+          "end": 1788616684.9506338,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-173",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.0595956,
+          "end": 1788616685.0601687,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-174",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.180708,
+          "end": 1788616685.1816564,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-175",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.2052243,
+          "end": 1788616685.2059135,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-168",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.245116,
+          "end": 1788616685.2458699,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-176",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.281212,
+          "end": 1788616685.281804,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-177",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.3066576,
+          "end": 1788616685.3075993,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-180",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.4343932,
+          "end": 1788616685.4354732,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-179",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.4802024,
+          "end": 1788616685.4807978,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-181",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.4844065,
+          "end": 1788616685.4848976,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-184",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.6020188,
+          "end": 1788616685.602812,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-183",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.6152506,
+          "end": 1788616685.616777,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-185",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.6739645,
+          "end": 1788616685.674985,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-186",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.700602,
+          "end": 1788616685.701385,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-188",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.809649,
+          "end": 1788616685.8103404,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-187",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.8565,
+          "end": 1788616685.8575418,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-191",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.9501898,
+          "end": 1788616685.950759,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-189",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.9571986,
+          "end": 1788616685.9579577,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-190",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616684.9590313,
+          "end": 1788616685.96064,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-192",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.009224,
+          "end": 1788616686.0098548,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-195",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.1524112,
+          "end": 1788616686.1536784,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-197",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.254939,
+          "end": 1788616686.255778,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-198",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.3027215,
+          "end": 1788616686.3046126,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-199",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.3536553,
+          "end": 1788616686.3544705,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-200",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.4346635,
+          "end": 1788616686.4363267,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-201",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.5367513,
+          "end": 1788616686.5394475,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-202",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.5378797,
+          "end": 1788616686.5386312,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-203",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.5840962,
+          "end": 1788616686.5848584,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-205",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.651514,
+          "end": 1788616686.6522558,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-204",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.7259688,
+          "end": 1788616686.7274354,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-208",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.8085592,
+          "end": 1788616686.8093004,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-209",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.8549678,
+          "end": 1788616686.855812,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-210",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.9003527,
+          "end": 1788616686.9014583,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-211",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616685.9499266,
+          "end": 1788616686.9507246,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-213",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.0527995,
+          "end": 1788616687.0535707,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-214",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.1026227,
+          "end": 1788616687.1039429,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-212",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.1077123,
+          "end": 1788616687.1094546,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-215",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.1968036,
+          "end": 1788616687.1980264,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-217",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.2525682,
+          "end": 1788616687.2533712,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-206",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.3410876,
+          "end": 1788616687.3426921,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-220",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.4210763,
+          "end": 1788616687.4228027,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-222",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.5117035,
+          "end": 1788616687.5124784,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-223",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.5566685,
+          "end": 1788616687.557481,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-224",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.6359456,
+          "end": 1788616687.6366806,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-225",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.7388282,
+          "end": 1788616687.7399387,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-227",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.785295,
+          "end": 1788616687.7860014,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-229",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.8536353,
+          "end": 1788616687.8542802,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-231",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616686.9495482,
+          "end": 1788616687.9513721,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-232",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.0017595,
+          "end": 1788616688.002696,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-234",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.1206012,
+          "end": 1788616688.1233444,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-236",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.215813,
+          "end": 1788616688.2163773,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-235",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.2820895,
+          "end": 1788616688.2830656,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-238",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.3025134,
+          "end": 1788616688.3066413,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-237",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.3086832,
+          "end": 1788616688.3099618,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-240",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.4088333,
+          "end": 1788616688.409923,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-194",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.450857,
+          "end": 1788616688.4542842,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-241",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.4650369,
+          "end": 1788616688.4658191,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-242",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.500635,
+          "end": 1788616688.5019479,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-243",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.5556567,
+          "end": 1788616688.557408,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-244",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.6026418,
+          "end": 1788616688.6032035,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-245",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.6851017,
+          "end": 1788616688.6859822,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-246",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.7341025,
+          "end": 1788616688.737118,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-248",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.8068862,
+          "end": 1788616688.8085113,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-250",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616687.916102,
+          "end": 1788616688.91849,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-253",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.09209,
+          "end": 1788616689.0928931,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-255",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.1525006,
+          "end": 1788616689.1539984,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-256",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.2015913,
+          "end": 1788616689.2025023,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-257",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.2548738,
+          "end": 1788616689.255608,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-259",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.433264,
+          "end": 1788616689.4343565,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-258",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.4360943,
+          "end": 1788616689.4370952,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-261",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.4540343,
+          "end": 1788616689.4548821,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-262",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.509658,
+          "end": 1788616689.5122192,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-263",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.560397,
+          "end": 1788616689.5612988,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-265",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.6596591,
+          "end": 1788616689.661008,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-266",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.7368731,
+          "end": 1788616689.7393832,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-226",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.7857342,
+          "end": 1788616689.787005,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-267",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.7880528,
+          "end": 1788616689.7889135,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-268",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.8059313,
+          "end": 1788616689.806581,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-270",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.9069052,
+          "end": 1788616689.9076812,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-271",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616688.9589844,
+          "end": 1788616689.9596128,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-272",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.004604,
+          "end": 1788616690.0057948,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-269",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.038476,
+          "end": 1788616690.0390718,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-273",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.088728,
+          "end": 1788616690.089484,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-275",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.1586366,
+          "end": 1788616690.1595736,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-277",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.2856011,
+          "end": 1788616690.2876604,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-278",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.3013003,
+          "end": 1788616690.3041506,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-279",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.3856573,
+          "end": 1788616690.3862603,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-280",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.3999548,
+          "end": 1788616690.4006357,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-282",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.6071053,
+          "end": 1788616690.6078486,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-285",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.6528225,
+          "end": 1788616690.653785,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-284",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.853589,
+          "end": 1788616690.8571682,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-289",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.8551686,
+          "end": 1788616690.8590207,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-290",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.9203005,
+          "end": 1788616690.9215002,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-287",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.9529166,
+          "end": 1788616690.954273,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-281",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616689.9818041,
+          "end": 1788616690.9849856,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-294",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.1350427,
+          "end": 1788616691.139194,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-274",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.142846,
+          "end": 1788616691.143663,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-283",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.1429918,
+          "end": 1788616691.1446195,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-295",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.1554897,
+          "end": 1788616691.156303,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-293",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.2836652,
+          "end": 1788616691.2884312,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-297",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.2895544,
+          "end": 1788616691.2935998,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-296",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.3305638,
+          "end": 1788616691.3316894,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-299",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.3516977,
+          "end": 1788616691.3540173,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-288",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.3697467,
+          "end": 1788616691.3714359,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-301",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.454089,
+          "end": 1788616691.4551077,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-300",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.4568534,
+          "end": 1788616691.4582663,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-302",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.5215056,
+          "end": 1788616691.5221796,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-304",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.6023426,
+          "end": 1788616691.6034508,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-306",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.7270608,
+          "end": 1788616691.7295516,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-307",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.7590733,
+          "end": 1788616691.7607665,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-308",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.8105567,
+          "end": 1788616691.8124044,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-305",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.838779,
+          "end": 1788616691.8408716,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-310",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.9152203,
+          "end": 1788616691.9160578,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-311",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616690.9663093,
+          "end": 1788616691.969117,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-313",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.065843,
+          "end": 1788616692.0688143,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-317",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.2767947,
+          "end": 1788616692.277423,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-320",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.4410362,
+          "end": 1788616692.446986,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-321",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.5062213,
+          "end": 1788616692.5086868,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-322",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.5206609,
+          "end": 1788616692.521202,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-323",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.5903733,
+          "end": 1788616692.5912268,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-324",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.7539713,
+          "end": 1788616692.7557607,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-327",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616691.7746747,
+          "end": 1788616692.7763171,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-325",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.0095692,
+          "end": 1788616693.014105,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "burst-2-multi-332",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.014854,
+          "end": 1788616693.0230267,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "burst-2-multi-330",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.018275,
+          "end": 1788616693.0206308,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-331",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.018941,
+          "end": 1788616693.0198367,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-333",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.065074,
+          "end": 1788616693.069067,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-336",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.2031,
+          "end": 1788616693.2039063,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-337",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.3350618,
+          "end": 1788616693.3370388,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-326",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.4489646,
+          "end": 1788616693.4530447,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-341",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.4675684,
+          "end": 1788616693.4696572,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-342",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.5184968,
+          "end": 1788616693.5194185,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-343",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.563274,
+          "end": 1788616693.5639074,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-345",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.706101,
+          "end": 1788616693.706902,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-347",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.7550733,
+          "end": 1788616693.7569132,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-349",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.861822,
+          "end": 1788616693.8624253,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-350",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616692.9359303,
+          "end": 1788616693.9365659,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-352",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.0040965,
+          "end": 1788616694.005708,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-353",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.0527678,
+          "end": 1788616694.0536947,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-354",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.120013,
+          "end": 1788616694.1206374,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-357",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.2608137,
+          "end": 1788616694.2626033,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-356",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.2618115,
+          "end": 1788616694.2640524,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-358",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.380589,
+          "end": 1788616694.3813112,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-292",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.4381979,
+          "end": 1788616694.4389038,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-363",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.5532777,
+          "end": 1788616694.555855,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-309",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.6079934,
+          "end": 1788616694.6097198,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-365",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.6525881,
+          "end": 1788616694.6534908,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-366",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.7562544,
+          "end": 1788616694.7588289,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-367",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.7859893,
+          "end": 1788616694.7866654,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-369",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.8874366,
+          "end": 1788616694.888364,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-368",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.9120762,
+          "end": 1788616694.912898,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-355",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616693.982116,
+          "end": 1788616694.9831107,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-360",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.0376868,
+          "end": 1788616695.0380938,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-372",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.0409703,
+          "end": 1788616695.0421135,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-373",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.0520854,
+          "end": 1788616695.0532966,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-371",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.0568094,
+          "end": 1788616695.0579302,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-370",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.0818284,
+          "end": 1788616695.0828738,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-375",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.1603255,
+          "end": 1788616695.1610775,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-374",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.183807,
+          "end": 1788616695.1858172,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-376",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.211578,
+          "end": 1788616695.212284,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-348",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.3357239,
+          "end": 1788616695.3370328,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-378",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.3558736,
+          "end": 1788616695.3576143,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-379",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.3608272,
+          "end": 1788616695.3614793,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-380",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.434398,
+          "end": 1788616695.4349031,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-381",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.4554324,
+          "end": 1788616695.4560647,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-382",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.5350378,
+          "end": 1788616695.5365248,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-383",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.5555341,
+          "end": 1788616695.5568955,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst-2-multi-384",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.602395,
+          "end": 1788616695.6040082,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst-2-multi-387",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.7515862,
+          "end": 1788616695.7524276,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-385",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.755401,
+          "end": 1788616695.7560685,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst-2-multi-388",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.804721,
+          "end": 1788616695.8055096,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-389",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.8837628,
+          "end": 1788616695.8845632,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst-2-multi-390",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.9608278,
+          "end": 1788616695.9615002,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-391",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616694.9694982,
+          "end": 1788616695.9701974,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst-2-multi-392",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.03497,
+          "end": 1788616696.0357456,
+          "inflight": 23
+        },
+        {
+          "benchmark_id": "burst-2-multi-395",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.2566388,
+          "end": 1788616696.2579825,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-397",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.2616205,
+          "end": 1788616696.2627895,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-396",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.3304183,
+          "end": 1788616696.3311183,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-399",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.3526351,
+          "end": 1788616696.35349,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-400",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.4118433,
+          "end": 1788616696.4140615,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-402",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.5046968,
+          "end": 1788616696.5055122,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-401",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.5314615,
+          "end": 1788616696.5322897,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-405",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.661569,
+          "end": 1788616696.6631074,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-406",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.708837,
+          "end": 1788616696.7097156,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-408",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.8030066,
+          "end": 1788616696.8042066,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-407",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.8634381,
+          "end": 1788616696.866169,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-410",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.9093142,
+          "end": 1788616696.9110208,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-329",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616695.9366174,
+          "end": 1788616696.937325,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-412",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.0133917,
+          "end": 1788616697.0140676,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-413",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.064168,
+          "end": 1788616697.0649612,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-414",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.1369393,
+          "end": 1788616697.1385944,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-415",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.1529326,
+          "end": 1788616697.1563206,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-416",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.2374501,
+          "end": 1788616697.238409,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-417",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.2529304,
+          "end": 1788616697.2553182,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-419",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.3610566,
+          "end": 1788616697.3622475,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-420",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.4067447,
+          "end": 1788616697.4077306,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-421",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.4891553,
+          "end": 1788616697.4940665,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-423",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.5552554,
+          "end": 1788616697.5614421,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-422",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.5857346,
+          "end": 1788616697.586647,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-393",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.5892825,
+          "end": 1788616697.5914764,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-424",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.6485577,
+          "end": 1788616697.6495538,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-425",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.760002,
+          "end": 1788616697.7608876,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-427",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.8099763,
+          "end": 1788616697.8108246,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-411",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.8888912,
+          "end": 1788616697.8906636,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-429",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616696.934589,
+          "end": 1788616697.935311,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-431",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.0860598,
+          "end": 1788616698.0902934,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-433",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.0936608,
+          "end": 1788616698.0947833,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-434",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.1254647,
+          "end": 1788616698.126985,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-435",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.1827629,
+          "end": 1788616698.1836708,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-436",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.263621,
+          "end": 1788616698.2647705,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-438",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.355937,
+          "end": 1788616698.3566654,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-442",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.5174608,
+          "end": 1788616698.5188131,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-443",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.5967324,
+          "end": 1788616698.600243,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-445",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.669653,
+          "end": 1788616698.6716092,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-446",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.717666,
+          "end": 1788616698.7186306,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-447",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.8051486,
+          "end": 1788616698.8061686,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-448",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.8095026,
+          "end": 1788616698.8101594,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-449",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616697.8584023,
+          "end": 1788616698.8590739,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-453",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.0534458,
+          "end": 1788616699.0542395,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-451",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.0637383,
+          "end": 1788616699.0653965,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-444",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.1356788,
+          "end": 1788616699.1365542,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-456",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.2207499,
+          "end": 1788616699.2214518,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-457",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.2551908,
+          "end": 1788616699.2561984,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-460",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.4042144,
+          "end": 1788616699.404995,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-459",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.407541,
+          "end": 1788616699.4083097,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-461",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.507958,
+          "end": 1788616699.5091705,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-464",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.6129673,
+          "end": 1788616699.6135933,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-465",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.67079,
+          "end": 1788616699.6719718,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-463",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.7346213,
+          "end": 1788616699.7359257,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-454",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.7373395,
+          "end": 1788616699.7383475,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-467",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.7673085,
+          "end": 1788616699.7687922,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-466",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.7711887,
+          "end": 1788616699.771712,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-468",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.820383,
+          "end": 1788616699.8215177,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-469",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616698.9805083,
+          "end": 1788616699.9816725,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-473",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.105818,
+          "end": 1788616700.106474,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-439",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.1828773,
+          "end": 1788616700.1845565,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-476",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.205632,
+          "end": 1788616700.2065194,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-478",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.3104148,
+          "end": 1788616700.3109603,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-481",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.4552279,
+          "end": 1788616700.4560597,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-482",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.5822856,
+          "end": 1788616700.5832462,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-484",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.6056333,
+          "end": 1788616700.6063445,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-450",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.6356542,
+          "end": 1788616700.636301,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-486",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.7582889,
+          "end": 1788616700.7594526,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-489",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616699.8560474,
+          "end": 1788616700.8574429,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-490",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.032036,
+          "end": 1788616701.0330038,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-491",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.0889752,
+          "end": 1788616701.0899816,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-494",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.1024852,
+          "end": 1788616701.1032424,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-495",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.1603167,
+          "end": 1788616701.1616733,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-496",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.2553399,
+          "end": 1788616701.256009,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-497",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.2574089,
+          "end": 1788616701.257894,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-483",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.3837078,
+          "end": 1788616701.3844423,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-500",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.4344661,
+          "end": 1788616701.43526,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-501",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.4738736,
+          "end": 1788616701.4756947,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-502",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.5592203,
+          "end": 1788616701.5607047,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-503",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.5600083,
+          "end": 1788616701.5614572,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-504",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.6207066,
+          "end": 1788616701.6213279,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-492",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.6314516,
+          "end": 1788616701.632044,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-505",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.6518836,
+          "end": 1788616701.65346,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-506",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.7014906,
+          "end": 1788616701.703012,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-508",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.8442786,
+          "end": 1788616701.8447783,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-511",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616700.9535031,
+          "end": 1788616701.9544885,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-513",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.0699217,
+          "end": 1788616702.0707583,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-499",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.085206,
+          "end": 1788616702.0857487,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-516",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.2059157,
+          "end": 1788616702.207788,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-515",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.2071042,
+          "end": 1788616702.2094817,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-517",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.2519975,
+          "end": 1788616702.2527475,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-518",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.3137436,
+          "end": 1788616702.314979,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-514",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.332597,
+          "end": 1788616702.3333511,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-521",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.4775586,
+          "end": 1788616702.4783266,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-522",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.5807858,
+          "end": 1788616702.581554,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-525",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.6528866,
+          "end": 1788616702.6549997,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-523",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.6814895,
+          "end": 1788616702.6836767,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-527",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.7552915,
+          "end": 1788616702.7559853,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-528",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.8105657,
+          "end": 1788616702.811697,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-531",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.958524,
+          "end": 1788616702.9598074,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-530",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616701.9602277,
+          "end": 1788616702.9618802,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-532",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.107195,
+          "end": 1788616703.1099987,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-536",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.2448285,
+          "end": 1788616703.2456183,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-539",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.3598979,
+          "end": 1788616703.3605354,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-541",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.4866407,
+          "end": 1788616703.487483,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "burst-2-multi-542",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.5069098,
+          "end": 1788616703.5097508,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-543",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.5567982,
+          "end": 1788616703.5622814,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-544",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.618873,
+          "end": 1788616703.6215398,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-545",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.6754327,
+          "end": 1788616703.6774225,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-547",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.7528484,
+          "end": 1788616703.753486,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-534",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.8375964,
+          "end": 1788616703.8396826,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "burst-2-multi-549",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.8852649,
+          "end": 1788616703.8860009,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-550",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616702.9545238,
+          "end": 1788616703.9552383,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-552",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.0362763,
+          "end": 1788616704.0372927,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-553",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.0560067,
+          "end": 1788616704.0569859,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-551",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.0588057,
+          "end": 1788616704.0595584,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-555",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.156797,
+          "end": 1788616704.1578033,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-554",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.1659684,
+          "end": 1788616704.1671834,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-556",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.2094166,
+          "end": 1788616704.2101004,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-558",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.3196132,
+          "end": 1788616704.3210125,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-563",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.560869,
+          "end": 1788616704.5617063,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-562",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.6075277,
+          "end": 1788616704.608179,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-567",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.760975,
+          "end": 1788616704.7616463,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "burst-2-multi-538",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.8373578,
+          "end": 1788616704.8394225,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-568",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.8382668,
+          "end": 1788616704.8407254,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-570",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.935253,
+          "end": 1788616704.936054,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-571",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.9506328,
+          "end": 1788616704.9512622,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-557",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.9862385,
+          "end": 1788616704.9882793,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-559",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.9872916,
+          "end": 1788616704.989116,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-572",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616703.9999125,
+          "end": 1788616705.0016499,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-566",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.0324938,
+          "end": 1788616705.0336714,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-573",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.0849502,
+          "end": 1788616705.085836,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-574",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.1346757,
+          "end": 1788616705.1353421,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-577",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.3576956,
+          "end": 1788616705.358479,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "burst-2-multi-580",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.433777,
+          "end": 1788616705.4344072,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "burst-2-multi-581",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.4497852,
+          "end": 1788616705.4502778,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-579",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.4544334,
+          "end": 1788616705.455025,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-561",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.4843178,
+          "end": 1788616705.4873693,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-575",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.4849184,
+          "end": 1788616705.486301,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-582",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.4998016,
+          "end": 1788616705.5008857,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-583",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.550621,
+          "end": 1788616705.5515306,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-584",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.6566002,
+          "end": 1788616705.6585104,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "burst-2-multi-586",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.7021785,
+          "end": 1788616705.7028453,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-587",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.7497385,
+          "end": 1788616705.7503397,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-588",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.8083558,
+          "end": 1788616705.8090189,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-589",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.8694556,
+          "end": 1788616705.8702238,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "burst-2-multi-590",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616704.905485,
+          "end": 1788616705.906228,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "burst-2-multi-592",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.0058584,
+          "end": 1788616706.0067067,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-595",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.2088604,
+          "end": 1788616706.209664,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "burst-2-multi-597",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.2974892,
+          "end": 1788616706.2982838,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "burst-2-multi-598",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.3019252,
+          "end": 1788616706.3026304,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-599",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.4094043,
+          "end": 1788616706.4102788,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "burst-2-multi-578",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.430482,
+          "end": 1788616706.4311855,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "burst-2-multi-576",
+          "channel": "b",
+          "status": 200,
+          "start": 1788616705.4458227,
+          "end": 1788616706.4470859,
+          "inflight": 19
+        }
+      ]
+    },
+    "c": {
+      "attempts": 7,
+      "success": 7,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 3,
+      "effective_config": {
+        "capacity": 32,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "burst-2-multi-29",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616676.8622851,
+          "end": 1788616677.8629167,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst-2-multi-344",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616694.1799502,
+          "end": 1788616695.1815135,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst-2-multi-346",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616694.3549569,
+          "end": 1788616695.3586056,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-351",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616694.9888656,
+          "end": 1788616695.9897313,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "burst-2-multi-487",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616699.8277793,
+          "end": 1788616700.8284938,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "burst-2-multi-488",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616699.9235168,
+          "end": 1788616700.9240859,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "burst-2-multi-526",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616704.0127075,
+          "end": 1788616705.0132763,
+          "inflight": 1
+        }
+      ]
+    }
+  }
+}

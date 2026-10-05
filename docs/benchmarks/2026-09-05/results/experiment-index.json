@@ -1,0 +1,2127 @@
+{
+  "started_at": 1788614912.6605449,
+  "initial_containers": [
+    {
+      "name": "new-api-cloud-new-api-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 5,
+      "health": "healthy"
+    },
+    {
+      "name": "new-api-cloud-nginx-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "new-api-cloud-mysql-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": "healthy"
+    },
+    {
+      "name": "new-api-cloud-redis-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": "healthy"
+    },
+    {
+      "name": "new-api-bench-app",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "new-api-bench-nginx",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "new-api-bench-redis",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    }
+  ],
+  "scope": "isolated gateway HTTP Responses SSE with simulated upstream; not real Agent or production improvement",
+  "duration_per_run_s": 30,
+  "repeats_per_arm": 3,
+  "runs": [
+    {
+      "run_id": "weighted-1-baseline",
+      "scenario": "weighted",
+      "arm": "baseline",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 90,
+            "priority": 10,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 10,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "RetryTimes": "0",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 280,
+        "success": 280,
+        "http_error": 320,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788614914.8783193,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788614944.8783193,
+        "last_actual_start_at": 1788614944.8311954,
+        "last_actual_start_offset_s": 29.952876091003418,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.0039647180019529,
+        "whole_run_elapsed_s": 31.003964718001953,
+        "whole_run_completed_rps": 9.031103039458127,
+        "latency_p95_s": 1.310530144997756,
+        "latency_p99_s": 1.6256226980040083,
+        "first_output_p95_s": 0.28494236300321063,
+        "first_output_p99_s": 0.3961741390012321,
+        "scheduling_delay_p95_s": 0.0009467790077906102,
+        "scheduling_delay_p99_s": 0.0016516150062670931,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 547,
+          "success": 227,
+          "rejected": 320,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 8,
+          "effective_config": {
+            "capacity": 8,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        },
+        "b": {
+          "attempts": 53,
+          "success": 53,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 5,
+          "effective_config": {
+            "capacity": 24,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-1-optimized",
+      "scenario": "weighted",
+      "arm": "optimized",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 10,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 592,
+        "success": 592,
+        "http_error": 8,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788614947.921281,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788614977.921281,
+        "last_actual_start_at": 1788614977.8743958,
+        "last_actual_start_offset_s": 29.9531147480011,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.5240393940039212,
+        "whole_run_elapsed_s": 31.52403939400392,
+        "whole_run_completed_rps": 18.779319255406154,
+        "latency_p95_s": 2.98925882599724,
+        "latency_p99_s": 4.527501538999786,
+        "first_output_p95_s": 0.7402217880007811,
+        "first_output_p99_s": 1.1484908280035597,
+        "scheduling_delay_p95_s": 0.0009452790036448278,
+        "scheduling_delay_p99_s": 0.0017859620056697167,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 156,
+          "success": 148,
+          "rejected": 8,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 8,
+          "effective_config": {
+            "capacity": 8,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        },
+        "b": {
+          "attempts": 444,
+          "success": 444,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 22,
+          "effective_config": {
+            "capacity": 24,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-2-optimized",
+      "scenario": "weighted",
+      "arm": "optimized",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 10,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 592,
+        "success": 592,
+        "http_error": 8,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788614981.4373028,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615011.4373028,
+        "last_actual_start_at": 1788615011.3936124,
+        "last_actual_start_offset_s": 29.95630955696106,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 2.236926716999733,
+        "whole_run_elapsed_s": 32.23692671699973,
+        "whole_run_completed_rps": 18.36403343274706,
+        "latency_p95_s": 3.1511594989933656,
+        "latency_p99_s": 4.427174867996655,
+        "first_output_p95_s": 0.6671891919977497,
+        "first_output_p99_s": 1.4560154909995617,
+        "scheduling_delay_p95_s": 0.0009357199960504659,
+        "scheduling_delay_p99_s": 0.0012047310010530055,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 148,
+          "success": 140,
+          "rejected": 8,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 8,
+          "effective_config": {
+            "capacity": 8,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        },
+        "b": {
+          "attempts": 452,
+          "success": 452,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 21,
+          "effective_config": {
+            "capacity": 24,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-2-baseline",
+      "scenario": "weighted",
+      "arm": "baseline",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 90,
+            "priority": 10,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 10,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 291,
+        "success": 291,
+        "http_error": 309,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615015.7595868,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615045.7595868,
+        "last_actual_start_at": 1788615045.7116687,
+        "last_actual_start_offset_s": 29.95208191871643,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.0113072829990415,
+        "whole_run_elapsed_s": 31.01130728299904,
+        "whole_run_completed_rps": 9.383674069088066,
+        "latency_p95_s": 1.2029394900018815,
+        "latency_p99_s": 1.46393240600446,
+        "first_output_p95_s": 0.270992526995542,
+        "first_output_p99_s": 0.39907191599922953,
+        "scheduling_delay_p95_s": 0.0008591750010964461,
+        "scheduling_delay_p99_s": 0.0014521679986501113,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 536,
+          "success": 227,
+          "rejected": 309,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 8,
+          "effective_config": {
+            "capacity": 8,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        },
+        "b": {
+          "attempts": 64,
+          "success": 64,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 5,
+          "effective_config": {
+            "capacity": 24,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-3-baseline",
+      "scenario": "weighted",
+      "arm": "baseline",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 90,
+            "priority": 10,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 10,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 291,
+        "success": 291,
+        "http_error": 309,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615048.972686,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615078.972686,
+        "last_actual_start_at": 1788615078.9260275,
+        "last_actual_start_offset_s": 29.953341484069824,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.014276305999374,
+        "whole_run_elapsed_s": 31.014276305999374,
+        "whole_run_completed_rps": 9.382775762003165,
+        "latency_p95_s": 1.241953108998132,
+        "latency_p99_s": 1.3947903589942143,
+        "first_output_p95_s": 0.2842170840012841,
+        "first_output_p99_s": 0.3445738110021921,
+        "scheduling_delay_p95_s": 0.0007169930031523108,
+        "scheduling_delay_p99_s": 0.0014844199977233075,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 535,
+          "success": 226,
+          "rejected": 309,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 8,
+          "effective_config": {
+            "capacity": 8,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        },
+        "b": {
+          "attempts": 65,
+          "success": 65,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 6,
+          "effective_config": {
+            "capacity": 24,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "weighted-3-optimized",
+      "scenario": "weighted",
+      "arm": "optimized",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 10,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 583,
+        "success": 583,
+        "http_error": 17,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615082.1812963,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615112.1812963,
+        "last_actual_start_at": 1788615112.1364892,
+        "last_actual_start_offset_s": 29.955192804336548,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.8429247020030743,
+        "whole_run_elapsed_s": 31.842924702003074,
+        "whole_run_completed_rps": 18.308619746958307,
+        "latency_p95_s": 3.8295343499994488,
+        "latency_p99_s": 6.100254678996862,
+        "first_output_p95_s": 0.8571301530027995,
+        "first_output_p99_s": 1.7928065140004037,
+        "scheduling_delay_p95_s": 0.0011451239988673478,
+        "scheduling_delay_p99_s": 0.002557446001446806,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 161,
+          "success": 144,
+          "rejected": 17,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 8,
+          "effective_config": {
+            "capacity": 8,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        },
+        "b": {
+          "attempts": 439,
+          "success": 439,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 22,
+          "effective_config": {
+            "capacity": 24,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "retry-1-baseline",
+      "scenario": "retry",
+      "arm": "baseline",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 50,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 50,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 32,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 300,
+        "actual_sent": 300,
+        "total_completed": 240,
+        "success": 240,
+        "http_error": 60,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615116.0288734,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615146.0288734,
+        "last_actual_start_at": 1788615145.930042,
+        "last_actual_start_offset_s": 29.90116858482361,
+        "actual_started_within_send_window": 300,
+        "actual_start_rate_during_window_rps": 10.0,
+        "drain_elapsed_s": 0.9517634630028624,
+        "whole_run_elapsed_s": 30.951763463002862,
+        "whole_run_completed_rps": 7.7540008435020455,
+        "latency_p95_s": 1.0733186170036788,
+        "latency_p99_s": 1.1115017470001476,
+        "first_output_p95_s": 0.21599876999971457,
+        "first_output_p99_s": 0.26776644100027625,
+        "scheduling_delay_p95_s": 0.0004632720083463937,
+        "scheduling_delay_p99_s": 0.0007285220053745434,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 300,
+          "success": 240,
+          "rejected": 0,
+          "fault": 60,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          },
+          "overrides": {
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          }
+        },
+        "b": {
+          "attempts": 0,
+          "success": 0,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 0,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "retry-1-optimized",
+      "scenario": "retry",
+      "arm": "optimized",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 50,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 50,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "1",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 32,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 300,
+        "actual_sent": 300,
+        "total_completed": 300,
+        "success": 300,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615149.0178034,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615179.0178034,
+        "last_actual_start_at": 1788615178.9190211,
+        "last_actual_start_offset_s": 29.901217699050903,
+        "actual_started_within_send_window": 300,
+        "actual_start_rate_during_window_rps": 10.0,
+        "drain_elapsed_s": 0.9535009009996429,
+        "whole_run_elapsed_s": 30.953500900999643,
+        "whole_run_completed_rps": 9.69195700865977,
+        "latency_p95_s": 1.1076476449961774,
+        "latency_p99_s": 1.1394063030020334,
+        "first_output_p95_s": 0.24574833000224316,
+        "first_output_p99_s": 0.2870971849988564,
+        "scheduling_delay_p95_s": 0.0005849579974892549,
+        "scheduling_delay_p99_s": 0.0014368229967658408,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 300,
+          "success": 240,
+          "rejected": 0,
+          "fault": 60,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          },
+          "overrides": {
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          }
+        },
+        "b": {
+          "attempts": 60,
+          "success": 60,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "retry-2-optimized",
+      "scenario": "retry",
+      "arm": "optimized",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 50,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 50,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 32,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 300,
+        "actual_sent": 300,
+        "total_completed": 300,
+        "success": 300,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615181.9570997,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615211.9570997,
+        "last_actual_start_at": 1788615211.8582606,
+        "last_actual_start_offset_s": 29.901160955429077,
+        "actual_started_within_send_window": 300,
+        "actual_start_rate_during_window_rps": 10.0,
+        "drain_elapsed_s": 0.9495980339997914,
+        "whole_run_elapsed_s": 30.94959803399979,
+        "whole_run_completed_rps": 9.693179202858595,
+        "latency_p95_s": 1.11490549500013,
+        "latency_p99_s": 1.151173200996709,
+        "first_output_p95_s": 0.24757668600068428,
+        "first_output_p99_s": 0.3022761910033296,
+        "scheduling_delay_p95_s": 0.0005796840050606988,
+        "scheduling_delay_p99_s": 0.0011985800010734238,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 300,
+          "success": 240,
+          "rejected": 0,
+          "fault": 60,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          },
+          "overrides": {
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          }
+        },
+        "b": {
+          "attempts": 60,
+          "success": 60,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "retry-2-baseline",
+      "scenario": "retry",
+      "arm": "baseline",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 50,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 50,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "0",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 32,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 300,
+        "actual_sent": 300,
+        "total_completed": 240,
+        "success": 240,
+        "http_error": 60,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615214.9406612,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615244.9406612,
+        "last_actual_start_at": 1788615244.8418348,
+        "last_actual_start_offset_s": 29.90117359161377,
+        "actual_started_within_send_window": 300,
+        "actual_start_rate_during_window_rps": 10.0,
+        "drain_elapsed_s": 0.9533656260027783,
+        "whole_run_elapsed_s": 30.95336562600278,
+        "whole_run_completed_rps": 7.753599492211111,
+        "latency_p95_s": 1.0724347049981588,
+        "latency_p99_s": 1.1152938549930695,
+        "first_output_p95_s": 0.2137065899951267,
+        "first_output_p99_s": 0.2366539130016463,
+        "scheduling_delay_p95_s": 0.00043003299651900306,
+        "scheduling_delay_p99_s": 0.0008168950007529929,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 300,
+          "success": 240,
+          "rejected": 0,
+          "fault": 60,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          },
+          "overrides": {
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          }
+        },
+        "b": {
+          "attempts": 0,
+          "success": 0,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 0,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "retry-3-baseline",
+      "scenario": "retry",
+      "arm": "baseline",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 50,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 50,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "RetryTimes": "0",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 32,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 300,
+        "actual_sent": 300,
+        "total_completed": 240,
+        "success": 240,
+        "http_error": 60,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615247.9667642,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615277.9667642,
+        "last_actual_start_at": 1788615277.8679497,
+        "last_actual_start_offset_s": 29.901185512542725,
+        "actual_started_within_send_window": 300,
+        "actual_start_rate_during_window_rps": 10.0,
+        "drain_elapsed_s": 0.958266662004462,
+        "whole_run_elapsed_s": 30.958266662004462,
+        "whole_run_completed_rps": 7.752372011659023,
+        "latency_p95_s": 1.0772538029996213,
+        "latency_p99_s": 1.264083756999753,
+        "first_output_p95_s": 0.21817205900151748,
+        "first_output_p99_s": 0.3884691549974377,
+        "scheduling_delay_p95_s": 0.0005459649983095005,
+        "scheduling_delay_p99_s": 0.0014211870075087063,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 300,
+          "success": 240,
+          "rejected": 0,
+          "fault": 60,
+          "inflight": 0,
+          "max_inflight": 12,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          },
+          "overrides": {
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          }
+        },
+        "b": {
+          "attempts": 0,
+          "success": 0,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 0,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    },
+    {
+      "run_id": "retry-3-optimized",
+      "scenario": "retry",
+      "arm": "optimized",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 50,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 50,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "RetryTimes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 32,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 300,
+        "actual_sent": 300,
+        "total_completed": 300,
+        "success": 300,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788615281.0206673,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788615311.0206673,
+        "last_actual_start_at": 1788615310.9217834,
+        "last_actual_start_offset_s": 29.901116132736206,
+        "actual_started_within_send_window": 300,
+        "actual_start_rate_during_window_rps": 10.0,
+        "drain_elapsed_s": 0.9484289699976216,
+        "whole_run_elapsed_s": 30.94842896999762,
+        "whole_run_completed_rps": 9.693545358661966,
+        "latency_p95_s": 1.1267084179999074,
+        "latency_p99_s": 1.1818979840027168,
+        "first_output_p95_s": 0.27748142299969913,
+        "first_output_p99_s": 0.2888898099990911,
+        "scheduling_delay_p95_s": 0.0005200800005695783,
+        "scheduling_delay_p99_s": 0.0011147379991598427,
+        "workers": 128
+      },
+      "upstream": {
+        "a": {
+          "attempts": 300,
+          "success": 240,
+          "rejected": 0,
+          "fault": 60,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          },
+          "overrides": {
+            "fault_period_s": 10.0,
+            "fault_window_s": 2.0
+          }
+        },
+        "b": {
+          "attempts": 60,
+          "success": 60,
+          "rejected": 0,
+          "fault": 0,
+          "inflight": 0,
+          "max_inflight": 11,
+          "effective_config": {
+            "capacity": 32,
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          },
+          "overrides": {
+            "fault_period_s": 0.0,
+            "fault_window_s": 0.0
+          }
+        }
+      },
+      "containers_after": [
+        {
+          "name": "new-api-cloud-new-api-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 5,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-nginx-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-cloud-mysql-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-cloud-redis-1",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": "healthy"
+        },
+        {
+          "name": "new-api-bench-app",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-nginx",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        },
+        {
+          "name": "new-api-bench-redis",
+          "running": true,
+          "oom_killed": false,
+          "restart_count": 0,
+          "health": null
+        }
+      ]
+    }
+  ],
+  "finished_at": 1788615312.0269494,
+  "final_containers": [
+    {
+      "name": "new-api-cloud-new-api-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 5,
+      "health": "healthy"
+    },
+    {
+      "name": "new-api-cloud-nginx-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "new-api-cloud-mysql-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": "healthy"
+    },
+    {
+      "name": "new-api-cloud-redis-1",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": "healthy"
+    },
+    {
+      "name": "new-api-bench-app",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "new-api-bench-nginx",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    },
+    {
+      "name": "new-api-bench-redis",
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0,
+      "health": null
+    }
+  ]
+}

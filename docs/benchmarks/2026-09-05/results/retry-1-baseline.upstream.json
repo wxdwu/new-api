@@ -1,0 +1,2446 @@
+{
+  "control_epoch": 1788615116.0276551,
+  "duration_s": 1.0,
+  "first_token_s": 0.2,
+  "fault_period_s": 0.0,
+  "fault_window_s": 0.0,
+  "channels": {
+    "a": {
+      "attempts": 300,
+      "success": 240,
+      "rejected": 0,
+      "fault": 60,
+      "inflight": 0,
+      "max_inflight": 11,
+      "effective_config": {
+        "capacity": 32,
+        "fault_period_s": 10.0,
+        "fault_window_s": 2.0
+      },
+      "overrides": {
+        "fault_period_s": 10.0,
+        "fault_window_s": 2.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "retry-1-baseline-0",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.0339384,
+          "end": 1788615116.0339384,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-1",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.1337674,
+          "end": 1788615116.1337674,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-2",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.2337883,
+          "end": 1788615116.2337883,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-3",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.3387353,
+          "end": 1788615116.3387353,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-4",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.4334211,
+          "end": 1788615116.4334211,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-5",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.5333543,
+          "end": 1788615116.5333543,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-6",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.6333404,
+          "end": 1788615116.6333404,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-7",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.7340484,
+          "end": 1788615116.7340484,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-8",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.8333447,
+          "end": 1788615116.8333447,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-9",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615116.9330678,
+          "end": 1788615116.9330678,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-10",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.0332885,
+          "end": 1788615117.0332885,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-11",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.1333191,
+          "end": 1788615117.1333191,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-12",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.2333393,
+          "end": 1788615117.2333393,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-13",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.333633,
+          "end": 1788615117.333633,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-14",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.4333153,
+          "end": 1788615117.4333153,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-15",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.533563,
+          "end": 1788615117.533563,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-16",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.6335094,
+          "end": 1788615117.6335094,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-17",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.734419,
+          "end": 1788615117.734419,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-18",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.8334332,
+          "end": 1788615117.8334332,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-19",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615117.9339588,
+          "end": 1788615117.9339588,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-20",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.033592,
+          "end": 1788615119.0346715,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "retry-1-baseline-21",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.1335757,
+          "end": 1788615119.1342518,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "retry-1-baseline-22",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.234012,
+          "end": 1788615119.2346516,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "retry-1-baseline-23",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.3335848,
+          "end": 1788615119.3340335,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "retry-1-baseline-24",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.4340396,
+          "end": 1788615119.436395,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "retry-1-baseline-25",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.533772,
+          "end": 1788615119.5344799,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "retry-1-baseline-26",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.6337202,
+          "end": 1788615119.6346297,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "retry-1-baseline-27",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.7343264,
+          "end": 1788615119.7360241,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "retry-1-baseline-28",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.833646,
+          "end": 1788615119.834267,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "retry-1-baseline-29",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615118.9338298,
+          "end": 1788615119.9345064,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-30",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.0336854,
+          "end": 1788615120.0346224,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-31",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.1334517,
+          "end": 1788615120.1340222,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-32",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.233703,
+          "end": 1788615120.2347677,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-33",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.3333898,
+          "end": 1788615120.3344886,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-34",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.4360669,
+          "end": 1788615120.4368806,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-35",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.5339146,
+          "end": 1788615120.5363054,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-36",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.633582,
+          "end": 1788615120.6343617,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-37",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.7336795,
+          "end": 1788615120.7344453,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-38",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.833412,
+          "end": 1788615120.834249,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-39",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615119.9333274,
+          "end": 1788615120.934477,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-40",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.0332882,
+          "end": 1788615121.035526,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-41",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.1331909,
+          "end": 1788615121.133743,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-42",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.2332397,
+          "end": 1788615121.2339888,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-43",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.3335001,
+          "end": 1788615121.3343706,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-44",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.4338217,
+          "end": 1788615121.4356968,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-45",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.5333924,
+          "end": 1788615121.5340116,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-46",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.645491,
+          "end": 1788615121.647082,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-47",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.7333438,
+          "end": 1788615121.733991,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-48",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.8333297,
+          "end": 1788615121.8339713,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-49",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615120.933243,
+          "end": 1788615121.9343488,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-50",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.047227,
+          "end": 1788615122.0480702,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-51",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.13329,
+          "end": 1788615122.1347575,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-52",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.2333684,
+          "end": 1788615122.2343285,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-53",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.3333168,
+          "end": 1788615122.3344748,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-54",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.4964144,
+          "end": 1788615122.4970672,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-55",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.5335126,
+          "end": 1788615122.5345058,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-56",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.6332924,
+          "end": 1788615122.6338768,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-57",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.7334018,
+          "end": 1788615122.7346747,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-58",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.8335617,
+          "end": 1788615122.8350914,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-59",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615121.9333382,
+          "end": 1788615122.9338937,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-60",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.0333402,
+          "end": 1788615123.0340998,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-61",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.1335847,
+          "end": 1788615123.134877,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-62",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.2335994,
+          "end": 1788615123.2347198,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-63",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.3336468,
+          "end": 1788615123.334348,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-64",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.4333365,
+          "end": 1788615123.4349208,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-65",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.5886843,
+          "end": 1788615123.5896072,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-66",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.6333184,
+          "end": 1788615123.634685,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-67",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.733728,
+          "end": 1788615123.7365654,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-68",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.844388,
+          "end": 1788615123.8460996,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-69",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615122.9333732,
+          "end": 1788615123.9344022,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-70",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.033415,
+          "end": 1788615124.0342224,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-71",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.1336472,
+          "end": 1788615124.1357646,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-72",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.2337594,
+          "end": 1788615124.2351074,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-73",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.3333547,
+          "end": 1788615124.3360841,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-74",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.4336677,
+          "end": 1788615124.4346058,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-75",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.5334332,
+          "end": 1788615124.5365248,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-76",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.6954396,
+          "end": 1788615124.6965296,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-77",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.7350469,
+          "end": 1788615124.7458558,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-78",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.834365,
+          "end": 1788615124.8357086,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-79",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615123.936815,
+          "end": 1788615124.9384294,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-80",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.0375621,
+          "end": 1788615125.0395098,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-81",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.135013,
+          "end": 1788615125.1381845,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-82",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.2339468,
+          "end": 1788615125.2352386,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-83",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.3345973,
+          "end": 1788615125.3355026,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-84",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.4342477,
+          "end": 1788615125.4366546,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-85",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.613665,
+          "end": 1788615125.614528,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-86",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.634461,
+          "end": 1788615125.6371891,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-87",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.7403972,
+          "end": 1788615125.741108,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-88",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.834049,
+          "end": 1788615125.8349557,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-89",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615124.9347749,
+          "end": 1788615125.9354277,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-90",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.035798,
+          "end": 1788615126.0373912,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-91",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.1352844,
+          "end": 1788615126.136166,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-92",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.234078,
+          "end": 1788615126.2353206,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-93",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.333368,
+          "end": 1788615126.3341053,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-94",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.433512,
+          "end": 1788615126.4343002,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-95",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.5334806,
+          "end": 1788615126.5343342,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-96",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.6366374,
+          "end": 1788615126.6374881,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-97",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.733689,
+          "end": 1788615126.7351844,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-98",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.8334374,
+          "end": 1788615126.8357472,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-99",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615125.9333642,
+          "end": 1788615126.9344711,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-100",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.0333242,
+          "end": 1788615126.0333242,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-101",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.1335812,
+          "end": 1788615126.1335812,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "retry-1-baseline-102",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.2333605,
+          "end": 1788615126.2333605,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "retry-1-baseline-103",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.3333986,
+          "end": 1788615126.3333986,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "retry-1-baseline-104",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.4332466,
+          "end": 1788615126.4332466,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "retry-1-baseline-105",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.5333064,
+          "end": 1788615126.5333064,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "retry-1-baseline-106",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.6334693,
+          "end": 1788615126.6334693,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "retry-1-baseline-107",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.7335558,
+          "end": 1788615126.7335558,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "retry-1-baseline-108",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.8333542,
+          "end": 1788615126.8333542,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "retry-1-baseline-109",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615126.933414,
+          "end": 1788615126.933414,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "retry-1-baseline-110",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.0333,
+          "end": 1788615127.0333,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-111",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.133454,
+          "end": 1788615127.133454,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-112",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.233785,
+          "end": 1788615127.233785,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-113",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.3336046,
+          "end": 1788615127.3336046,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-114",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.4335105,
+          "end": 1788615127.4335105,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-115",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.5334613,
+          "end": 1788615127.5334613,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-116",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.6343195,
+          "end": 1788615127.6343195,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-117",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.7335267,
+          "end": 1788615127.7335267,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-118",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.8340304,
+          "end": 1788615127.8340304,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-119",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615127.9345691,
+          "end": 1788615127.9345691,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-120",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.034012,
+          "end": 1788615129.0359437,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "retry-1-baseline-121",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.1342623,
+          "end": 1788615129.13588,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "retry-1-baseline-122",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.2337005,
+          "end": 1788615129.2346568,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "retry-1-baseline-123",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.3337388,
+          "end": 1788615129.3347628,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "retry-1-baseline-124",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.4336677,
+          "end": 1788615129.4343245,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "retry-1-baseline-125",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.5359576,
+          "end": 1788615129.53757,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "retry-1-baseline-126",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.6401024,
+          "end": 1788615129.6409745,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "retry-1-baseline-127",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.734031,
+          "end": 1788615129.7347257,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "retry-1-baseline-128",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.8339753,
+          "end": 1788615129.8349013,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "retry-1-baseline-129",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615128.9338963,
+          "end": 1788615129.9347835,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-130",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.0340981,
+          "end": 1788615130.034771,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-131",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.1337762,
+          "end": 1788615130.1344347,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-132",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.2335885,
+          "end": 1788615130.2342744,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-133",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.3336067,
+          "end": 1788615130.334432,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-134",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.4336917,
+          "end": 1788615130.435031,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-135",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.5356412,
+          "end": 1788615130.5364146,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-136",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.633518,
+          "end": 1788615130.6339269,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-137",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.7335265,
+          "end": 1788615130.734815,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-138",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.833409,
+          "end": 1788615130.8340812,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-139",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615129.9336836,
+          "end": 1788615130.9343793,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-140",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.0333686,
+          "end": 1788615131.035239,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-141",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.1332746,
+          "end": 1788615131.1350079,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-142",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.2333355,
+          "end": 1788615131.2345145,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-143",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.3332849,
+          "end": 1788615131.3352547,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-144",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.4333558,
+          "end": 1788615131.435761,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-145",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.5333784,
+          "end": 1788615131.5361955,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-146",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.6335163,
+          "end": 1788615131.6346622,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-147",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.7406254,
+          "end": 1788615131.7415931,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-148",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.8333437,
+          "end": 1788615131.8341095,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-149",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615130.9334083,
+          "end": 1788615131.9346366,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-150",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.033464,
+          "end": 1788615132.0343704,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-151",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.1347961,
+          "end": 1788615132.137223,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-152",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.2332876,
+          "end": 1788615132.2338827,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-153",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.334022,
+          "end": 1788615132.3352177,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-154",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.4342308,
+          "end": 1788615132.4348876,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-155",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.5340166,
+          "end": 1788615132.5350347,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-156",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.633708,
+          "end": 1788615132.63483,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-157",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.7491727,
+          "end": 1788615132.7513359,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-158",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.8333466,
+          "end": 1788615132.834311,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-159",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615131.9333901,
+          "end": 1788615132.934221,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-160",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.0335944,
+          "end": 1788615133.0346208,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-161",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.1334295,
+          "end": 1788615133.134756,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-162",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.233481,
+          "end": 1788615133.235346,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-163",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.3332376,
+          "end": 1788615133.334083,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-164",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.4333477,
+          "end": 1788615133.4339142,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-165",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.53337,
+          "end": 1788615133.5344927,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-166",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.6333108,
+          "end": 1788615133.6342075,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-167",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.7333083,
+          "end": 1788615133.734583,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-168",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.8332875,
+          "end": 1788615133.834251,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-169",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615132.9452605,
+          "end": 1788615133.9458895,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-170",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.0407166,
+          "end": 1788615134.041462,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-171",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.1333258,
+          "end": 1788615134.1344912,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-172",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.2335582,
+          "end": 1788615134.2346663,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-173",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.3335755,
+          "end": 1788615134.3345542,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-174",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.433322,
+          "end": 1788615134.4354248,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-175",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.5334153,
+          "end": 1788615134.5341518,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-176",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.6334345,
+          "end": 1788615134.634207,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-177",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.7333655,
+          "end": 1788615134.7341213,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-178",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.8334303,
+          "end": 1788615134.8347473,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-179",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615133.9333308,
+          "end": 1788615134.9340253,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-180",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.0338268,
+          "end": 1788615135.0355504,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-181",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.13401,
+          "end": 1788615135.1365368,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-182",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.234052,
+          "end": 1788615135.2359111,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-183",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.3338075,
+          "end": 1788615135.3354974,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-184",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.4413736,
+          "end": 1788615135.4428904,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-185",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.5377252,
+          "end": 1788615135.5392337,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-186",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.633485,
+          "end": 1788615135.63402,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-187",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.7336364,
+          "end": 1788615135.7344067,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-188",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.8460305,
+          "end": 1788615135.849187,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-189",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615134.9380717,
+          "end": 1788615135.9392877,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-190",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.037612,
+          "end": 1788615136.0389755,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-191",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.1344018,
+          "end": 1788615136.1356869,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-192",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.2344089,
+          "end": 1788615136.2360857,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-193",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.3332942,
+          "end": 1788615136.3345244,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-194",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.43348,
+          "end": 1788615136.4343145,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-195",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.5345154,
+          "end": 1788615136.5358047,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-196",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.633584,
+          "end": 1788615136.6349118,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-197",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.7336159,
+          "end": 1788615136.73487,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-198",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.8334503,
+          "end": 1788615136.834084,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-199",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615135.9336097,
+          "end": 1788615136.9343338,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-200",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.0333004,
+          "end": 1788615136.0333004,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-201",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.133379,
+          "end": 1788615136.133379,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "retry-1-baseline-202",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.234019,
+          "end": 1788615136.234019,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "retry-1-baseline-203",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.3332834,
+          "end": 1788615136.3332834,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "retry-1-baseline-204",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.4333272,
+          "end": 1788615136.4333272,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "retry-1-baseline-205",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.5337331,
+          "end": 1788615136.5337331,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "retry-1-baseline-206",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.6334326,
+          "end": 1788615136.6334326,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "retry-1-baseline-207",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.7335355,
+          "end": 1788615136.7335355,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "retry-1-baseline-208",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.8332038,
+          "end": 1788615136.8332038,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "retry-1-baseline-209",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615136.9333925,
+          "end": 1788615136.9333925,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "retry-1-baseline-210",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.0333533,
+          "end": 1788615137.0333533,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-211",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.133486,
+          "end": 1788615137.133486,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-212",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.2335303,
+          "end": 1788615137.2335303,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-213",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.3336518,
+          "end": 1788615137.3336518,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-214",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.4336119,
+          "end": 1788615137.4336119,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-215",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.533338,
+          "end": 1788615137.533338,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-216",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.633832,
+          "end": 1788615137.633832,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-217",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.7338202,
+          "end": 1788615137.7338202,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-218",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.8339603,
+          "end": 1788615137.8339603,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-219",
+          "channel": "a",
+          "status": 503,
+          "start": 1788615137.9435444,
+          "end": 1788615137.9435444,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "retry-1-baseline-220",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.034312,
+          "end": 1788615139.03574,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "retry-1-baseline-221",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.133838,
+          "end": 1788615139.1354585,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "retry-1-baseline-222",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.2336726,
+          "end": 1788615139.2345462,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "retry-1-baseline-223",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.3336782,
+          "end": 1788615139.3354182,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "retry-1-baseline-224",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.433515,
+          "end": 1788615139.4347048,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "retry-1-baseline-225",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.5345418,
+          "end": 1788615139.535681,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "retry-1-baseline-226",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.6336985,
+          "end": 1788615139.6350703,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "retry-1-baseline-227",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.7337677,
+          "end": 1788615139.735238,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "retry-1-baseline-228",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.833745,
+          "end": 1788615139.8345406,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "retry-1-baseline-229",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615138.9337332,
+          "end": 1788615139.934354,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-230",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.0335875,
+          "end": 1788615140.035454,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-231",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.1335738,
+          "end": 1788615140.1356447,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-232",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.233482,
+          "end": 1788615140.2362132,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-233",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.3336291,
+          "end": 1788615140.3344357,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-234",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.4334896,
+          "end": 1788615140.434104,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-235",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.5410845,
+          "end": 1788615140.542412,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-236",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.6341033,
+          "end": 1788615140.635574,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-237",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.7338996,
+          "end": 1788615140.7347753,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-238",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.8336875,
+          "end": 1788615140.8344908,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-239",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615139.9337554,
+          "end": 1788615140.934622,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-240",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.0344625,
+          "end": 1788615141.0354,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-241",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.1339867,
+          "end": 1788615141.135559,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-242",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.2337077,
+          "end": 1788615141.2347739,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-243",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.3339987,
+          "end": 1788615141.3349757,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-244",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.4331076,
+          "end": 1788615141.4345083,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-245",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.533427,
+          "end": 1788615141.534087,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-246",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.6333945,
+          "end": 1788615141.6340868,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-247",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.733447,
+          "end": 1788615141.733973,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-248",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.8444743,
+          "end": 1788615141.845268,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-249",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615140.9333072,
+          "end": 1788615141.934336,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-250",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.0332253,
+          "end": 1788615142.034751,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-251",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.1433773,
+          "end": 1788615142.1445575,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-252",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.2332263,
+          "end": 1788615142.233828,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-253",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.333456,
+          "end": 1788615142.334659,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-254",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.4334366,
+          "end": 1788615142.4342227,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-255",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.5334275,
+          "end": 1788615142.534613,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-256",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.6334019,
+          "end": 1788615142.6349344,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-257",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.7334392,
+          "end": 1788615142.7340548,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-258",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.8334594,
+          "end": 1788615142.8341165,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-259",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615141.9334428,
+          "end": 1788615142.934237,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-260",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.0412679,
+          "end": 1788615143.0425196,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-261",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.1332643,
+          "end": 1788615143.1369224,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-262",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.2332113,
+          "end": 1788615143.2345386,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-263",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.333303,
+          "end": 1788615143.3345692,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-264",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.433347,
+          "end": 1788615143.434444,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-265",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.5334744,
+          "end": 1788615143.5346115,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-266",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.633327,
+          "end": 1788615143.634749,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-267",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.7333083,
+          "end": 1788615143.7339737,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-268",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.8333378,
+          "end": 1788615143.8339515,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-269",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615142.9333715,
+          "end": 1788615143.9338632,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-270",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.0335784,
+          "end": 1788615144.0341024,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-271",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.1367252,
+          "end": 1788615144.1387665,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-272",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.234255,
+          "end": 1788615144.234915,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-273",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.3340604,
+          "end": 1788615144.3370664,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-274",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.434083,
+          "end": 1788615144.4365895,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-275",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.533983,
+          "end": 1788615144.534727,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-276",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.633404,
+          "end": 1788615144.6350555,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-277",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.7334027,
+          "end": 1788615144.7347803,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-278",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.8335543,
+          "end": 1788615144.8343823,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-279",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615143.9332738,
+          "end": 1788615144.934007,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-280",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.0335274,
+          "end": 1788615145.0340383,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-281",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.1380138,
+          "end": 1788615145.1393094,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-282",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.2333825,
+          "end": 1788615145.2345822,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-283",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.3334482,
+          "end": 1788615145.3353975,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-284",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.4330812,
+          "end": 1788615145.4338632,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-285",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.5335755,
+          "end": 1788615145.5352488,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-286",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.633466,
+          "end": 1788615145.6343882,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-287",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.7335398,
+          "end": 1788615145.7342985,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-288",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.8336604,
+          "end": 1788615145.8344038,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-289",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615144.9335785,
+          "end": 1788615145.9360378,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-290",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.0334568,
+          "end": 1788615146.0342824,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-291",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.133443,
+          "end": 1788615146.1340818,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-292",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.2339327,
+          "end": 1788615146.236317,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-293",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.338517,
+          "end": 1788615146.3392742,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-294",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.4350784,
+          "end": 1788615146.4359877,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "retry-1-baseline-295",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.5347073,
+          "end": 1788615146.5364716,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-296",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.6339874,
+          "end": 1788615146.6359026,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-297",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.733839,
+          "end": 1788615146.7353044,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-298",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.8337195,
+          "end": 1788615146.8345199,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "retry-1-baseline-299",
+          "channel": "a",
+          "status": 200,
+          "start": 1788615145.9349728,
+          "end": 1788615146.9356828,
+          "inflight": 11
+        }
+      ]
+    },
+    "b": {
+      "attempts": 0,
+      "success": 0,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 0,
+      "effective_config": {
+        "capacity": 32,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": []
+    }
+  }
+}

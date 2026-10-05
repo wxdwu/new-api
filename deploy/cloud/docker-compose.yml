@@ -1,0 +1,121 @@
+name: new-api-cloud
+
+services:
+  new-api:
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+      args:
+        DEBIAN_MIRROR: mirrors.aliyun.com
+    image: new-api:cloud
+    restart: unless-stopped
+    command: --log-dir /app/logs
+    expose:
+      - "3000"
+    volumes:
+      - app_data:/data
+      - app_logs:/app/logs
+    environment:
+      SQL_DSN: "newapi:${MYSQL_PASSWORD}@tcp(mysql:3306)/new-api?charset=utf8mb4&parseTime=True&loc=Local"
+      REDIS_CONN_STRING: "redis://:${REDIS_PASSWORD}@redis:6379"
+      SESSION_SECRET: "${SESSION_SECRET}"
+      CRYPTO_SECRET: "${CRYPTO_SECRET}"
+      TZ: Asia/Shanghai
+      GIN_MODE: release
+      ERROR_LOG_ENABLED: "true"
+      BATCH_UPDATE_ENABLED: "true"
+      NODE_NAME: new-api-cloud-1
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O - http://127.0.0.1:3000/api/status | grep -q '\"success\":true'"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+    networks:
+      - backend
+    logging:
+      options:
+        max-size: "20m"
+        max-file: "5"
+
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb-buffer-pool-size=512M
+      - --max-connections=150
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: new-api
+      MYSQL_USER: newapi
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      TZ: Asia/Shanghai
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u newapi -p\"$$MYSQL_PASSWORD\" --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+    networks:
+      - backend
+    logging:
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD}"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"$$REDIS_PASSWORD\" ping 2>/dev/null | grep -q PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    environment:
+      REDIS_PASSWORD: "${REDIS_PASSWORD}"
+    networks:
+      - backend
+    logging:
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+  nginx:
+    image: nginx:stable-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      new-api:
+        condition: service_healthy
+    networks:
+      - backend
+    logging:
+      options:
+        max-size: "20m"
+        max-file: "5"
+
+volumes:
+  app_data:
+  app_logs:
+  mysql_data:
+  redis_data:
+
+networks:
+  backend:
+    driver: bridge

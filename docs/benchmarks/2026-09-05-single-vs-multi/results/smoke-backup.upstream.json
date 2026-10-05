@@ -1,0 +1,130 @@
+{
+  "control_epoch": 1788616604.3037944,
+  "duration_s": 1.0,
+  "first_token_s": 0.2,
+  "fault_period_s": 0.0,
+  "fault_window_s": 0.0,
+  "channels": {
+    "a": {
+      "attempts": 1,
+      "success": 0,
+      "rejected": 0,
+      "fault": 1,
+      "inflight": 0,
+      "max_inflight": 0,
+      "effective_config": {
+        "capacity": 8,
+        "fault_period_s": 60.0,
+        "fault_window_s": 60.0
+      },
+      "overrides": {
+        "fault_period_s": 60.0,
+        "fault_window_s": 60.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "smoke-backup-2",
+          "channel": "a",
+          "status": 503,
+          "start": 1788616605.3102717,
+          "end": 1788616605.3102717,
+          "inflight": 0
+        }
+      ]
+    },
+    "b": {
+      "attempts": 3,
+      "success": 0,
+      "rejected": 0,
+      "fault": 3,
+      "inflight": 0,
+      "max_inflight": 0,
+      "effective_config": {
+        "capacity": 24,
+        "fault_period_s": 60.0,
+        "fault_window_s": 60.0
+      },
+      "overrides": {
+        "fault_period_s": 60.0,
+        "fault_window_s": 60.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "smoke-backup-0",
+          "channel": "b",
+          "status": 503,
+          "start": 1788616604.3093765,
+          "end": 1788616604.3093765,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "smoke-backup-1",
+          "channel": "b",
+          "status": 503,
+          "start": 1788616604.8102043,
+          "end": 1788616604.8102043,
+          "inflight": 0
+        },
+        {
+          "benchmark_id": "smoke-backup-3",
+          "channel": "b",
+          "status": 503,
+          "start": 1788616605.8095071,
+          "end": 1788616605.8095071,
+          "inflight": 0
+        }
+      ]
+    },
+    "c": {
+      "attempts": 4,
+      "success": 4,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 3,
+      "effective_config": {
+        "capacity": 32,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "smoke-backup-0",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616604.320111,
+          "end": 1788616605.321603,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "smoke-backup-1",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616604.8214283,
+          "end": 1788616605.8219824,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "smoke-backup-2",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616605.322662,
+          "end": 1788616606.3236468,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "smoke-backup-3",
+          "channel": "c",
+          "status": 200,
+          "start": 1788616605.820438,
+          "end": 1788616606.8212547,
+          "inflight": 3
+        }
+      ]
+    }
+  }
+}

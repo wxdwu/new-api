@@ -3,57 +3,104 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        DEBIAN_MIRROR: mirrors.aliyun.com
     image: new-api:local
-    container_name: new-api-local
     restart: unless-stopped
     ports:
       - "127.0.0.1:${NEW_API_LOCAL_PORT:-3300}:3000"
     volumes:
       - local_data:/data
     environment:
-      - SQL_DSN=postgresql://root:123456@postgres:5432/new-api
-      - REDIS_CONN_STRING=redis://redis
-      - TZ=Asia/Shanghai
-      - BATCH_UPDATE_ENABLED=true
+      SQL_DSN: "root:${LOCAL_DEMO_MYSQL_PASSWORD:-LocalDemoMySQL123!}@tcp(mysql:3306)/new-api?charset=utf8mb4&parseTime=True&loc=Local"
+      REDIS_CONN_STRING: redis://redis
+      SESSION_SECRET: ${LOCAL_DEMO_SESSION_SECRET:-local-demo-session-secret-only-for-loopback-2026}
+      CRYPTO_SECRET: ${LOCAL_DEMO_SESSION_SECRET:-local-demo-session-secret-only-for-loopback-2026}
+      NODE_NAME: local-demo
+      TZ: Asia/Shanghai
+      BATCH_UPDATE_ENABLED: "true"
     depends_on:
       redis:
-        condition: service_started
-      postgres:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget --quiet --output-document=/dev/null http://127.0.0.1:3000/api/status || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    networks:
+      - local-network
+
+  demo-seed:
+    image: golang:1.26.1-alpine@sha256:2389ebfa5b7f43eeafbd6be0c3700cc46690ef842ad962f6c5bd6be49ed82039
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:ro
+      - local_seed_data:/runtime/data
+      - local_go_modules:/go/pkg/mod
+      - local_go_cache:/root/.cache/go-build
+    environment:
+      SQL_DSN: "root:${LOCAL_DEMO_MYSQL_PASSWORD:-LocalDemoMySQL123!}@tcp(mysql:3306)/new-api?charset=utf8mb4&parseTime=True&loc=Local"
+      REDIS_CONN_STRING: redis://redis
+      SESSION_SECRET: ${LOCAL_DEMO_SESSION_SECRET:-local-demo-session-secret-only-for-loopback-2026}
+      CRYPTO_SECRET: ${LOCAL_DEMO_SESSION_SECRET:-local-demo-session-secret-only-for-loopback-2026}
+      LOCAL_DEMO_SEED: "1"
+      LOCAL_DEMO_ROOT_PASSWORD: ${LOCAL_DEMO_ROOT_PASSWORD:-LocalDemo123!}
+      NODE_NAME: local-demo-seed
+      GOCACHE: /root/.cache/go-build
+      GOPROXY: https://goproxy.cn,direct
+      TZ: Asia/Shanghai
+    command:
+      - sh
+      - -c
+      - go build -o /tmp/local-demo-seed ./cmd/demo-seed && cd /runtime && /tmp/local-demo-seed --log-dir /tmp/local-demo-logs
+    depends_on:
+      mysql:
         condition: service_healthy
     networks:
       - local-network
 
   redis:
     image: redis:7-alpine
-    container_name: new-api-local-redis
     restart: unless-stopped
     volumes:
       - local_redis_data:/data
-    networks:
-      - local-network
-
-  postgres:
-    image: postgres:15-alpine
-    container_name: new-api-local-pg
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: new-api
-    volumes:
-      - local_pg_data:/var/lib/postgresql/data
-    networks:
-      - local-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U root -d new-api"]
+      test: ["CMD", "redis-cli", "ping"]
       interval: 5s
       timeout: 3s
       retries: 10
+    networks:
+      - local-network
+
+  mysql:
+    image: mysql:8.2
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${LOCAL_DEMO_MYSQL_PASSWORD:-LocalDemoMySQL123!}
+      MYSQL_DATABASE: new-api
+    ports:
+      - "127.0.0.1:${NEW_API_LOCAL_MYSQL_PORT:-33307}:3306"
+    volumes:
+      - local_mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping --host=127.0.0.1 --user=root --password=\"$${MYSQL_ROOT_PASSWORD}\" --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 20s
+    networks:
+      - local-network
 
 volumes:
   local_data:
-  local_pg_data:
+  local_mysql_data:
   local_redis_data:
+  local_seed_data:
+  local_go_modules:
+  local_go_cache:
 
 networks:
   local-network:

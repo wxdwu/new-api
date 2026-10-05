@@ -1,0 +1,2698 @@
+{
+  "started_at": 1788616606.8697493,
+  "scope": "isolated single-channel vs three-channel HTTP Responses SSE, same image, synthetic capacity and faults; not historical production or Agent results",
+  "duration_s": 30,
+  "rps": 20,
+  "repeats_per_arm": 3,
+  "initial_state": {
+    "recorded_at": 1788616606.911881,
+    "containers": [
+      {
+        "name": "new-api-cloud-new-api-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 5,
+        "health": "healthy"
+      },
+      {
+        "name": "new-api-cloud-nginx-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      },
+      {
+        "name": "new-api-cloud-mysql-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": "healthy"
+      },
+      {
+        "name": "new-api-cloud-redis-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": "healthy"
+      },
+      {
+        "name": "new-api-sm-app",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      },
+      {
+        "name": "new-api-sm-redis",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      },
+      {
+        "name": "new-api-sm-nginx",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      }
+    ],
+    "load": [
+      0.951171875,
+      0.35205078125,
+      0.3037109375
+    ],
+    "memory_available_kib": 2397180
+  },
+  "runs": [
+    {
+      "run_id": "burst-1-single",
+      "scenario": "burst",
+      "arm": "single",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 2,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 2,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "RetryTimes": "0",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 226,
+        "success": 226,
+        "http_error": 374,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616608.9702904,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616638.9702904,
+        "last_actual_start_at": 1788616638.9224422,
+        "last_actual_start_offset_s": 29.952151775360107,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 0.857753338998009,
+        "whole_run_elapsed_s": 30.85775333899801,
+        "whole_run_completed_rps": 7.323929176476414,
+        "latency_p95_s": 1.2317705980021856,
+        "latency_p99_s": 1.293599216005532,
+        "first_output_p95_s": 0.3349693610070972,
+        "first_output_p99_s": 0.4206244200031506,
+        "scheduling_delay_p95_s": 0.000666098996589426,
+        "scheduling_delay_p99_s": 0.0015147980011533946,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616606.955047,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          0.951171875,
+          0.35205078125,
+          0.3037109375
+        ],
+        "memory_available_kib": 2397116
+      },
+      "state_after": {
+        "recorded_at": 1788616639.8887398,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          0.79248046875,
+          0.36669921875,
+          0.30908203125
+        ],
+        "memory_available_kib": 2387140
+      }
+    },
+    {
+      "run_id": "burst-1-multi",
+      "scenario": "burst",
+      "arm": "multi",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 1,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 600,
+        "success": 600,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616641.9220903,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616671.9220903,
+        "last_actual_start_at": 1788616671.8742373,
+        "last_actual_start_offset_s": 29.952147006988525,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.4343953450006666,
+        "whole_run_elapsed_s": 31.434395345000667,
+        "whole_run_completed_rps": 19.08737207809611,
+        "latency_p95_s": 2.542837013999815,
+        "latency_p99_s": 3.6566170240039355,
+        "first_output_p95_s": 0.8389197159995092,
+        "first_output_p99_s": 1.2635401419975096,
+        "scheduling_delay_p95_s": 0.0008887649964890443,
+        "scheduling_delay_p99_s": 0.0015381359989987686,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616639.927933,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          0.79248046875,
+          0.36669921875,
+          0.30908203125
+        ],
+        "memory_available_kib": 2386888
+      },
+      "state_after": {
+        "recorded_at": 1788616673.419215,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          0.9794921875,
+          0.45458984375,
+          0.3408203125
+        ],
+        "memory_available_kib": 2375396
+      }
+    },
+    {
+      "run_id": "burst-2-multi",
+      "scenario": "burst",
+      "arm": "multi",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 1,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 600,
+        "success": 600,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616675.395527,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616705.395527,
+        "last_actual_start_at": 1788616705.3496451,
+        "last_actual_start_offset_s": 29.954118251800537,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.7384161290028715,
+        "whole_run_elapsed_s": 31.73841612900287,
+        "whole_run_completed_rps": 18.90453504551899,
+        "latency_p95_s": 3.932246047996159,
+        "latency_p99_s": 5.5363391089995275,
+        "first_output_p95_s": 0.9426548940027715,
+        "first_output_p99_s": 2.2448558320029406,
+        "scheduling_delay_p95_s": 0.0011306260057608597,
+        "scheduling_delay_p99_s": 0.002121916004398372,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616673.4573383,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          0.9794921875,
+          0.45458984375,
+          0.3408203125
+        ],
+        "memory_available_kib": 2371624
+      },
+      "state_after": {
+        "recorded_at": 1788616707.204369,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.736328125,
+          0.6923828125,
+          0.42529296875
+        ],
+        "memory_available_kib": 2354552
+      }
+    },
+    {
+      "run_id": "burst-2-single",
+      "scenario": "burst",
+      "arm": "single",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 2,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 2,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "0",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 228,
+        "success": 228,
+        "http_error": 372,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616709.3837197,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616739.3837197,
+        "last_actual_start_at": 1788616739.335887,
+        "last_actual_start_offset_s": 29.95216727256775,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 0.8022285879997071,
+        "whole_run_elapsed_s": 30.802228587999707,
+        "whole_run_completed_rps": 7.402061813437321,
+        "latency_p95_s": 1.1664859560041805,
+        "latency_p99_s": 1.3226423809974222,
+        "first_output_p95_s": 0.2709989220020361,
+        "first_output_p99_s": 0.3353189119952731,
+        "scheduling_delay_p95_s": 0.0006919059960637242,
+        "scheduling_delay_p99_s": 0.001527870997961145,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616707.2466476,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.736328125,
+          0.6923828125,
+          0.42529296875
+        ],
+        "memory_available_kib": 2358336
+      },
+      "state_after": {
+        "recorded_at": 1788616740.246868,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.7060546875,
+          0.78564453125,
+          0.46533203125
+        ],
+        "memory_available_kib": 2361820
+      }
+    },
+    {
+      "run_id": "burst-3-single",
+      "scenario": "burst",
+      "arm": "single",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 2,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 2,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "RetryTimes": "0",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 229,
+        "success": 229,
+        "http_error": 371,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616742.2210808,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616772.2210808,
+        "last_actual_start_at": 1788616772.176176,
+        "last_actual_start_offset_s": 29.955095291137695,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.0179349600002752,
+        "whole_run_elapsed_s": 31.017934960000275,
+        "whole_run_completed_rps": 7.382825461956477,
+        "latency_p95_s": 1.1753813120012637,
+        "latency_p99_s": 1.292226458004734,
+        "first_output_p95_s": 0.25936152299982496,
+        "first_output_p99_s": 0.2854157510009827,
+        "scheduling_delay_p95_s": 0.0005176439954084344,
+        "scheduling_delay_p99_s": 0.0011987010002485476,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616740.2854388,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.7060546875,
+          0.78564453125,
+          0.46533203125
+        ],
+        "memory_available_kib": 2361828
+      },
+      "state_after": {
+        "recorded_at": 1788616773.3058562,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.80224609375,
+          0.90673828125,
+          0.51708984375
+        ],
+        "memory_available_kib": 2358576
+      }
+    },
+    {
+      "run_id": "burst-3-multi",
+      "scenario": "burst",
+      "arm": "multi",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 1,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 600,
+        "success": 600,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616775.404808,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616805.404808,
+        "last_actual_start_at": 1788616805.357201,
+        "last_actual_start_offset_s": 29.952393054962158,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.7719836059986847,
+        "whole_run_elapsed_s": 31.771983605998685,
+        "whole_run_completed_rps": 18.88456218033291,
+        "latency_p95_s": 2.514137671998469,
+        "latency_p99_s": 3.769280998996692,
+        "first_output_p95_s": 0.7372450889961328,
+        "first_output_p99_s": 1.4517677369949524,
+        "scheduling_delay_p95_s": 0.0009267299974453636,
+        "scheduling_delay_p99_s": 0.0015639539997209795,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616773.3480942,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.80224609375,
+          0.90673828125,
+          0.51708984375
+        ],
+        "memory_available_kib": 2356312
+      },
+      "state_after": {
+        "recorded_at": 1788616807.2415776,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          2.54638671875,
+          1.17578125,
+          0.62158203125
+        ],
+        "memory_available_kib": 2366692
+      }
+    },
+    {
+      "run_id": "burst_fault-1-single",
+      "scenario": "burst_fault",
+      "arm": "single",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 2,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 2,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "0",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 187,
+        "success": 187,
+        "http_error": 413,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616809.2712533,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616839.2712533,
+        "last_actual_start_at": 1788616839.2266514,
+        "last_actual_start_offset_s": 29.955398082733154,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.0052190809947206,
+        "whole_run_elapsed_s": 31.00521908099472,
+        "whole_run_completed_rps": 6.0312426598728806,
+        "latency_p95_s": 1.3202867649961263,
+        "latency_p99_s": 1.4874736400015536,
+        "first_output_p95_s": 0.2938860569993267,
+        "first_output_p99_s": 0.45637669999996433,
+        "scheduling_delay_p95_s": 0.000731296997400932,
+        "scheduling_delay_p99_s": 0.0020331409978098236,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616807.2830508,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          2.54638671875,
+          1.17578125,
+          0.62158203125
+        ],
+        "memory_available_kib": 2366188
+      },
+      "state_after": {
+        "recorded_at": 1788616840.3393788,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.54248046875,
+          1.06201171875,
+          0.60107421875
+        ],
+        "memory_available_kib": 2359504
+      }
+    },
+    {
+      "run_id": "burst_fault-1-multi",
+      "scenario": "burst_fault",
+      "arm": "multi",
+      "repeat": 1,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 1,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 600,
+        "success": 600,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616842.3608527,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616872.3608527,
+        "last_actual_start_at": 1788616872.3131657,
+        "last_actual_start_offset_s": 29.95231294631958,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.7510572239989415,
+        "whole_run_elapsed_s": 31.75105722399894,
+        "whole_run_completed_rps": 18.89700855524558,
+        "latency_p95_s": 3.7727667989965994,
+        "latency_p99_s": 5.647623759999988,
+        "first_output_p95_s": 1.0368317519969423,
+        "first_output_p99_s": 2.1973722340044333,
+        "scheduling_delay_p95_s": 0.0009168199976556934,
+        "scheduling_delay_p99_s": 0.001837177995184902,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616840.379307,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.54248046875,
+          1.06201171875,
+          0.60107421875
+        ],
+        "memory_available_kib": 2359504
+      },
+      "state_after": {
+        "recorded_at": 1788616874.1768827,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.6494140625,
+          1.13623046875,
+          0.64404296875
+        ],
+        "memory_available_kib": 2357472
+      }
+    },
+    {
+      "run_id": "burst_fault-2-multi",
+      "scenario": "burst_fault",
+      "arm": "multi",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 1,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 600,
+        "success": 600,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616876.1582108,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616906.1582108,
+        "last_actual_start_at": 1788616906.111524,
+        "last_actual_start_offset_s": 29.95331335067749,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 3.0273302370042074,
+        "whole_run_elapsed_s": 33.02733023700421,
+        "whole_run_completed_rps": 18.16677266053291,
+        "latency_p95_s": 7.454149878001772,
+        "latency_p99_s": 11.126801726997655,
+        "first_output_p95_s": 1.6647302799974568,
+        "first_output_p99_s": 3.1522405440045986,
+        "scheduling_delay_p95_s": 0.001386556999932509,
+        "scheduling_delay_p99_s": 0.01627772299980279,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616874.2183685,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.6494140625,
+          1.13623046875,
+          0.64404296875
+        ],
+        "memory_available_kib": 2349708
+      },
+      "state_after": {
+        "recorded_at": 1788616909.2562752,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          2.82568359375,
+          1.486328125,
+          0.77978515625
+        ],
+        "memory_available_kib": 2325296
+      }
+    },
+    {
+      "run_id": "burst_fault-2-single",
+      "scenario": "burst_fault",
+      "arm": "single",
+      "repeat": 2,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 2,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 2,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "0",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 192,
+        "success": 192,
+        "http_error": 408,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616911.3339384,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616941.3339384,
+        "last_actual_start_at": 1788616941.2860026,
+        "last_actual_start_offset_s": 29.952064275741577,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 0.8986959270041552,
+        "whole_run_elapsed_s": 30.898695927004155,
+        "whole_run_completed_rps": 6.213854476369668,
+        "latency_p95_s": 1.2305915149991051,
+        "latency_p99_s": 1.3785193000003346,
+        "first_output_p95_s": 0.26670365299651166,
+        "first_output_p99_s": 0.437466734998452,
+        "scheduling_delay_p95_s": 0.0005075800072518177,
+        "scheduling_delay_p99_s": 0.0010450069967191666,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616909.3003047,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          2.82568359375,
+          1.486328125,
+          0.77978515625
+        ],
+        "memory_available_kib": 2323280
+      },
+      "state_after": {
+        "recorded_at": 1788616942.2948186,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.83642578125,
+          1.38525390625,
+          0.771484375
+        ],
+        "memory_available_kib": 2341864
+      }
+    },
+    {
+      "run_id": "burst_fault-3-single",
+      "scenario": "burst_fault",
+      "arm": "single",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 2,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 2,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "0",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false",
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 189,
+        "success": 189,
+        "http_error": 411,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616944.2794082,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788616974.2794082,
+        "last_actual_start_at": 1788616974.2318735,
+        "last_actual_start_offset_s": 29.952465295791626,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.0579501949978294,
+        "whole_run_elapsed_s": 31.05795019499783,
+        "whole_run_completed_rps": 6.085398386350693,
+        "latency_p95_s": 1.3181092939994414,
+        "latency_p99_s": 1.4089321229985217,
+        "first_output_p95_s": 0.3146812389968545,
+        "first_output_p99_s": 0.5379259679975803,
+        "scheduling_delay_p95_s": 0.0006107899971539155,
+        "scheduling_delay_p99_s": 0.002245691001007799,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616942.3354657,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.83642578125,
+          1.38525390625,
+          0.771484375
+        ],
+        "memory_available_kib": 2334052
+      },
+      "state_after": {
+        "recorded_at": 1788616975.3994694,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.775390625,
+          1.3984375,
+          0.7939453125
+        ],
+        "memory_available_kib": 2343284
+      }
+    },
+    {
+      "run_id": "burst_fault-3-multi",
+      "scenario": "burst_fault",
+      "arm": "multi",
+      "repeat": 3,
+      "effective_config": {
+        "channels": [
+          {
+            "id": 1,
+            "name": "benchmark-a",
+            "status": 1,
+            "weight": 25,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 2,
+            "name": "benchmark-b",
+            "status": 1,
+            "weight": 75,
+            "priority": 20,
+            "auto_ban": 0
+          },
+          {
+            "id": 3,
+            "name": "benchmark-c",
+            "status": 1,
+            "weight": 100,
+            "priority": 10,
+            "auto_ban": 0
+          }
+        ],
+        "options": {
+          "AutomaticDisableChannelEnabled": "false",
+          "ModelRequestRateLimitCount": "0",
+          "ModelRequestRateLimitDurationMinutes": "1",
+          "RetryTimes": "1",
+          "AutomaticEnableChannelEnabled": "false",
+          "ModelRequestRateLimitSuccessCount": "1000",
+          "ModelRequestRateLimitEnabled": "false"
+        }
+      },
+      "control": {
+        "channels": {
+          "a": {
+            "capacity": 8,
+            "fault_period_s": 10,
+            "fault_window_s": 2
+          },
+          "b": {
+            "capacity": 24,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          },
+          "c": {
+            "capacity": 32,
+            "fault_period_s": 0,
+            "fault_window_s": 0
+          }
+        },
+        "duration_s": 1,
+        "first_token_s": 0.2,
+        "fault_period_s": 0,
+        "fault_window_s": 0,
+        "reset": true
+      },
+      "client": {
+        "planned_requests": 600,
+        "actual_sent": 600,
+        "total_completed": 600,
+        "success": 600,
+        "http_error": 0,
+        "stream_interrupted": 0,
+        "invalid_response": 0,
+        "transport_error": 0,
+        "run_started_at": 1788616977.4125905,
+        "send_window_s": 30,
+        "send_window_ended_at": 1788617007.4125905,
+        "last_actual_start_at": 1788617007.3667433,
+        "last_actual_start_offset_s": 29.954152822494507,
+        "actual_started_within_send_window": 600,
+        "actual_start_rate_during_window_rps": 20.0,
+        "drain_elapsed_s": 1.4978760559970397,
+        "whole_run_elapsed_s": 31.49787605599704,
+        "whole_run_completed_rps": 19.04890345410331,
+        "latency_p95_s": 3.4725453270002618,
+        "latency_p99_s": 4.750961978003033,
+        "first_output_p95_s": 1.0433239589983714,
+        "first_output_p99_s": 1.7190345599956345,
+        "scheduling_delay_p95_s": 0.000978861004114151,
+        "scheduling_delay_p99_s": 0.0017880899977171794,
+        "workers": 128
+      },
+      "state_before": {
+        "recorded_at": 1788616975.4414558,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          1.775390625,
+          1.3984375,
+          0.7939453125
+        ],
+        "memory_available_kib": 2335500
+      },
+      "state_after": {
+        "recorded_at": 1788617008.9794476,
+        "containers": [
+          {
+            "name": "new-api-cloud-new-api-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 5,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-nginx-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-cloud-mysql-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-cloud-redis-1",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": "healthy"
+          },
+          {
+            "name": "new-api-sm-app",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-redis",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          },
+          {
+            "name": "new-api-sm-nginx",
+            "running": true,
+            "oom_killed": false,
+            "restart_count": 0,
+            "health": null
+          }
+        ],
+        "load": [
+          2.13671875,
+          1.51708984375,
+          0.8564453125
+        ],
+        "memory_available_kib": 2348296
+      }
+    }
+  ],
+  "finished_at": 1788617008.9837956,
+  "final_state": {
+    "recorded_at": 1788617009.0259202,
+    "containers": [
+      {
+        "name": "new-api-cloud-new-api-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 5,
+        "health": "healthy"
+      },
+      {
+        "name": "new-api-cloud-nginx-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      },
+      {
+        "name": "new-api-cloud-mysql-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": "healthy"
+      },
+      {
+        "name": "new-api-cloud-redis-1",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": "healthy"
+      },
+      {
+        "name": "new-api-sm-app",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      },
+      {
+        "name": "new-api-sm-redis",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      },
+      {
+        "name": "new-api-sm-nginx",
+        "running": true,
+        "oom_killed": false,
+        "restart_count": 0,
+        "health": null
+      }
+    ],
+    "load": [
+      2.13671875,
+      1.51708984375,
+      0.8564453125
+    ],
+    "memory_available_kib": 2340304
+  }
+}

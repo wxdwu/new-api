@@ -1,0 +1,4847 @@
+{
+  "control_epoch": 1788614947.920031,
+  "duration_s": 1.0,
+  "first_token_s": 0.2,
+  "fault_period_s": 0.0,
+  "fault_window_s": 0.0,
+  "channels": {
+    "a": {
+      "attempts": 156,
+      "success": 148,
+      "rejected": 8,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 8,
+      "effective_config": {
+        "capacity": 8,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "weighted-1-optimized-0",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614947.9258635,
+          "end": 1788614948.9269302,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-4",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614948.125925,
+          "end": 1788614949.1284342,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-7",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614948.2761703,
+          "end": 1788614949.276855,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-19",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614948.8785822,
+          "end": 1788614949.879267,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-21",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614948.986301,
+          "end": 1788614949.9869893,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-22",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614949.0414762,
+          "end": 1788614950.042091,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-33",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614949.6203454,
+          "end": 1788614950.620835,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-37",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614949.7765555,
+          "end": 1788614950.7770963,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-38",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614949.8256855,
+          "end": 1788614950.826619,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-32",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614950.0643759,
+          "end": 1788614951.0652792,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-47",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614950.2872767,
+          "end": 1788614951.28934,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-52",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614950.5259743,
+          "end": 1788614951.5282552,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-55",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614950.6757011,
+          "end": 1788614951.676704,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-60",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614950.930174,
+          "end": 1788614951.9308746,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-56",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614951.258312,
+          "end": 1788614952.2596943,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-69",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614951.4600112,
+          "end": 1788614952.460615,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-80",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614951.9665756,
+          "end": 1788614952.9673574,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-79",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614952.1073213,
+          "end": 1788614953.107927,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-86",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614952.263785,
+          "end": 1788614953.2672517,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-87",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614952.3144162,
+          "end": 1788614953.3151565,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-97",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614952.809874,
+          "end": 1788614953.8125045,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-94",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614952.8590963,
+          "end": 1788614953.8613486,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-92",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614952.8618867,
+          "end": 1788614953.8649745,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-103",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614953.08248,
+          "end": 1788614954.083185,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-105",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614953.176525,
+          "end": 1788614954.17707,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-108",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614953.3448303,
+          "end": 1788614954.3455975,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-114",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614953.6357615,
+          "end": 1788614954.6368139,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-117",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614953.8138695,
+          "end": 1788614954.8187118,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-111",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614953.8210266,
+          "end": 1788614954.8218658,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-118",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614953.8422468,
+          "end": 1788614953.8422468,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-122",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614954.0470195,
+          "end": 1788614955.047805,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-135",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614954.6907248,
+          "end": 1788614955.6914265,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-138",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614954.8723714,
+          "end": 1788614955.8733444,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-140",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614954.9604392,
+          "end": 1788614955.961044,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-141",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614954.978828,
+          "end": 1788614955.9804816,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-142",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614955.0308797,
+          "end": 1788614956.0368903,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-143",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614955.0923522,
+          "end": 1788614956.0930037,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-145",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614955.1778045,
+          "end": 1788614956.1786826,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-149",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614955.384707,
+          "end": 1788614956.3853352,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-150",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614955.4339893,
+          "end": 1788614955.4339893,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-152",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614955.5428116,
+          "end": 1788614955.5428116,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-154",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614955.7339964,
+          "end": 1788614956.7361164,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-162",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.0351448,
+          "end": 1788614957.0406702,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-170",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.4349875,
+          "end": 1788614957.4356601,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-172",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.5389698,
+          "end": 1788614957.5407574,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-171",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.5646274,
+          "end": 1788614957.5659993,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-174",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.6767266,
+          "end": 1788614957.679581,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-175",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.6823516,
+          "end": 1788614957.6842709,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-181",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614956.9860725,
+          "end": 1788614957.9868875,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-178",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614957.3682878,
+          "end": 1788614958.369277,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-193",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614957.650017,
+          "end": 1788614958.651264,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-195",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614957.6828172,
+          "end": 1788614958.6845176,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-196",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614957.7456949,
+          "end": 1788614958.7487977,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-204",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614958.1386905,
+          "end": 1788614959.1392186,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-209",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614958.4594135,
+          "end": 1788614959.4599845,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-210",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614958.4845986,
+          "end": 1788614959.4857337,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-214",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614958.960029,
+          "end": 1788614959.9611032,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-228",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614959.4091628,
+          "end": 1788614960.411822,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-229",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614959.4822805,
+          "end": 1788614960.4828553,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-236",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614959.7369664,
+          "end": 1788614960.7375035,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-237",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614959.7762365,
+          "end": 1788614960.7774181,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-238",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614959.8272839,
+          "end": 1788614960.8283296,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-224",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614959.8390265,
+          "end": 1788614960.839897,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-243",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614960.0787477,
+          "end": 1788614961.0794015,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-242",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614960.136483,
+          "end": 1788614961.1372511,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-248",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614960.413665,
+          "end": 1788614961.4172726,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-256",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614960.7295134,
+          "end": 1788614961.7309625,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-261",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614961.2103765,
+          "end": 1788614962.2112792,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-276",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614961.7386055,
+          "end": 1788614962.7393444,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-280",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614961.9357347,
+          "end": 1788614962.9370153,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-279",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614961.9362822,
+          "end": 1788614962.9386573,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-281",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614962.056721,
+          "end": 1788614963.0593152,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-284",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614962.128417,
+          "end": 1788614963.12919,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-282",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614962.2677581,
+          "end": 1788614963.2685616,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-287",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614962.3343303,
+          "end": 1788614963.3350697,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-289",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614962.400643,
+          "end": 1788614963.4020417,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-291",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614962.4763005,
+          "end": 1788614962.4763005,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-294",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614962.659991,
+          "end": 1788614962.659991,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-297",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614962.8012564,
+          "end": 1788614963.8017976,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-295",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614962.8065236,
+          "end": 1788614962.8065236,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-298",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614962.852497,
+          "end": 1788614962.852497,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-311",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614963.4956584,
+          "end": 1788614964.4962986,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-315",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614963.8715522,
+          "end": 1788614964.8722925,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-318",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614963.8752043,
+          "end": 1788614964.8756914,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-323",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614964.0759828,
+          "end": 1788614965.0770779,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-322",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614964.0802033,
+          "end": 1788614965.0809846,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-324",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614964.1257427,
+          "end": 1788614965.1270006,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-329",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614964.4313629,
+          "end": 1788614965.4317956,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-331",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614964.4782088,
+          "end": 1788614965.478764,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-333",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614964.610042,
+          "end": 1788614965.6107907,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-336",
+          "channel": "a",
+          "status": 429,
+          "start": 1788614964.7261205,
+          "end": 1788614964.7261205,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-332",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614965.1583197,
+          "end": 1788614966.1604218,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-337",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614965.3070457,
+          "end": 1788614966.307686,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-351",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614965.478361,
+          "end": 1788614966.480756,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-355",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614965.7802145,
+          "end": 1788614966.7829912,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-360",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614965.9259546,
+          "end": 1788614966.9266813,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-362",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614966.0335462,
+          "end": 1788614967.0342634,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-364",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614966.159639,
+          "end": 1788614967.161373,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-366",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614966.2269022,
+          "end": 1788614967.2276728,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-370",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614966.4606647,
+          "end": 1788614967.4612017,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-380",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614966.93225,
+          "end": 1788614967.9343836,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-373",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614967.0069637,
+          "end": 1788614968.010073,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-378",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614967.0185812,
+          "end": 1788614968.020141,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-386",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614967.2360194,
+          "end": 1788614968.2379832,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-397",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614967.7794547,
+          "end": 1788614968.7800665,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-403",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614968.075556,
+          "end": 1788614969.0765543,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-402",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614968.1099067,
+          "end": 1788614969.111864,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-406",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614968.2366786,
+          "end": 1788614969.2374268,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-410",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614968.5073433,
+          "end": 1788614969.5082886,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-414",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614968.628648,
+          "end": 1788614969.6296,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-416",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614968.9105623,
+          "end": 1788614969.9124212,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-422",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614969.037117,
+          "end": 1788614970.0391657,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-424",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614969.1330159,
+          "end": 1788614970.1343353,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-426",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614969.2278273,
+          "end": 1788614970.2285733,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-430",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614969.428973,
+          "end": 1788614970.430225,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-433",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614969.5865781,
+          "end": 1788614970.587568,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-443",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.0863514,
+          "end": 1788614971.0870137,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-447",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.2781107,
+          "end": 1788614971.2788103,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-450",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.5021129,
+          "end": 1788614971.5053086,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-451",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.5034041,
+          "end": 1788614971.5074265,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-454",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.635983,
+          "end": 1788614971.636536,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-452",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.7599118,
+          "end": 1788614971.760639,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-456",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614970.7630324,
+          "end": 1788614971.7642808,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-458",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614971.0609665,
+          "end": 1788614972.0633383,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-466",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614971.2456617,
+          "end": 1788614972.2466388,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-467",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614971.4595442,
+          "end": 1788614972.4605734,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-475",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614971.6878917,
+          "end": 1788614972.6887076,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-485",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614972.2897415,
+          "end": 1788614973.2957487,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-492",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614972.5387437,
+          "end": 1788614973.539583,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-498",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614972.9314075,
+          "end": 1788614973.9338477,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-480",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614973.1655514,
+          "end": 1788614974.1668973,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-507",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614973.2914202,
+          "end": 1788614974.2977152,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-506",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614973.4345038,
+          "end": 1788614974.4363346,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-510",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614973.4995313,
+          "end": 1788614974.506248,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-513",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614973.5933676,
+          "end": 1788614974.5939753,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-520",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614973.925687,
+          "end": 1788614974.9262881,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-522",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614974.0341852,
+          "end": 1788614975.034734,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-532",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614974.5827765,
+          "end": 1788614975.5846536,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-541",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614974.9790761,
+          "end": 1788614975.980796,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-544",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.134422,
+          "end": 1788614976.1350174,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-546",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.2328012,
+          "end": 1788614976.2334538,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-547",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.2799475,
+          "end": 1788614976.2822251,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-548",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.3507168,
+          "end": 1788614976.3545759,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-555",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.6893072,
+          "end": 1788614976.6900346,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-554",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.862266,
+          "end": 1788614976.8626955,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-558",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614975.8633099,
+          "end": 1788614976.863911,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-566",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614976.2302783,
+          "end": 1788614977.2309036,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-556",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614976.2560964,
+          "end": 1788614977.2567909,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-567",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614976.2879405,
+          "end": 1788614977.2887666,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-575",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.013455,
+          "end": 1788614978.0142267,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-581",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.127773,
+          "end": 1788614978.1287417,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-587",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.3814154,
+          "end": 1788614978.3820887,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-578",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.456458,
+          "end": 1788614978.4571192,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-583",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.516194,
+          "end": 1788614978.5169096,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-595",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.680101,
+          "end": 1788614978.6807222,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-599",
+          "channel": "a",
+          "status": 200,
+          "start": 1788614977.9238486,
+          "end": 1788614978.9248087,
+          "inflight": 7
+        }
+      ]
+    },
+    "b": {
+      "attempts": 444,
+      "success": 444,
+      "rejected": 0,
+      "fault": 0,
+      "inflight": 0,
+      "max_inflight": 22,
+      "effective_config": {
+        "capacity": 24,
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "overrides": {
+        "fault_period_s": 0.0,
+        "fault_window_s": 0.0
+      },
+      "rows": [
+        {
+          "benchmark_id": "weighted-1-optimized-1",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614947.9763203,
+          "end": 1788614948.976937,
+          "inflight": 1
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-2",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.0263062,
+          "end": 1788614949.0284572,
+          "inflight": 2
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-3",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.0759165,
+          "end": 1788614949.0765438,
+          "inflight": 3
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-5",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.1761196,
+          "end": 1788614949.176672,
+          "inflight": 4
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-6",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.2263467,
+          "end": 1788614949.2306914,
+          "inflight": 5
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-8",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.3261206,
+          "end": 1788614949.3279624,
+          "inflight": 6
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-9",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.3758283,
+          "end": 1788614949.3763397,
+          "inflight": 7
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-10",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.425985,
+          "end": 1788614949.4265664,
+          "inflight": 8
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-11",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.476334,
+          "end": 1788614949.4768298,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-12",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.526852,
+          "end": 1788614949.527478,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-13",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.5762613,
+          "end": 1788614949.5768635,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-14",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.6363764,
+          "end": 1788614949.6376894,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-15",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.678088,
+          "end": 1788614949.6788456,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-16",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.7266688,
+          "end": 1788614949.727276,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-17",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.776355,
+          "end": 1788614949.7772481,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-18",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.830972,
+          "end": 1788614949.8315885,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-20",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614948.9266374,
+          "end": 1788614949.9272673,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-24",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.1456568,
+          "end": 1788614950.1465962,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-23",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.166063,
+          "end": 1788614950.1686912,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-26",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.228064,
+          "end": 1788614950.231085,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-25",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.2397642,
+          "end": 1788614950.2402961,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-27",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.2799757,
+          "end": 1788614950.2807846,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-28",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.3387976,
+          "end": 1788614950.340236,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-30",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.425733,
+          "end": 1788614950.4263535,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-29",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.4313073,
+          "end": 1788614950.4324374,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-31",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.5656168,
+          "end": 1788614950.5665212,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-35",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.676453,
+          "end": 1788614950.6770642,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-36",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.7256546,
+          "end": 1788614950.726318,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-34",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.7316363,
+          "end": 1788614950.732348,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-39",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.8763697,
+          "end": 1788614950.8767838,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-41",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.9783485,
+          "end": 1788614950.9787285,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-40",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614949.9819968,
+          "end": 1788614950.9826303,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-42",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.0286007,
+          "end": 1788614951.0291984,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-43",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.0838213,
+          "end": 1788614951.086256,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-44",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.1272027,
+          "end": 1788614951.128309,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-45",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.1847682,
+          "end": 1788614951.1855395,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-48",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.3330371,
+          "end": 1788614951.3341076,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-46",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.3343687,
+          "end": 1788614951.3359752,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-49",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.399695,
+          "end": 1788614951.4007916,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-51",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.5103383,
+          "end": 1788614951.5114388,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-50",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.5309393,
+          "end": 1788614951.5318553,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-54",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.7368238,
+          "end": 1788614951.7382255,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-57",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.8243,
+          "end": 1788614951.8253744,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-58",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.831317,
+          "end": 1788614951.8318636,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-59",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.894884,
+          "end": 1788614951.8955643,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-61",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614950.9760475,
+          "end": 1788614951.977397,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-62",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.027492,
+          "end": 1788614952.028647,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-64",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.136387,
+          "end": 1788614952.1370435,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-65",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.2107625,
+          "end": 1788614952.2114499,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-66",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.261396,
+          "end": 1788614952.266561,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-67",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.296422,
+          "end": 1788614952.2980433,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-63",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.3072598,
+          "end": 1788614952.3084433,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-68",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.3266754,
+          "end": 1788614952.327443,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-70",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.4699662,
+          "end": 1788614952.470597,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-71",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.477962,
+          "end": 1788614952.4787815,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-73",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.5774674,
+          "end": 1788614952.5785925,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-72",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.581267,
+          "end": 1788614952.5817373,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-74",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.626667,
+          "end": 1788614952.6275458,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-75",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.682106,
+          "end": 1788614952.6833863,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-77",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614951.7875507,
+          "end": 1788614952.7883906,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-82",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.031773,
+          "end": 1788614953.0325325,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-81",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.035936,
+          "end": 1788614953.0367153,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-83",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.0775728,
+          "end": 1788614953.0785358,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-53",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.1111758,
+          "end": 1788614953.1119566,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-84",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.1260004,
+          "end": 1788614953.126676,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-85",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.1812649,
+          "end": 1788614953.1817958,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-78",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.259121,
+          "end": 1788614953.2602282,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-76",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.2614267,
+          "end": 1788614953.2625139,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-89",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.381561,
+          "end": 1788614953.382283,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-88",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.4395711,
+          "end": 1788614953.4405704,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-90",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.4518785,
+          "end": 1788614953.4529936,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-93",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.5778713,
+          "end": 1788614953.5785463,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-95",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.6776307,
+          "end": 1788614953.678594,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-96",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.8568258,
+          "end": 1788614953.8586686,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-98",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.8643281,
+          "end": 1788614953.86609,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-99",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.8754892,
+          "end": 1788614953.8767524,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-100",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614952.945338,
+          "end": 1788614953.9459393,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-102",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.0253181,
+          "end": 1788614954.0258613,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-101",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.0298648,
+          "end": 1788614954.030357,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-104",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.1801744,
+          "end": 1788614954.180716,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-91",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.2091956,
+          "end": 1788614954.2104125,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-106",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.2278042,
+          "end": 1788614954.2288067,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-107",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.2845376,
+          "end": 1788614954.2854238,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-110",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.4349887,
+          "end": 1788614954.4354827,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-112",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.6066,
+          "end": 1788614954.607632,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-113",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.6325712,
+          "end": 1788614954.6344466,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-115",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.6756723,
+          "end": 1788614954.6763513,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-109",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.7098129,
+          "end": 1788614954.7106004,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-116",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.7460666,
+          "end": 1788614954.7470384,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-119",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.8847232,
+          "end": 1788614954.8855727,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-120",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.929874,
+          "end": 1788614954.9304779,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-121",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614953.9784055,
+          "end": 1788614954.9792674,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-124",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.1305072,
+          "end": 1788614955.131429,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-123",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.1570432,
+          "end": 1788614955.157737,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-125",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.2825885,
+          "end": 1788614955.2850049,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-126",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.2874691,
+          "end": 1788614955.2885647,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-128",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.3308208,
+          "end": 1788614955.331469,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-127",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.4136875,
+          "end": 1788614955.4143562,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-130",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.4252396,
+          "end": 1788614955.425885,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-129",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.4290552,
+          "end": 1788614955.4299536,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-131",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.4797432,
+          "end": 1788614955.4804342,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-132",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.536866,
+          "end": 1788614955.537971,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-133",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.578393,
+          "end": 1788614955.5803335,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-134",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.6288426,
+          "end": 1788614955.6296096,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-136",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.7277262,
+          "end": 1788614955.728746,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-137",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614954.7771058,
+          "end": 1788614955.7777076,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-139",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.1082368,
+          "end": 1788614956.1088324,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-144",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.1278954,
+          "end": 1788614956.1284943,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-146",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.264311,
+          "end": 1788614956.2649012,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-147",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.2845962,
+          "end": 1788614956.2852898,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-148",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.3289638,
+          "end": 1788614956.3304527,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-151",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.4780104,
+          "end": 1788614956.4787817,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-153",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.5828986,
+          "end": 1788614956.5845413,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-156",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.7378392,
+          "end": 1788614956.7402713,
+          "inflight": 9
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-155",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.7412887,
+          "end": 1788614956.7448266,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-157",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.7862854,
+          "end": 1788614956.7870374,
+          "inflight": 10
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-158",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.8345044,
+          "end": 1788614956.8353837,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-160",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614955.928741,
+          "end": 1788614956.934833,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-159",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.019324,
+          "end": 1788614957.0199955,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-161",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.0359733,
+          "end": 1788614957.0381641,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-164",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.1370754,
+          "end": 1788614957.1383564,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-163",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.1921887,
+          "end": 1788614957.1928508,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-165",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.1990333,
+          "end": 1788614957.1997948,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-166",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.2442474,
+          "end": 1788614957.24496,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-167",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.3114293,
+          "end": 1788614957.3124464,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-168",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.3290792,
+          "end": 1788614957.3300319,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-176",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.7303379,
+          "end": 1788614957.7310848,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-177",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.7808278,
+          "end": 1788614957.781613,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-179",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.9127355,
+          "end": 1788614957.9133937,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-169",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.9334018,
+          "end": 1788614957.9341185,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-180",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614956.9449406,
+          "end": 1788614957.9459999,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-182",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.0342681,
+          "end": 1788614958.035404,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-183",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.0986981,
+          "end": 1788614958.099395,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-173",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.118875,
+          "end": 1788614958.1196587,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-186",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.236439,
+          "end": 1788614958.2371073,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-185",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.2962284,
+          "end": 1788614958.2974234,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-187",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.29758,
+          "end": 1788614958.2986479,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-188",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.3366275,
+          "end": 1788614958.3374982,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-189",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.3849392,
+          "end": 1788614958.3855584,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-190",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.4276078,
+          "end": 1788614958.428285,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-191",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.4800968,
+          "end": 1788614958.4812417,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-194",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.6376474,
+          "end": 1788614958.6384525,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-192",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.6422133,
+          "end": 1788614958.644071,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-184",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.660065,
+          "end": 1788614958.6631851,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-197",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.7874975,
+          "end": 1788614958.788647,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-198",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.8305645,
+          "end": 1788614958.8317723,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-199",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.8756337,
+          "end": 1788614958.8764322,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-201",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614957.9778674,
+          "end": 1788614958.979393,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-200",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.0569484,
+          "end": 1788614959.057686,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-203",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.086556,
+          "end": 1788614959.0872293,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-205",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.1776314,
+          "end": 1788614959.1790917,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-202",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.205546,
+          "end": 1788614959.2062614,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-207",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.2943332,
+          "end": 1788614959.2953537,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-206",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.4155312,
+          "end": 1788614959.4162853,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-208",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.4634013,
+          "end": 1788614959.4642327,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-212",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.5334098,
+          "end": 1788614959.533903,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-211",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.5573401,
+          "end": 1788614959.5582845,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-213",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.5758178,
+          "end": 1788614959.5764453,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-215",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.6936011,
+          "end": 1788614959.694371,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-217",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.8632138,
+          "end": 1788614959.8638551,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-216",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614958.9930665,
+          "end": 1788614959.9939322,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-220",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.0060515,
+          "end": 1788614960.008684,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-219",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.008457,
+          "end": 1788614960.010661,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-221",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.0288641,
+          "end": 1788614960.0302768,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-222",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.0332167,
+          "end": 1788614960.0340838,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-218",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.0503225,
+          "end": 1788614960.0510528,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-225",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.1834333,
+          "end": 1788614960.1838615,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-226",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.2287364,
+          "end": 1788614960.2315269,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-223",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.260035,
+          "end": 1788614960.2615345,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-227",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.4067934,
+          "end": 1788614960.4085531,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-230",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.4363134,
+          "end": 1788614960.4371495,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-231",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.4942589,
+          "end": 1788614960.495403,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-232",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.5294075,
+          "end": 1788614960.5306137,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-234",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.6275225,
+          "end": 1788614960.6288702,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-233",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.6317031,
+          "end": 1788614960.6335285,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-235",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.6766376,
+          "end": 1788614960.6774452,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-240",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.9462993,
+          "end": 1788614960.9468603,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-241",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614959.9820518,
+          "end": 1788614960.9830735,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-244",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.133695,
+          "end": 1788614961.1344523,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-239",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.219523,
+          "end": 1788614961.2205346,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-246",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.247493,
+          "end": 1788614961.2485693,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-247",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.284962,
+          "end": 1788614961.2863932,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-245",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.4178212,
+          "end": 1788614961.4190106,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-250",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.4288113,
+          "end": 1788614961.4299989,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-252",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.528103,
+          "end": 1788614961.5287852,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-251",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.5347848,
+          "end": 1788614961.535347,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-253",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.5880497,
+          "end": 1788614961.588988,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-254",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.62848,
+          "end": 1788614961.6300042,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-249",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.7141142,
+          "end": 1788614961.7149513,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-255",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.7318501,
+          "end": 1788614961.7334235,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-257",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.789045,
+          "end": 1788614961.7916539,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-259",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.8769822,
+          "end": 1788614961.8778033,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-258",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.938931,
+          "end": 1788614961.9397104,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-260",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614960.9454315,
+          "end": 1788614961.9462662,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-262",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.0342853,
+          "end": 1788614962.0347178,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-265",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.1853151,
+          "end": 1788614962.1858978,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-264",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.2095213,
+          "end": 1788614962.2125962,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-263",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.2133248,
+          "end": 1788614962.2140274,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-267",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.2778504,
+          "end": 1788614962.2788203,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-268",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.3265665,
+          "end": 1788614962.3278842,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-269",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.3795185,
+          "end": 1788614962.3806257,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-272",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.5616634,
+          "end": 1788614962.562261,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-273",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.5753603,
+          "end": 1788614962.5766642,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-274",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.6643074,
+          "end": 1788614962.6650133,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-275",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.7110522,
+          "end": 1788614962.7124732,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-278",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.840563,
+          "end": 1788614962.8433905,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-271",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614961.907988,
+          "end": 1788614962.908855,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-270",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.0764122,
+          "end": 1788614963.077179,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-266",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.079206,
+          "end": 1788614963.0818315,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-283",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.08407,
+          "end": 1788614963.0849848,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-286",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.2458358,
+          "end": 1788614963.2471783,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-285",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.2560143,
+          "end": 1788614963.2568264,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-288",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.3650901,
+          "end": 1788614963.3657925,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-277",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.5112047,
+          "end": 1788614963.5119565,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-290",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.5567877,
+          "end": 1788614963.5587528,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-293",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.5811677,
+          "end": 1788614963.581871,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-292",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.6074266,
+          "end": 1788614963.608071,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-296",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.761828,
+          "end": 1788614963.7624047,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-299",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.877577,
+          "end": 1788614963.8787513,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-300",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614962.9660528,
+          "end": 1788614963.9668698,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-302",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.0264983,
+          "end": 1788614964.0273616,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-305",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.1804,
+          "end": 1788614964.1810286,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-303",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.2083304,
+          "end": 1788614964.2120864,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-301",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.2104323,
+          "end": 1788614964.2112982,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-304",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.2624612,
+          "end": 1788614964.263524,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-308",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.3385274,
+          "end": 1788614964.3392305,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-306",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.3427334,
+          "end": 1788614964.343409,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-309",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.37867,
+          "end": 1788614964.3793616,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-310",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.5042975,
+          "end": 1788614964.504877,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-307",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.507602,
+          "end": 1788614964.5081096,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-312",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.5306005,
+          "end": 1788614964.5313346,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-313",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.642638,
+          "end": 1788614964.6433597,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-314",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.7432933,
+          "end": 1788614964.744357,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-316",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.7493472,
+          "end": 1788614964.7500534,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-317",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.8662245,
+          "end": 1788614964.8669767,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-320",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.9356697,
+          "end": 1788614964.9363914,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-321",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614963.9843328,
+          "end": 1788614964.984829,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-325",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.1756604,
+          "end": 1788614965.176447,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-326",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.226811,
+          "end": 1788614965.2283523,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-319",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.3198264,
+          "end": 1788614965.320426,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-327",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.383841,
+          "end": 1788614965.3845751,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-330",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.4276505,
+          "end": 1788614965.4283051,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-328",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.4443333,
+          "end": 1788614965.4450488,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-335",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.6757069,
+          "end": 1788614965.6763759,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-338",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.8266358,
+          "end": 1788614965.8272977,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-340",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.9316459,
+          "end": 1788614965.9341118,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-341",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614964.9798336,
+          "end": 1788614965.9805036,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-342",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.0265734,
+          "end": 1788614966.028231,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-343",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.110244,
+          "end": 1788614966.1120055,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-345",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.1792119,
+          "end": 1788614966.180237,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-346",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.2275884,
+          "end": 1788614966.2282696,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-344",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.240838,
+          "end": 1788614966.2414324,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-334",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.2590644,
+          "end": 1788614966.2597756,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-347",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.2783365,
+          "end": 1788614966.2787445,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-348",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.4057503,
+          "end": 1788614966.4067323,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-352",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.5357094,
+          "end": 1788614966.5365143,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-353",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.5860682,
+          "end": 1788614966.5874362,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-349",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.607685,
+          "end": 1788614966.6090045,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-350",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.6090963,
+          "end": 1788614966.6098795,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-339",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.6166427,
+          "end": 1788614966.6173148,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-354",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.7076316,
+          "end": 1788614966.708313,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-356",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.7257507,
+          "end": 1788614966.7264433,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-357",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.7755206,
+          "end": 1788614966.777062,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-358",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.8267436,
+          "end": 1788614966.8273351,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-359",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614965.8754587,
+          "end": 1788614966.8763013,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-363",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.0762498,
+          "end": 1788614967.0768857,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-361",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.0840287,
+          "end": 1788614967.0847237,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-365",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.2112541,
+          "end": 1788614967.214192,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-368",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.3278484,
+          "end": 1788614967.328772,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-369",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.4560156,
+          "end": 1788614967.456745,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-371",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.4821985,
+          "end": 1788614967.482943,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-367",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.516047,
+          "end": 1788614967.5166624,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-372",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.5288472,
+          "end": 1788614967.529601,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-374",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.732734,
+          "end": 1788614967.7338817,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-376",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.7825263,
+          "end": 1788614967.7843738,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-379",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.9869988,
+          "end": 1788614967.9891143,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-381",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614966.999204,
+          "end": 1788614968.0011528,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-385",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.1890674,
+          "end": 1788614968.189753,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-383",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.2088082,
+          "end": 1788614968.2143033,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-377",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.211374,
+          "end": 1788614968.2120097,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-388",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.3347366,
+          "end": 1788614968.335442,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-387",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.404265,
+          "end": 1788614968.4050167,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-389",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.4119098,
+          "end": 1788614968.4129202,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-375",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.4148116,
+          "end": 1788614968.416452,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-390",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.4309466,
+          "end": 1788614968.4315336,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-392",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.5828846,
+          "end": 1788614968.583623,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-394",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.6286254,
+          "end": 1788614968.629455,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-391",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.655715,
+          "end": 1788614968.6564054,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-395",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.694067,
+          "end": 1788614968.6948144,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-396",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.782417,
+          "end": 1788614968.783369,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-398",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.829686,
+          "end": 1788614968.8318822,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-382",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.8578904,
+          "end": 1788614968.859724,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-384",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.860682,
+          "end": 1788614968.8627758,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-400",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.9257545,
+          "end": 1788614968.9265099,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-399",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.9332047,
+          "end": 1788614968.9356642,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-401",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614967.9780214,
+          "end": 1788614968.9787934,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-393",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.1107085,
+          "end": 1788614969.1119509,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-404",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.146276,
+          "end": 1788614969.1475554,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-405",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.1759996,
+          "end": 1788614969.17686,
+          "inflight": 22
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-407",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.2805197,
+          "end": 1788614969.2819865,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-408",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.329507,
+          "end": 1788614969.3301778,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-409",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.3846262,
+          "end": 1788614969.385521,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-411",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.4865658,
+          "end": 1788614969.4882133,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-412",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.5447273,
+          "end": 1788614969.5454998,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-413",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.595053,
+          "end": 1788614969.5956736,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-415",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.6860917,
+          "end": 1788614969.686829,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-417",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.8686824,
+          "end": 1788614969.8699017,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-419",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.8856008,
+          "end": 1788614969.8866742,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-421",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614968.9779084,
+          "end": 1788614969.982577,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-420",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.0175133,
+          "end": 1788614970.019565,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-423",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.106722,
+          "end": 1788614970.109177,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-425",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.2634325,
+          "end": 1788614970.264107,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-427",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.2873764,
+          "end": 1788614970.2884042,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-418",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.3726833,
+          "end": 1788614970.3736176,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-429",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.3826692,
+          "end": 1788614970.38338,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-431",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.48777,
+          "end": 1788614970.4904218,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-434",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.6354935,
+          "end": 1788614970.6365845,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-436",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.7347834,
+          "end": 1788614970.7354531,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-437",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.77888,
+          "end": 1788614970.7793746,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-432",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.8605375,
+          "end": 1788614970.8642817,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-435",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.8611133,
+          "end": 1788614970.8618307,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-428",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.8623984,
+          "end": 1788614970.8631842,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-438",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.9067135,
+          "end": 1788614970.9073117,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-441",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.9775388,
+          "end": 1788614970.9786925,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-439",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.985399,
+          "end": 1788614970.9862952,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-440",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614969.9882808,
+          "end": 1788614970.9891853,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-442",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.0407276,
+          "end": 1788614971.0430262,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-445",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.1791205,
+          "end": 1788614971.1810617,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-444",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.184437,
+          "end": 1788614971.1906993,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-446",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.3349845,
+          "end": 1788614971.3357913,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-448",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.4094923,
+          "end": 1788614971.4118884,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-453",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.5777473,
+          "end": 1788614971.5788476,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-455",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.6843266,
+          "end": 1788614971.6850107,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-457",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.7775443,
+          "end": 1788614971.7791667,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-459",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.8803618,
+          "end": 1788614971.8813856,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-461",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614970.9804645,
+          "end": 1788614971.9823732,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-462",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.0289109,
+          "end": 1788614972.0300868,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-460",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.0625656,
+          "end": 1788614972.0640264,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-463",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.18692,
+          "end": 1788614972.1917808,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-464",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.1935902,
+          "end": 1788614972.1995447,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-465",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.1957388,
+          "end": 1788614972.1976225,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-469",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.3837953,
+          "end": 1788614972.3843606,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-468",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.4578273,
+          "end": 1788614972.4603493,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-471",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.4950778,
+          "end": 1788614972.4957988,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-472",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.5350683,
+          "end": 1788614972.5361142,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-470",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.6080604,
+          "end": 1788614972.6086943,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-474",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.6416807,
+          "end": 1788614972.6422641,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-473",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.6835027,
+          "end": 1788614972.6842852,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-478",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.826337,
+          "end": 1788614972.82695,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-476",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.8312945,
+          "end": 1788614972.8318415,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-477",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.8375788,
+          "end": 1788614972.838187,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-479",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.88023,
+          "end": 1788614972.8807538,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-481",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614971.9810288,
+          "end": 1788614972.9825077,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-449",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.0115783,
+          "end": 1788614973.0123,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-483",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.0789144,
+          "end": 1788614973.0802217,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-484",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.2122774,
+          "end": 1788614973.2170267,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-482",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.2169795,
+          "end": 1788614973.2186942,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-486",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.2834678,
+          "end": 1788614973.286886,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-487",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.2903507,
+          "end": 1788614973.2944596,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-488",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.38272,
+          "end": 1788614973.3840785,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-491",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.5814536,
+          "end": 1788614973.5823348,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-493",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.6560066,
+          "end": 1788614973.6585975,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-495",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.683183,
+          "end": 1788614973.687271,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-496",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.7298176,
+          "end": 1788614973.7305367,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-494",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.7509625,
+          "end": 1788614973.752118,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-497",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.7781913,
+          "end": 1788614973.7792666,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-489",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.8058562,
+          "end": 1788614973.8069153,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-499",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.8785944,
+          "end": 1788614973.8793373,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-500",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614972.9364715,
+          "end": 1788614973.9371018,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-501",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.0344265,
+          "end": 1788614974.0351057,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-503",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.0772774,
+          "end": 1788614974.0779724,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-502",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.0832279,
+          "end": 1788614974.083978,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-505",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.2977107,
+          "end": 1788614974.2991145,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-508",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.3348377,
+          "end": 1788614974.3365903,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-509",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.4088197,
+          "end": 1788614974.4106715,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-511",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.5038826,
+          "end": 1788614974.504824,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-512",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.5547428,
+          "end": 1788614974.5560706,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-514",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.645246,
+          "end": 1788614974.6458473,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-515",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.6854858,
+          "end": 1788614974.6863246,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-517",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.782539,
+          "end": 1788614974.783021,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-516",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.8126996,
+          "end": 1788614974.8136704,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-518",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.854328,
+          "end": 1788614974.8548083,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-519",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.877468,
+          "end": 1788614974.8782105,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-521",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614973.980031,
+          "end": 1788614974.980643,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-504",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.0644982,
+          "end": 1788614975.0657976,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-524",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.135172,
+          "end": 1788614975.1357775,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-523",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.1815944,
+          "end": 1788614975.182345,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-525",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.1859732,
+          "end": 1788614975.1869924,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-526",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.2273972,
+          "end": 1788614975.228044,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-527",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.3073807,
+          "end": 1788614975.3095038,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-528",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.345412,
+          "end": 1788614975.3464913,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-530",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.4277465,
+          "end": 1788614975.4292703,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-490",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.4642587,
+          "end": 1788614975.4660518,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-529",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.4830596,
+          "end": 1788614975.4836743,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-531",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.584628,
+          "end": 1788614975.5870888,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-533",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.5882587,
+          "end": 1788614975.590438,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-535",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.6755857,
+          "end": 1788614975.6762774,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-534",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.6793551,
+          "end": 1788614975.6803133,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-536",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.7274683,
+          "end": 1788614975.7292027,
+          "inflight": 20
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-537",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.779711,
+          "end": 1788614975.780305,
+          "inflight": 21
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-539",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.8805702,
+          "end": 1788614975.8815808,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-540",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614974.9370277,
+          "end": 1788614975.9384747,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-542",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.0388906,
+          "end": 1788614976.0423496,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-543",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.0872262,
+          "end": 1788614976.0882077,
+          "inflight": 19
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-545",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.2159874,
+          "end": 1788614976.216844,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-549",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.4605377,
+          "end": 1788614976.462266,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-538",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.4637036,
+          "end": 1788614976.4649158,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-550",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.4656591,
+          "end": 1788614976.467478,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-551",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.493413,
+          "end": 1788614976.4943101,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-552",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.5285637,
+          "end": 1788614976.5292017,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-559",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.8785527,
+          "end": 1788614976.87984,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-557",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.8806896,
+          "end": 1788614976.8813639,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-561",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.9778047,
+          "end": 1788614976.9784844,
+          "inflight": 11
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-560",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614975.99169,
+          "end": 1788614976.9930422,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-553",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.0189977,
+          "end": 1788614977.020493,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-562",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.0418408,
+          "end": 1788614977.042906,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-564",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.129617,
+          "end": 1788614977.1306746,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-563",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.1330266,
+          "end": 1788614977.133597,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-565",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.180993,
+          "end": 1788614977.1818264,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-568",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.329473,
+          "end": 1788614977.330041,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-570",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.4607165,
+          "end": 1788614977.4612825,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-574",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.6362746,
+          "end": 1788614977.6372552,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-573",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.6563108,
+          "end": 1788614977.6573007,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-571",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.6795154,
+          "end": 1788614977.680879,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-577",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.7788632,
+          "end": 1788614977.7799616,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-576",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.805656,
+          "end": 1788614977.8068058,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-580",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614976.9296527,
+          "end": 1788614977.9303875,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-579",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.0761187,
+          "end": 1788614978.0768619,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-582",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.0783954,
+          "end": 1788614978.079474,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-572",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.0806644,
+          "end": 1788614978.0813723,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-586",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.2846205,
+          "end": 1788614978.2858653,
+          "inflight": 12
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-585",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.286433,
+          "end": 1788614978.287805,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-588",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.3367856,
+          "end": 1788614978.3375874,
+          "inflight": 13
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-589",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.38324,
+          "end": 1788614978.384198,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-590",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.446368,
+          "end": 1788614978.447756,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-584",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.4666696,
+          "end": 1788614978.4678156,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-591",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.5106182,
+          "end": 1788614978.5113287,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-592",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.5608535,
+          "end": 1788614978.5615623,
+          "inflight": 17
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-593",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.5775342,
+          "end": 1788614978.578667,
+          "inflight": 18
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-598",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.8305879,
+          "end": 1788614978.8318279,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-597",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614977.957622,
+          "end": 1788614978.9593942,
+          "inflight": 14
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-596",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614978.0601206,
+          "end": 1788614979.0621178,
+          "inflight": 15
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-594",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614978.0615523,
+          "end": 1788614979.0636125,
+          "inflight": 16
+        },
+        {
+          "benchmark_id": "weighted-1-optimized-569",
+          "channel": "b",
+          "status": 200,
+          "start": 1788614978.0998726,
+          "end": 1788614979.100718,
+          "inflight": 14
+        }
+      ]
+    }
+  }
+}
